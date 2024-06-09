@@ -1,2 +1,3 @@
 class ls_mandalorian_nightowl_helmet;
 class LST_Uniform_Hyperion;
+class Merc_Helmet_Hyperion;

@@ -19,18 +19,16 @@ class cfgPatches {
 class cfgWeapons {
 	#include "data\looseDepends_weapons.hpp"
 	
-	class BCG_Owl_Helmet_BASE: ls_mandalorian_nightowl_helmet {
+	class BCG_JazzHands_Helmet: Merc_Helmet_Hyperion {
 		scope=2;
 		scopeArsenal=2;
 		author="Gray";
-		displayName="[BCG] Night Owl Helmet";
+		displayName="[BCG] Helmet Heavy";
 		hiddenSelections[]={
-			"camo1",
-			"visor"
+			"Camo1"
 		};
 		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\sex.paa",
-			"BCG_Armour\data\helmets\sex_visor.paa"
+			"armor_unit\Hyperion\Hyperion_helmet_co.paa"
 		};
 	};
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion {
