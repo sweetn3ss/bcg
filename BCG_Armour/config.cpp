@@ -12,7 +12,7 @@ class cfgPatches {
 		requiredVersion=0.1;
 		requiredAddons[]={
 			"ls_armor_greenfor",
-			"armor_unit" // last force project armour folder :puking_face:
+			//"armor_unit" // last force project armour folder :puking_face:
 		};
 	};
 };
@@ -30,10 +30,10 @@ class cfgWeapons {
 		author="Gray";
 		displayName="[BCG] Helmet Heavy";
 		hiddenSelections[]={
-			"Camo1"
+			"camo1"
 		};
 		hiddenSelectionsTextures[]={
-			"\armor_unit\Hyperion\Hyperion_helmet_co.paa"
+			"\BCG_Armour\data\uniforms\Hyperion_helmet_co.paa"
 		};
 	};
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion {
@@ -62,6 +62,13 @@ class cfgVehicles {
 			"camo2",
 			"camoB",
 			"Uniform"
+		};
+		hiddenSelectionsMaterials[]={
+			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			//"\armor_unit\Hyperion\camo1.rvmat",
+			"\armor_unit\Hyperion\camo2.rvmat",
+			"\armor_unit\Hyperion\camoB.rvmat",
+			"\armor_unit\Hyperion\uniform.rvmat"
 		};
 		hiddenSelectionsTextures[]={
 			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
