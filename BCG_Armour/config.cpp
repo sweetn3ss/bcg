@@ -46,7 +46,7 @@ class cfgWeapons
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
 	{
 		scope = 2;
-		displayName = "[BCG] Uniform Basic";
+		displayName = "[BCG] Uniform JazzHands";
 		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
 		class ItemInfo: UniformItem
 		{
@@ -57,16 +57,137 @@ class cfgWeapons
 			mass = 40;
 		};
 	};
+	class BCG_Uniform_Basic: LST_Uniform_Hyperion
+	{
+		scope = 2;
+		displayName = "[BCG] Uniform Basic";
+		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BCG_Armor_Basic";
+			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+			containerClass = "Supply200";
+			mass = 40;
+		};
+	};
+	class BCG_Uniform_Trim: LST_Uniform_Hyperion
+	{
+		scope = 2;
+		displayName = "[BCG] Uniform Trim";
+		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BCG_Armor_Trim";
+			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+			containerClass = "Supply200";
+			mass = 40;
+		};
+	};
+	class BCG_Uniform_Fancy: LST_Uniform_Hyperion
+	{
+		scope = 2;
+		displayName = "[BCG] Uniform Fancy";
+		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BCG_Armor_Fancy";
+			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+			containerClass = "Supply200";
+			mass = 40;
+		};
+	};
 	
 };
 class cfgVehicles
 {
 	class LST_Armor_Hyperion;
+	class JLTS_Clone_jumppack_JT12;
+	
+	#include "\data\bcgBackpack.hpp"
+	
 	class BCG_JazzHands_Armour: LST_Armor_Hyperion
 	{
 		displayName = "[BCG] Uniform Basic";
 		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
 		uniformClass = "BCG_JazzHands_Uniform";
+		model = "\armor_unit\Uniform_Hyperion.p3d";
+		hiddenSelections[] = {
+			"camo1",
+			"camo2",
+			"camoB",
+			"Uniform"
+		};
+		hiddenSelectionsMaterials[] = {
+			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\armor_unit\Hyperion\camo2.rvmat",
+			"\armor_unit\Hyperion\camoB.rvmat",
+			"\armor_unit\Hyperion\uniform.rvmat"
+		};
+		hiddenSelectionsTextures[] = {
+			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
+			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
+			"\armor_unit\Hyperion\uniform.paa"
+		};
+	};
+	class BCG_Armor_Basic: LST_Armor_Hyperion
+	{
+		displayName = "[BCG] Uniform Basic";
+		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+		uniformClass = "BCG_Uniform_Basic";
+		model = "\armor_unit\Uniform_Hyperion.p3d";
+		hiddenSelections[] = {
+			"camo1",
+			"camo2",
+			"camoB",
+			"Uniform"
+		};
+		hiddenSelectionsMaterials[] = {
+			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\armor_unit\Hyperion\camo2.rvmat",
+			"\armor_unit\Hyperion\camoB.rvmat",
+			"\armor_unit\Hyperion\uniform.rvmat"
+		};
+		hiddenSelectionsTextures[] = {
+			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
+			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
+			"\armor_unit\Hyperion\uniform.paa"
+		};
+	};
+	class BCG_Armor_Trim: LST_Armor_Hyperion
+	{
+		displayName = "[BCG] Uniform Trim";
+		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+		uniformClass = "BCG_Uniform_Trim";
+		model = "\armor_unit\Uniform_Hyperion.p3d";
+		hiddenSelections[] = {
+			"camo1",
+			"camo2",
+			"camoB",
+			"Uniform"
+		};
+		hiddenSelectionsMaterials[] = {
+			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\armor_unit\Hyperion\camo2.rvmat",
+			"\armor_unit\Hyperion\camoB.rvmat",
+			"\armor_unit\Hyperion\uniform.rvmat"
+		};
+		hiddenSelectionsTextures[] = {
+			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
+			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
+			"\armor_unit\Hyperion\uniform.paa"
+		};
+	};
+	class BCG_Armor_Fancy: LST_Armor_Hyperion
+	{
+		displayName = "[BCG] Uniform Fancy";
+		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+		uniformClass = "BCG_Uniform_Fancy";
 		model = "\armor_unit\Uniform_Hyperion.p3d";
 		hiddenSelections[] = {
 			"camo1",
