@@ -110,7 +110,7 @@ class cfgVehicles
 	
 	class BCG_JazzHands_Armour: LST_Armor_Hyperion
 	{
-		displayName = "[BCG] Uniform Basic";
+		displayName = "[BCG] Uniform JazzHands";
 		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
 		uniformClass = "BCG_JazzHands_Uniform";
 		model = "\armor_unit\Uniform_Hyperion.p3d";
