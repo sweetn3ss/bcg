@@ -41,7 +41,7 @@ class cfgWeapons
 	class LST_Mando_G_cyclo_helmet;
 	class LST_Mando_G_Fil_cyclo_helmet;
 	
-	#include "\data\bcgHelms.hpp"
+	#include "bcgHelms.hpp"
 	
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
 	{
@@ -106,7 +106,7 @@ class cfgVehicles
 	class LST_Armor_Hyperion;
 	class JLTS_Clone_jumppack_JT12;
 	
-	#include "\data\bcgBackpack.hpp"
+	#include "bcgBackpack.hpp"
 	
 	class BCG_JazzHands_Armour: LST_Armor_Hyperion
 	{
@@ -121,14 +121,14 @@ class cfgVehicles
 			"Uniform"
 		};
 		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\BCG_Armour\data\uniforms\camo1.rvmat",
 			"\armor_unit\Hyperion\camo2.rvmat",
 			"\armor_unit\Hyperion\camoB.rvmat",
 			"\armor_unit\Hyperion\uniform.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo1_basic_co.paa",
+			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo2_basic_co.paa",
 			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
 			"\armor_unit\Hyperion\uniform.paa"
 		};
@@ -146,14 +146,14 @@ class cfgVehicles
 			"Uniform"
 		};
 		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\BCG_Armour\data\uniforms\camo1.rvmat",
 			"\armor_unit\Hyperion\camo2.rvmat",
 			"\armor_unit\Hyperion\camoB.rvmat",
 			"\armor_unit\Hyperion\uniform.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo1_basic_co.paa",
+			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo2_basic_co.paa",
 			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
 			"\armor_unit\Hyperion\uniform.paa"
 		};
@@ -171,14 +171,14 @@ class cfgVehicles
 			"Uniform"
 		};
 		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\BCG_Armour\data\uniforms\camo1.rvmat",
 			"\armor_unit\Hyperion\camo2.rvmat",
 			"\armor_unit\Hyperion\camoB.rvmat",
 			"\armor_unit\Hyperion\uniform.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\trim\Hyperion_Camo1_trim_co.paa",
+			"\BCG_Armour\data\uniforms\trim\Hyperion_Camo2_trim_co.paa",
 			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
 			"\armor_unit\Hyperion\uniform.paa"
 		};
@@ -196,14 +196,14 @@ class cfgVehicles
 			"Uniform"
 		};
 		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\shinyerectile.rvmat",
+			"\BCG_Armour\data\uniforms\camo1.rvmat",
 			"\armor_unit\Hyperion\camo2.rvmat",
 			"\armor_unit\Hyperion\camoB.rvmat",
 			"\armor_unit\Hyperion\uniform.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\Hyperion_Camo1_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_Camo2_co.paa",
+			"\BCG_Armour\data\uniforms\fancy\Hyperion_Camo1_fancy_co.paa",
+			"\BCG_Armour\data\uniforms\fancy\Hyperion_Camo2_fancy_co.paa",
 			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
 			"\armor_unit\Hyperion\uniform.paa"
 		};
