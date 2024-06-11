@@ -37,10 +37,8 @@ class cfgWeapons
 	class ls_mandalorian_elite_helmet;
 	class ls_mandalorian_stalker_helmet;
 	class LST_Mando_G_Notre_Helmet;
-	class ls_mandalorian_nightowl_helmet;
 	class LST_Mando_G_cyclo_helmet;
 	class LST_Mando_G_Fil_cyclo_helmet;
-	
 	#include "bcgHelms.hpp"
 	
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
