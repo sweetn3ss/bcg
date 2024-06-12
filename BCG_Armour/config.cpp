@@ -39,8 +39,12 @@ class cfgWeapons
 	class LST_Mando_G_Notre_Helmet;
 	class LST_Mando_G_cyclo_helmet;
 	class LST_Mando_G_Fil_cyclo_helmet;
-	class LST_Mando_Assasin_V2;
+	class LST_Merc_Uniform_Assasin;
+	
+	class SFA_Kama;
+	
 	#include "bcgHelms.hpp"
+	#include "bcgVest.hpp"
 	
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
 	{
@@ -98,12 +102,31 @@ class cfgWeapons
 			mass = 40;
 		};
 	};
+	class BCG_Uniform_Assassin: LST_Merc_Uniform_Assasin {
+		displayName = "[BCG] Uniform Assassin";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BCG_Armor_Assassin";
+			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
+			containerClass = "Supply200";
+			mass = 40;
+		};
+	};
 	
 };
 class cfgVehicles
 {
 	class LST_Armor_Hyperion;
+	class LST_Mando_Armor_Assasin;
 	class JLTS_Clone_jumppack_JT12;
+	class TKE_AlicePackUCN;
+	class TKE_AlicePackUCNM;
+	class TKE_CamelBakUCN;
+	class TKE_BackPack1;
+	class TKE_BackPack2;
+	class TKE_CamelBakV2UCN;
+	class TKE_RadioPackUCN;
 	
 	#include "bcgBackpack.hpp"
 	
@@ -205,6 +228,22 @@ class cfgVehicles
 			"\BCG_Armour\data\uniforms\fancy\Hyperion_Camo2_fancy_co.paa",
 			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
 			"\armor_unit\Hyperion\uniform.paa"
+		};
+	};
+	class BCG_Armor_Assassin: LST_Mando_Armor_Assasin
+	{
+		displayName = "[BCG] Uniform Assassin";
+		uniformClass = "BCG_Uniform_Assassin";
+		model = "\Merc_Armor_Unit\assasinarmor.p3d";
+		hiddenSelections[] = {
+			"Camo",
+			"Camo1",
+			"Camo2"
+		};
+		hiddenSelectionsTextures[] = {
+			"\Merc_Armor_Unit\data\assasinArmor\Armor_co.paa",
+			"\Merc_Armor_Unit\data\assasinArmor\Armor1_co.paa",
+			"\Merc_Armor_Unit\data\assasinArmor\Armor2_co.paa"
 		};
 	};
 };
