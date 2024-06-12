@@ -6,14 +6,34 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Armorer\helmet_beskar.rvmat",
+			"BCG_Armour\data\helmets\Armorer\helmet.rvmat",
 			"BCG_Armour\data\helmets\Armorer\visor.rvmat",
 			"BCG_Armour\data\helmets\Armorer\neck.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\helmets\Armorer\helmet_co.paa",
 			"BCG_Armour\data\helmets\Armorer\visor_co.paa",
-			"BCG_Armour\data\helmets\Armorer\visor_co.paa"
+			"BCG_Armour\data\helmets\Armorer\neck_co.paa"
+		};
+	};
+	
+	class BCG_Helmet_Assassin: LST_Mando_Assasin_V2 {
+		scope=2;
+		scopeArsenal=2;
+		displayName = "[BCG] Assassin Helmet";
+		hiddenSelections[] = {
+			"Camo",
+			"visor"
+		};
+		hiddenSelectionsMaterials[] = {
+			//"BCG_Armour\data\helmets\Assassin\mando.rvmat",
+			"BCG_Armour\data\helmets\shiny.rvmat",
+			"BCG_Armour\data\helmets\Assassin\Visor_Mando.rvmat"
+		};
+		hiddenSelectionsTextures[] = {
+			//"BCG_Armour\data\helmets\Assassin\V3_co.paa",
+			"BCG_Armour\data\helmets\blank.paa",
+			"BCG_Armour\data\helmets\Assassin\V3_co.paa"
 		};
 	};
 	
@@ -23,7 +43,6 @@
 			"Camo1"
 		};
 		hiddenSelectionsMaterials[] = {
-			//"Last_Force_Unit_1\Merc\data\Ver_helmet.rvmat"
 			"BCG_Armour\data\helmets\Commando\Ver_helmet.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
@@ -74,7 +93,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Gunslinger\helmet_beskar.rvmat",
+			"BCG_Armour\data\helmets\Gunslinger\helmet.rvmat",
 			"BCG_Armour\data\helmets\Gunslinger\visor.rvmat",
 			"BCG_Armour\data\helmets\Gunslinger\neck.rvmat"
 		};
@@ -91,7 +110,6 @@
 			"Camo1"
 		};
 		hiddenSelectionsMaterials[] = {
-			//"armor_unit\Hyperion\Helmet_maze.rvmat"
 			"BCG_Armour\data\helmets\Heavy\Helmet_maze.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
@@ -136,7 +154,10 @@
 	
 	class BCG_Helmet_Notre: LST_Mando_G_Notre_Helmet {
 		displayName = "[BCG] Notre Helmet";
-		hiddenSelections[] = {"Camo1","visor"};
+		hiddenSelections[] = {
+			"Camo1",
+			"visor"
+		};
 		hiddenSelectionsMaterials[] = {
 			"BCG_Armour\data\helmets\Notre\G_Notre_Helmet.rvmat",
 			"BCG_Armour\data\helmets\Notre\G_Visor_Notre_Helmet.rvmat"
@@ -230,8 +251,8 @@
 			"BCG_Armour\data\helmets\Traditional\neck.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"ls_armor_greenfor\helmet\mandalorian\traditional\data\helmet_co.paa",
-			"ls_armor_greenfor\helmet\mandalorian\traditional\data\visor_co.paa",
-			"ls_armor_greenfor\helmet\mandalorian\traditional\data\neck_co.paa"
+			"BCG_Armour\data\helmets\Traditional\helmet_co.paa",
+			"BCG_Armour\data\helmets\Traditional\visor_co.paa",
+			"BCG_Armour\data\helmets\Traditional\neck_co.paa"
 		};
 	};

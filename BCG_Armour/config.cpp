@@ -39,6 +39,7 @@ class cfgWeapons
 	class LST_Mando_G_Notre_Helmet;
 	class LST_Mando_G_cyclo_helmet;
 	class LST_Mando_G_Fil_cyclo_helmet;
+	class LST_Mando_Assasin_V2;
 	#include "bcgHelms.hpp"
 	
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
