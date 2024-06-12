@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "ls_armor_greenfor\helmet\mandalorian\stalker\data\helmet_smdi.paa";
+	texture = "BCG_Armour\data\helmets\Stalker\helmet_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

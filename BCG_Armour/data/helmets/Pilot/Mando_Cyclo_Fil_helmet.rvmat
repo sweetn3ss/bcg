@@ -69,7 +69,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "Last_Force_Unit_1\Merc\B_Cyclo_helmet_Fil_smdi.paa";
+	texture = "BCG_Armour\data\helmets\Pilot\G_Cyclo_helmet_Fil_smdi.paa"; // used to be "B_Cyclo_helmet_Fil_smdi.paa"
 	uvSource = "tex";
 	class uvTransform
 	{

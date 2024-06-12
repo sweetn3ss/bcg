@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="armor_unit\Hyperion\Hyperion_helmet_smdi.paa";
+	texture="BCG_Armour\data\helmets\Heavy\Hyperion_helmet_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

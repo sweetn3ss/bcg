@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="Merc_Armor_Unit\data\assasinv2\V3_smdi.paa";
+	texture="BCG_Armour\data\helmets\Assassin\V3_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
