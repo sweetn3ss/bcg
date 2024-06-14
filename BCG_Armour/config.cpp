@@ -41,6 +41,7 @@ class cfgWeapons
 	class LST_Mando_G_Fil_cyclo_helmet;
 	class LST_Merc_Uniform_Assasin;
 	class HeadGearItem;
+	class LST_Mando_Assasin_V2;
 	
 	class SFA_Kama;
 	

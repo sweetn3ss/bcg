@@ -99,7 +99,7 @@
 			"BCG_Armour\data\helmets\Gunslinger\neck.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"BCG_Armour\data\helmets\Gunslinger\gunslinger_blank.paa",
+			"BCG_Armour\data\helmets\Gunslinger\helmet_co.paa",
 			"BCG_Armour\data\helmets\Gunslinger\visor_co.paa",
 			"ls_armor_greenfor\helmet\mandalorian\dinDjarin\data\neck_co.paa"	
 		};
