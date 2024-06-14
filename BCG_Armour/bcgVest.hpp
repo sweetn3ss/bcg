@@ -8,7 +8,7 @@
 			"camo1"
 		};
 		hiddenSelectionsTextures[] = {
-			"SFA_Equipment_R\Vest\data\kama_blnk_co.paa"
+			"BCG_Armour\data\vests\kama_STND_co.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -21,7 +21,7 @@
 				"camo1"
 			};
 			hiddenSelectionsTextures[] = {
-				"SFA_Equipment_R\Vest\data\kama_blnk_co.paa"
+				"BCG_Armour\data\vests\kama_STND_co.paa"
 			
 			};
 		};
@@ -38,8 +38,8 @@
 			"camo2"
 		};
 		hiddenSelectionsTextures[] = {
-			"SFA_Equipment_R\Vest\data\Sash_co.paa",
-			"SFA_Equipment_R\Vest\data\kama_STND_co.paa"
+			"BCG_Armour\data\vests\Sash_co.paa",
+			"BCG_Armour\data\vests\kama_STND_co.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -53,9 +53,9 @@
 				"camo2"
 			};
 			hiddenSelectionsTextures[] = {
-				"SFA_Equipment_R\Vest\data\Sash_co.paa",
-				"SFA_Equipment_R\Vest\data\kama_STND_co.paa"
-			
+				"BCG_Armour\data\vests\Sash_co.paa",	
+				"BCG_Armour\data\vests\kama_STND_co.paa"
+				
 				};
 			};
 		};
@@ -70,7 +70,7 @@
 			"camo1"
 		};
 		hiddenSelectionsTextures[] = {
-			"SFA_Equipment_R\Vest\data\Sash_co.paa"
+			"BCG_Armour\data\vests\Sash_co.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -83,7 +83,7 @@
 				"camo1"
 			};
 			hiddenSelectionsTextures[] = {
-				"SFA_Equipment_R\Vest\data\Sash_co.paa"	
+				"BCG_Armour\data\vests\Sash_co.paa"	
 			
 				};
 			};
@@ -118,31 +118,3 @@
 			};
 		};
 		
-		class BCG_Pauldron_Holster : BCG_Kama
-	{	
-		scope=2;
-		scopeArsenal=2;
-		displayName = "[BCG] Pauldron & Holsters";
-		model = "Clone_Armor_Unit\Clone_Trooper_Vest_Up_Holster.p3d"
-		hiddenSelections[] = {
-			"camo1"
-		};
-		hiddenSelectionsTextures[] = {
-			"Clone_Armor_Unit\data\Clone_ARC_Vest_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			vestType = "Rebreather";
-			uniformModel = "Clone_Armor_Unit\Clone_Trooper_Vest_Up_Holster.p3d";
-			containerClass = "Supply100";
-			mass = 80;
-			modelSides[]={6};
-			hiddenSelections[] = {
-				"camo1"
-			};
-			hiddenSelectionsTextures[] = {
-				"Clone_Armor_Unit\data\Clone_ARC_Vest_co.paa"	
-			
-				};
-			};
-		};
