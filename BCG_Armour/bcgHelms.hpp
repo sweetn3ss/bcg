@@ -87,21 +87,43 @@
 	
 	class BCG_Helmet_Gunslinger: ls_mandalorian_dinDjarin_helmet {
 		displayName = "[BCG] Gunslinger Helmet";
+		model = "ls_armor_greenfor\helmet\mandalorian\dinDjarin\ls_mandalorian_dinDjarin_helmet.p3d";
 		hiddenSelections[] = {
 			"camo1",
 			"visor",
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Gunslinger\helmet.rvmat",
+			"BCG_Armour\data\helmets\Gunslinger\gunslinger_shiny.rvmat",
 			"BCG_Armour\data\helmets\Gunslinger\visor.rvmat",
 			"BCG_Armour\data\helmets\Gunslinger\neck.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"BCG_Armour\data\helmets\Gunslinger\helmet_co.paa",
+			"BCG_Armour\data\helmets\Gunslinger\gunslinger_blank.paa",
 			"BCG_Armour\data\helmets\Gunslinger\visor_co.paa",
-			"BCG_Armour\data\helmets\Gunslinger\neck_co.paa"
+			"ls_armor_greenfor\helmet\mandalorian\dinDjarin\data\neck_co.paa"	
 		};
+		class ItemInfo: HeadGearItem	
+		{
+			uniformModel = "ls_armor_greenfor\helmet\mandalorian\dinDjarin\ls_mandalorian_dinDjarin_helmet.p3d";
+			mass= 30; 
+			hiddenSelections[] = {
+				"camo1",
+				"visor",
+				"neckTex"
+			};
+			hiddenSelectionsMaterials[] = {
+				"BCG_Armour\data\helmets\Gunslinger\helmet.rvmat",
+				"BCG_Armour\data\helmets\Gunslinger\visor.rvmat",
+				"BCG_Armour\data\helmets\Gunslinger\neck.rvmat"
+			};
+			hiddenSelectionsTextures[] = {
+				"BCG_Armour\data\helmets\Gunslinger\helmet_co.paa",
+				"BCG_Armour\data\helmets\Gunslinger\visor_co.paa",
+				"ls_armor_greenfor\helmet\mandalorian\dinDjarin\data\neck_co.paa"	
+			};	
+		};
+	
 	};
 	
 	class BCG_Helmet_Heavy: Merc_Helmet_Hyperion {
@@ -163,7 +185,8 @@
 			"BCG_Armour\data\helmets\Notre\G_Visor_Notre_Helmet.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
-			"BCG_Armour\data\helmets\Notre\G_Notre_Helmet_co.paa",
+			//"BCG_Armour\data\helmets\Notre\G_Notre_Helmet_co.paa",
+			"BCG_Armour\data\helmets\blank.paa",
 			"BCG_Armour\data\helmets\Notre\G_Notre_Helmet_co.paa"
 		};
 	};
@@ -254,5 +277,26 @@
 			"BCG_Armour\data\helmets\Traditional\helmet_co.paa",
 			"BCG_Armour\data\helmets\Traditional\visor_co.paa",
 			"BCG_Armour\data\helmets\Traditional\neck_co.paa"
+		};
+	};
+	
+	class BCG_Helmet_Gunslinger_Test: ls_mandalorian_dinDjarin_helmet {
+		displayName = "[BCG] Gunslinger Helmet TEST";
+		model = "ls_armor_greenfor\helmet\mandalorian\dinDjarin\ls_mandalorian_dinDjarin_helmet.p3d";
+		hiddenSelections[] = {
+			"camo1",
+			"visor",
+			"neckTex"
+		};
+		hiddenSelectionsMaterials[] = {
+			"BCG_Armour\data\helmets\shiny.rvmat",
+			"BCG_Armour\data\helmets\Gunslinger\visor.rvmat",
+			"BCG_Armour\data\helmets\Gunslinger\neck.rvmat"
+		};
+		hiddenSelectionsTextures[] = {
+			"BCG_Armour\data\helmets\blank.paa",
+			"BCG_Armour\data\helmets\Gunslinger\visor_co.paa",
+			"ls_armor_greenfor\helmet\mandalorian\dinDjarin\data\neck_co.paa"
+	//boobies 
 		};
 	};

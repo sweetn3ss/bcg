@@ -9,16 +9,16 @@
 
 class StageTI
 {
-	texture = "#(argb,8,8,3)color(0.5,0,0,0,TI)";
+	texture="#(argb,8,8,3)color(0.5,0,0,0,TI)";
 };
-ambient[] = {0.54901963,0.54901963,0.54901963,1};
-diffuse[] = {0.4745098,0.4745098,0.4745098,1};
-forcedDiffuse[] = {0,0,0,0};
-emmisive[] = {0,0,0,1};
-specular[] = {0.1,0.1,0.1,1};
-specularPower = 50;
-PixelShaderID = "Super";
-VertexShaderID = "Super";
+ambient[]={0.28235295,0.28235295,0.28235295,1};
+diffuse[]={0.21176471,0.21176471,0.21176471,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0,0,0,1};
+specular[]={0.21176471,0.21176471,0.21176471,1};
+specularPower=100;
+PixelShaderID="Super";
+VertexShaderID="Super";
 class Stage1
 {
 	texture = "Last_Force_Unit_1\Merc\Zan_Cyclo_helmet_nohq.paa";

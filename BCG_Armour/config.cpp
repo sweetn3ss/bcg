@@ -40,6 +40,7 @@ class cfgWeapons
 	class LST_Mando_G_cyclo_helmet;
 	class LST_Mando_G_Fil_cyclo_helmet;
 	class LST_Merc_Uniform_Assasin;
+	class HeadGearItem;
 	
 	class SFA_Kama;
 	
@@ -102,7 +103,8 @@ class cfgWeapons
 			mass = 40;
 		};
 	};
-	class BCG_Uniform_Assassin: LST_Merc_Uniform_Assasin {
+	class BCG_Uniform_Assassin: LST_Merc_Uniform_Assasin 
+	{
 		displayName = "[BCG] Uniform Assassin";
 		class ItemInfo: UniformItem
 		{
@@ -112,6 +114,7 @@ class cfgWeapons
 			containerClass = "Supply200";
 			mass = 40;
 		};
+		
 	};
 	
 };
@@ -246,9 +249,4 @@ class cfgVehicles
 			"\Merc_Armor_Unit\data\assasinArmor\Armor2_co.paa"
 		};
 	};
-};
-class cfgMods
-{
-	author = "SunPraiser";
-	timepacked = "1718016211";
 };
