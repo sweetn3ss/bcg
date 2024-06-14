@@ -6,7 +6,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Armorer\helmet.rvmat",
+			"BCG_Armour\data\helmets\Armorer\armorer_shiny.rvmat",
 			"BCG_Armour\data\helmets\Armorer\visor.rvmat",
 			"BCG_Armour\data\helmets\Armorer\neck.rvmat"
 		};
@@ -58,7 +58,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Executioner\helmet.rvmat",
+			"BCG_Armour\data\helmets\Executioner\executioner_shiny.rvmat",
 			"BCG_Armour\data\helmets\Executioner\visor.rvmat",
 			"BCG_Armour\data\helmets\Executioner\neck.rvmat"
 		};
@@ -163,7 +163,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Nightowl\helmet.rvmat",
+			"BCG_Armour\data\helmets\Nightowl\nightowl_shiny.rvmat",
 			"BCG_Armour\data\helmets\Nightowl\visor.rvmat",
 			"BCG_Armour\data\helmets\Nightowl\neck.rvmat"
 		};
@@ -231,7 +231,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\SplitJaw\helmet.rvmat",
+			"BCG_Armour\data\helmets\SplitJaw\splitjaw_shiny.rvmat",
 			"BCG_Armour\data\helmets\SplitJaw\visor.rvmat",
 			"BCG_Armour\data\helmets\SplitJaw\neck.rvmat"
 		};
@@ -250,7 +250,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Stalker\helmet.rvmat",
+			"BCG_Armour\data\helmets\Stalker\stalker_shiny.rvmat",
 			"BCG_Armour\data\helmets\Stalker\visor.rvmat",
 			"BCG_Armour\data\helmets\Stalker\neck.rvmat"
 		};
@@ -269,7 +269,7 @@
 			"neckTex"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Traditional\helmet.rvmat",
+			"BCG_Armour\data\helmets\Traditional\traditional_shiny.rvmat",
 			"BCG_Armour\data\helmets\Traditional\visor.rvmat",
 			"BCG_Armour\data\helmets\Traditional\neck.rvmat"
 		};
@@ -280,23 +280,3 @@
 		};
 	};
 	
-	class BCG_Helmet_Gunslinger_Test: ls_mandalorian_dinDjarin_helmet {
-		displayName = "[BCG] Gunslinger Helmet TEST";
-		model = "ls_armor_greenfor\helmet\mandalorian\dinDjarin\ls_mandalorian_dinDjarin_helmet.p3d";
-		hiddenSelections[] = {
-			"camo1",
-			"visor",
-			"neckTex"
-		};
-		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\shiny.rvmat",
-			"BCG_Armour\data\helmets\Gunslinger\visor.rvmat",
-			"BCG_Armour\data\helmets\Gunslinger\neck.rvmat"
-		};
-		hiddenSelectionsTextures[] = {
-			"BCG_Armour\data\helmets\blank.paa",
-			"BCG_Armour\data\helmets\Gunslinger\visor_co.paa",
-			"ls_armor_greenfor\helmet\mandalorian\dinDjarin\data\neck_co.paa"
-	//boobies 
-		};
-	};
