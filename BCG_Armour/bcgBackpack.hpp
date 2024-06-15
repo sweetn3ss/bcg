@@ -6,11 +6,11 @@
 			"camo1"
 		};
 		hiddenSelectionsTextures[] = {
-			"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"
+			"BCG_Armour\data\backpacks\jumppack\BCG_jumppack_co.paa"
 		};
 	};
 	class BCG_AlicePackUCN: TKE_AlicePackUCN {
-		displayName = "[BCG] Alice UCN";
+		displayName = "[BCG] Alice Pack";
 		maximumLoad = 550;
 		mass = 40;
 		hiddenSelections[] = {
@@ -21,14 +21,14 @@
 		};
 	};
 	class BCG_AlicePackUCNM: TKE_AlicePackUCNM {
-		displayName = "[BCG] Alice UCN Medical";
+		displayName = "[BCG] Medical Alice Pack";
 		maximumLoad = 550;
 		mass = 40;
 		hiddenSelections[] = {
 			"camo"
 		};
 		hiddenSelectionsTextures[] = {
-			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_AlicePackUCNM_co.paa"
+			"BCG_Armour\data\backpacks\medic backpack\BCG_Medical_Alicepack_co.paa"
 		};
 	};
 	class BCG_CamelBakUCN: TKE_CamelBakUCN {
@@ -87,6 +87,6 @@
 			"camo"
 		};
 		hiddenSelectionsTextures[] = {
-			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_RadioPack_co.paa"
+			"BCG_Armour\data\backpacks\radio pack\BCG_RadioPack_co.paa"
 		};
 	};
