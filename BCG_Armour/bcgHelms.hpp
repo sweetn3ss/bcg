@@ -27,7 +27,7 @@
 		};
 		hiddenSelectionsMaterials[] = {
 			//"BCG_Armour\data\helmets\Assassin\mando.rvmat",
-			"BCG_Armour\data\helmets\shiny.rvmat",
+			"BCG_Armour\data\helmets\assassin_shiny.rvmat",
 			"BCG_Armour\data\helmets\Assassin\Visor_Mando.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
@@ -43,7 +43,7 @@
 			"Camo1"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Commando\Ver_helmet.rvmat"
+			"BCG_Armour\data\helmets\Commando\commando_shiny.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\helmets\Commando\Ver_helmet_co.paa"
@@ -181,7 +181,7 @@
 			"visor"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Notre\G_Notre_Helmet.rvmat",
+			"BCG_Armour\data\helmets\Notre\notre_shiny.rvmat",
 			"BCG_Armour\data\helmets\Notre\G_Visor_Notre_Helmet.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
@@ -198,7 +198,7 @@
 			"visor"
 		};
 		hiddenSelectionsMaterials[] = {
-			"BCG_Armour\data\helmets\Pilot\Mando_Cyclo_Fil_helmet.rvmat",
+			"BCG_Armour\data\helmets\Pilot\pilot_shiny.rvmat",
 			"BCG_Armour\data\helmets\Pilot\Visor_Fil_Mando.rvmat"
 		};
 		hiddenSelectionsTextures[] = {
