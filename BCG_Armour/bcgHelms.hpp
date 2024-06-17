@@ -69,7 +69,7 @@
 		};
 	};
 	
-	class BCG_Helmet_Guard: LST_Clone_Helmet_Guard {
+	class BCG_Helmet_GuardGuard: LST_Clone_Helmet_Guard {
 		displayName = "[BCG] Guard Helmet";
 		hiddenSelections[] = {
 			"camo1",
@@ -280,3 +280,19 @@
 		};
 	};
 	
+	class BCG_Helmet_Testing: tgf_helmets_battle_master {
+		displayname = "[BCG] Rally Master Helmet"	
+		hiddenSelections[] = {
+			"camo1",
+			"camo2"
+		};
+		//hiddenSelectionsMaterials[] = {
+			//"BCG_Armour\date\helmets\RallyMasterTesting\rally_master.rvmat"
+			
+		//};
+		hiddenSelectionsTextures[] = {
+			"BCG_Armour\data\helmets\RallyMasterTesting\camo1_co.paa",
+			"BCG_Armour\data\helmets\RallyMasterTesting\camo2_co.paa"	
+			
+		};
+	};			

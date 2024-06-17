@@ -16,7 +16,7 @@ class cfgPatches
 		weapons[] = {};
 		units[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ls_armor_greenfor"};
+		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets_Base"}; 
 	};
 };
 class cfgWeapons
@@ -42,6 +42,7 @@ class cfgWeapons
 	class LST_Merc_Uniform_Assasin;
 	class HeadGearItem;
 	class LST_Mando_Assasin_V2;
+	class tgf_helmets_battle_master;
 	
 	class SFA_Kama;
 	
