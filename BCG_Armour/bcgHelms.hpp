@@ -286,10 +286,10 @@
 			"camo1",
 			"camo2"
 		};
-		//hiddenSelectionsMaterials[] = {
-			//"BCG_Armour\date\helmets\RallyMasterTesting\rally_master.rvmat"
+		hiddenSelectionsMaterials[] = {
+			"BCG_Armour\date\helmets\RallyMasterTesting\rally_master.rvmat"
 			
-		//};
+		};
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\helmets\RallyMasterTesting\camo1_co.paa",
 			"BCG_Armour\data\helmets\RallyMasterTesting\camo2_co.paa"	

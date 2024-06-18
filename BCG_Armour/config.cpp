@@ -16,7 +16,7 @@ class cfgPatches
 		weapons[] = {};
 		units[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets_Base"}; 
+		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit"}; 
 	};
 };
 class cfgWeapons
@@ -43,11 +43,10 @@ class cfgWeapons
 	class HeadGearItem;
 	class LST_Mando_Assasin_V2;
 	class tgf_helmets_battle_master;
-	
-	class SFA_Kama;
+	class tgf_armour_Base; 
 	
 	#include "bcgHelms.hpp"
-	#include "bcgVest.hpp"
+	#include "Vests.hpp"
 	
 	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
 	{
@@ -133,7 +132,9 @@ class cfgVehicles
 	class TKE_CamelBakV2UCN;
 	class TKE_RadioPackUCN;
 	
+	
 	#include "bcgBackpack.hpp"
+	
 	
 	class BCG_JazzHands_Armour: LST_Armor_Hyperion
 	{
