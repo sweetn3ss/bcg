@@ -551,8 +551,6 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[]={
 			"BCG_Armour\data\backpacks\jumppack\JT12\beskarized.rvmat"
-	
-		};
 	};
 	class BCG_Backpack_JT12_LR: tgf_backpacks_JT12_LR {
 		displayName="[BCG] JT12 Ascencion Pack LR";
