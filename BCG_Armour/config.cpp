@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.10
-//https://mikero.bytex.digital/Downloads
-//'now' is Mon Jun 10 14:41:23 2024 : 'file' last modified on Sun Jun 09 22:43:31 2024
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
 class cfgPatches
 {
 	class BCG_Armour
@@ -21,108 +12,57 @@ class cfgPatches
 };
 class cfgWeapons
 {
-	class ls_mandalorian_nightowl_helmet;
-	class LST_Uniform_Hyperion;
-	class Merc_Helmet_Hyperion;
 	class UniformItem;
 	class ItemInfo;
 	class VestItem;
-	class LST_Clone_Helmet_Guard;
-	class LST_Merc_Helmet_Ver;
-	class ls_mandalorian_dinDjarin_helmet;
-	class ls_mandalorian_executioner_helmet;
-	class ls_mandalorian_armorer_helmet;
-	class ls_mandalorian_traditional_helmet;
-	class LST_merc_helmet_v1_free;
-	class ls_mandalorian_elite_helmet;
-	class ls_mandalorian_stalker_helmet;
-	class LST_Mando_G_Notre_Helmet;
-	class LST_Mando_G_cyclo_helmet;
-	class LST_Mando_G_Fil_cyclo_helmet;
-	class LST_Merc_Uniform_Assasin;
 	class HeadGearItem;
-	class LST_Mando_Assasin_V2;
-	class tgf_helmets_battle_master;
-	class tgf_armour_Base; 
+	class tgf_helmets_battle_master; 
+	class tgf_armour_base;
+	class tgf_armour_heavy_armour;
+	class tgf_armour_battle_armour;
+	class tgf_armour_forgemaster_armour;
+	class tgf_armour_light_armour;
+	class tgf_armour_medium_armour;
+	class tgf_armour_super_light_armour;
+	class tgf_armour_war_chief_armour;
+	class V_PlateCarrier2_rgr;
 	
-	#include "bcgHelms.hpp"
-	#include "Vests.hpp"
+	// wip, ignore lol
+	class BCG_Helmet_Testing: tgf_helmets_battle_master {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname = "[BCG] Rally Master Helmet";
+		hiddenSelections[] = {
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[] = {
+			"BCG_Armour\data\helmets\RallyMasterTesting\rally_master.rvmat"
+		};
+		hiddenSelectionsTextures[] = {
+			"BCG_Armour\data\helmets\RallyMasterTesting\camo1_co.paa",
+			"BCG_Armour\data\helmets\RallyMasterTesting\camo2_co.paa"	
+		};
+	};
+	// this is the brokey shit
 	
-	class BCG_JazzHands_Uniform: LST_Uniform_Hyperion
-	{
-		scope = 2;
-		displayName = "[BCG] Uniform JazzHands";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "BCG_JazzHands_Armour";
-			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-			containerClass = "Supply200";
-			mass = 40;
+	class BCG_Armour_Rifleman: tgf_armour_battle_armour {
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Armour Rifleman";
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = {
+			"BCG_Armour\data\vests\Battle\camo1_co.paa",
+			"BCG_Armour\data\vests\Battle\camo2_co.paa"
 		};
 	};
-	class BCG_Uniform_Basic: LST_Uniform_Hyperion
-	{
-		scope = 2;
-		displayName = "[BCG] Uniform Basic";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "BCG_Armor_Basic";
-			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-			containerClass = "Supply200";
-			mass = 40;
-		};
-	};
-	class BCG_Uniform_Trim: LST_Uniform_Hyperion
-	{
-		scope = 2;
-		displayName = "[BCG] Uniform Trim";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "BCG_Armor_Trim";
-			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-			containerClass = "Supply200";
-			mass = 40;
-		};
-	};
-	class BCG_Uniform_Fancy: LST_Uniform_Hyperion
-	{
-		scope = 2;
-		displayName = "[BCG] Uniform Fancy";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "BCG_Armor_Fancy";
-			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-			containerClass = "Supply200";
-			mass = 40;
-		};
-	};
-	class BCG_Uniform_Assassin: LST_Merc_Uniform_Assasin 
-	{
-		displayName = "[BCG] Uniform Assassin";
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "BCG_Armor_Assassin";
-			picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-			containerClass = "Supply200";
-			mass = 40;
-		};
-		
-	};
-	
 };
 class cfgVehicles
 {
-	class LST_Armor_Hyperion;
-	class LST_Mando_Armor_Assasin;
 	class JLTS_Clone_jumppack_JT12;
 	class TKE_AlicePackUCN;
 	class TKE_AlicePackUCNM;
@@ -133,123 +73,96 @@ class cfgVehicles
 	class TKE_RadioPackUCN;
 	
 	
-	#include "bcgBackpack.hpp"
-	
-	
-	class BCG_JazzHands_Armour: LST_Armor_Hyperion
-	{
-		displayName = "[BCG] Uniform JazzHands";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		uniformClass = "BCG_JazzHands_Uniform";
-		model = "\armor_unit\Uniform_Hyperion.p3d";
+	class BCG_Back_JT12: JLTS_Clone_jumppack_JT12 {
+		displayName = "[BCG] JT12 Ascension Pack";
+		maximumLoad = 300;
+		mass = 40;
 		hiddenSelections[] = {
-			"camo1",
-			"camo2",
-			"camoB",
-			"Uniform"
-		};
-		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\camo1.rvmat",
-			"\armor_unit\Hyperion\camo2.rvmat",
-			"\armor_unit\Hyperion\camoB.rvmat",
-			"\armor_unit\Hyperion\uniform.rvmat"
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo1_basic_co.paa",
-			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo2_basic_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
-			"\armor_unit\Hyperion\uniform.paa"
+			"\BCG_Armour\data\backpacks\jumppack\BCG_jumppack_co.paa"
 		};
 	};
-	class BCG_Armor_Basic: LST_Armor_Hyperion
-	{
-		displayName = "[BCG] Uniform Basic";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		uniformClass = "BCG_Uniform_Basic";
-		model = "\armor_unit\Uniform_Hyperion.p3d";
+	class BCG_AlicePackUCN: TKE_AlicePackUCN {
+		displayName = "[BCG] Alice Pack";
+		maximumLoad = 550;
+		mass = 40;
 		hiddenSelections[] = {
-			"camo1",
-			"camo2",
-			"camoB",
-			"Uniform"
-		};
-		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\camo1.rvmat",
-			"\armor_unit\Hyperion\camo2.rvmat",
-			"\armor_unit\Hyperion\camoB.rvmat",
-			"\armor_unit\Hyperion\uniform.rvmat"
+			"camo"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo1_basic_co.paa",
-			"\BCG_Armour\data\uniforms\basic\Hyperion_Camo2_basic_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
-			"\armor_unit\Hyperion\uniform.paa"
+			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_AlicePackUCN_co.paa"
 		};
 	};
-	class BCG_Armor_Trim: LST_Armor_Hyperion
-	{
-		displayName = "[BCG] Uniform Trim";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		uniformClass = "BCG_Uniform_Trim";
-		model = "\armor_unit\Uniform_Hyperion.p3d";
+	class BCG_AlicePackUCNM: TKE_AlicePackUCNM {
+		displayName = "[BCG] Medical Alice Pack";
+		maximumLoad = 550;
+		mass = 40;
 		hiddenSelections[] = {
-			"camo1",
-			"camo2",
-			"camoB",
-			"Uniform"
-		};
-		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\camo1.rvmat",
-			"\armor_unit\Hyperion\camo2.rvmat",
-			"\armor_unit\Hyperion\camoB.rvmat",
-			"\armor_unit\Hyperion\uniform.rvmat"
+			"camo"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\trim\Hyperion_Camo1_trim_co.paa",
-			"\BCG_Armour\data\uniforms\trim\Hyperion_Camo2_trim_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
-			"\armor_unit\Hyperion\uniform.paa"
+			"BCG_Armour\data\backpacks\medic backpack\BCG_Medical_Alicepack_co.paa"
 		};
 	};
-	class BCG_Armor_Fancy: LST_Armor_Hyperion
-	{
-		displayName = "[BCG] Uniform Fancy";
-		picture = "\armor_unit\ui\Mando_Armor_Komtrabas.paa";
-		uniformClass = "BCG_Uniform_Fancy";
-		model = "\armor_unit\Uniform_Hyperion.p3d";
+	class BCG_CamelBakUCN: TKE_CamelBakUCN {
+		displayName = "[BCG] Camelbak";
+		maximumLoad = 250;
+		mass = 32;
 		hiddenSelections[] = {
-			"camo1",
-			"camo2",
-			"camoB",
-			"Uniform"
-		};
-		hiddenSelectionsMaterials[] = {
-			"\BCG_Armour\data\uniforms\camo1.rvmat",
-			"\armor_unit\Hyperion\camo2.rvmat",
-			"\armor_unit\Hyperion\camoB.rvmat",
-			"\armor_unit\Hyperion\uniform.rvmat"
+			"camo"
 		};
 		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\uniforms\fancy\Hyperion_Camo1_fancy_co.paa",
-			"\BCG_Armour\data\uniforms\fancy\Hyperion_Camo2_fancy_co.paa",
-			"\BCG_Armour\data\uniforms\Hyperion_CamoB_co.paa",
-			"\armor_unit\Hyperion\uniform.paa"
+			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_CamelBak_co.paa"
 		};
 	};
-	class BCG_Armor_Assassin: LST_Mando_Armor_Assasin
-	{
-		displayName = "[BCG] Uniform Assassin";
-		uniformClass = "BCG_Uniform_Assassin";
-		model = "\Merc_Armor_Unit\assasinarmor.p3d";
+	class BCG_BackPack1: TKE_BackPack1 {
+		displayName = "[BCG] Combat Pack";
+		maximumLoad = 400;
+		mass = 32;
 		hiddenSelections[] = {
-			"Camo",
-			"Camo1",
-			"Camo2"
+			"camo"
 		};
 		hiddenSelectionsTextures[] = {
-			"\Merc_Armor_Unit\data\assasinArmor\Armor_co.paa",
-			"\Merc_Armor_Unit\data\assasinArmor\Armor1_co.paa",
-			"\Merc_Armor_Unit\data\assasinArmor\Armor2_co.paa"
+			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BackPack1_co.paa"
+		};
+	};
+	class BCG_BackPack2: TKE_BackPack2 {
+		displayName = "[BCG] Combat Pack (Bedroll)";
+		maximumLoad = 400;
+		mass = 32;
+		hiddenSelections[] = {
+			"camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BackPack1_co.paa"
+		};
+	};
+	class BCG_CamelBakV2UCN: TKE_CamelBakV2UCN {
+		displayName = "[BCG] Field Camelbak";
+		maximumLoad = 250;
+		mass = 32;
+		hiddenSelections[] = {
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = {
+			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_CamelBak_co.paa",
+			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BedRoll_co",
+			"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa"
+		};
+	};
+	class BCG_RadioPackUCN: TKE_RadioPackUCN {
+		displayName = "[BCG] Radio Pack";
+		maximumLoad = 250;
+		mass = 32;
+		hiddenSelections[] = {
+			"camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"BCG_Armour\data\backpacks\radio pack\BCG_RadioPack_co.paa"
 		};
 	};
 };

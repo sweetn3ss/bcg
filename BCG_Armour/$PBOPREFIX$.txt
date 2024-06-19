@@ -1,4 +1,0 @@
-//<'BCG_Armour.pbo' properties via Mikero's dos tools, dll version 9.10>
-prefix=BCG_Armour;
-//PboType=Arma Addon;
-//</properties>
