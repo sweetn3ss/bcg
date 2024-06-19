@@ -58,7 +58,7 @@ class cfgWeapons
 			"camo2"
 		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\RallyMaster\rally_master.rvmat"
+			"BCG_Armour\data\helmets\RallyMaster\beskarized.rvmat"
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\RallyMaster\camo1_co.paa",
@@ -73,10 +73,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Arbiter\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Arbiter\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Arbiter\camo1_co.paa",
 			"BCG_Armour\data\helmets\Arbiter\camo2_co.paa"
@@ -90,10 +90,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\ForgeMaster\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\ForgeMaster\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\ForgeMaster\camo1_co.paa",
 			"BCG_Armour\data\helmets\ForgeMaster\camo2_co.paa"
@@ -107,10 +107,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\GarSaxon\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\GarSaxon\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\GarSaxon\camo1_co.paa",
 			"BCG_Armour\data\helmets\GarSaxon\camo2_co.paa"
@@ -124,10 +124,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Gunslinger\camo1_co.paa",
 			"BCG_Armour\data\helmets\Gunslinger\camo2_co.paa"
@@ -141,10 +141,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\GunslingerVet\camo1_co.paa",
 			"BCG_Armour\data\helmets\GunslingerVet\camo2_co.paa"
@@ -158,10 +158,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Heavy\camo1_co.paa",
 			"BCG_Armour\data\helmets\Heavy\camo2_co.paa"
@@ -176,10 +176,10 @@ class cfgWeapons
 			"camo1",
 			"camo2",
 			"camo"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Pilot\camo1_co.paa",
 			"BCG_Armour\data\helmets\Pilot\camo2_co.paa",
@@ -194,10 +194,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Shrike\camo1_co.paa",
 			"BCG_Armour\data\helmets\Shrike\camo2_co.paa"
@@ -211,10 +211,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\SuperCommando\camo1_co.paa",
 			"BCG_Armour\data\helmets\SuperCommando\camo2_co.paa"
@@ -228,10 +228,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\SuperCommandoVet\camo1_co.paa",
 			"BCG_Armour\data\helmets\SuperCommandoVet\camo2_co.paa"
@@ -245,10 +245,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Traditional\camo1_co.paa",
 			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
@@ -262,10 +262,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Veteran\camo1_co.paa",
 			"BCG_Armour\data\helmets\Veteran\camo2_co.paa"
@@ -279,10 +279,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Viper\camo1_co.paa",
 			"BCG_Armour\data\helmets\Viper\camo2_co.paa"
@@ -296,10 +296,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\ViperVet\camo1_co.paa",
 			"BCG_Armour\data\helmets\ViperVet\camo2_co.paa"
@@ -313,10 +313,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\WarChief\camo1_co.paa",
 			"BCG_Armour\data\helmets\WarChief\camo2_co.paa"
@@ -330,10 +330,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
-		};/*
+		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\Gunslinger\rally_master.rvmat"
-		};*/
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Warlord\camo1_co.paa",
 			"BCG_Armour\data\helmets\Warlord\camo2_co.paa"
