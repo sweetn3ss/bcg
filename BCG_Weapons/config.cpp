@@ -14,6 +14,8 @@ class cfgWeapons {
 	class SWLW_Westar35S;
 	
 	class BCG_Bulldog: OPTRE_CQS48_Bulldog_Automatic {
+		scope=2;
+		scopeArsenal=2;
 		displayName="[BCG] Bulldog Slugthrower";
 		baseWeapon="BCG_Bulldog";
 		hiddenSelections[]={
