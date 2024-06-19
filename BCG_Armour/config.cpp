@@ -352,7 +352,7 @@ class cfgWeapons
 		};	
 		hiddenSelectionsMaterials[]={
 			"BCG_Armour\data\vests\Battle\beskarized.rvmat",
-			"BCG_Armour\data\vests\Forge\beskarized.rvmat"
+			"BCG_Armour\data\vests\Battle\beskarized.rvmat"
 			
 		};
 		hiddenSelectionsTextures[]={
