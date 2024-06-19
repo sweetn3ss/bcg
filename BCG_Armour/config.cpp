@@ -315,11 +315,12 @@ class cfgWeapons
 			"camo2"
 		};
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat",
 			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\WarChief\camo1_co.paa",
-			"BCG_Armour\data\helmets\WarChief\camo2_co.paa"
+		
 		};
 	};
 	class BCG_Helmet_Warlord: tgf_helmets_warlord {
@@ -336,15 +337,15 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Warlord\camo1_co.paa",
-			"BCG_Armour\data\helmets\Warlord\camo2_co.paa"
+			
 		};
 	};
 	
 	// vests
-	class BCG_Armour_Rifleman: tgf_armour_battle_armour {
+	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
 		scopeArsenal=2;
-		displayName="[BCG] Armour Rifleman";
+		displayName="[BCG] Armour Warrior";
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -366,6 +367,7 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Forge\beskarized.rvmat",
 			"BCG_Armour\data\vests\Forge\beskarized.rvmat"
 			
 		};
@@ -397,6 +399,7 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Light\beskarized.rvmat",
 			"BCG_Armour\data\vests\Light\beskarized.rvmat"
 			
 		};
@@ -412,6 +415,7 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Medium\beskarized.rvmat",
 			"BCG_Armour\data\vests\Medium\beskarized.rvmat"
 			
 		};
@@ -427,6 +431,7 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\SLight\beskarized.rvmat",
 			"BCG_Armour\data\vests\SLight\beskarized.rvmat"
 			
 		};
@@ -442,6 +447,7 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\WarChief\beskarized.rvmat",
 			"BCG_Armour\data\vests\WarChief\beskarized.rvmat"
 			
 		};
@@ -457,6 +463,7 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Arbiter\beskarized.rvmat",
 			"BCG_Armour\data\vests\Arbiter\beskarized.rvmat"
 			
 		};
