@@ -530,7 +530,7 @@ class cfgVehicles
 		};
 	};
 	class BCG_Backpack_JT12: tgf_backpacks_JT12 {
-		displayName="[BCG] JT12 Sexmobile";
+		displayName="[BCG] JT12 Ascension Pack";
 		JLTS_energy[]={15,150};
 		JLTS_isJumppack=1;
 		JLTS_jumpLimits[]={50,{2,50},"default"};
@@ -549,9 +549,11 @@ class cfgVehicles
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\backpacks\jumppack\JT12\camo1_co.paa"
 		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\backpacks\jumppack\JT12\beskarized.rvmat"
 	};
 	class BCG_Backpack_JT12_LR: tgf_backpacks_JT12_LR {
-		displayName="[BCG] JT12 Sexmobile LR";
+		displayName="[BCG] JT12 Ascencion Pack LR";
 		JLTS_energy[]={15,150};
 		JLTS_isJumppack=1;
 		JLTS_jumpLimits[]={50,{2,50},"default"};
@@ -569,10 +571,13 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\backpacks\jumppack\JT12\camo1_co.paa"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\backpacks\jumppack\JT12\beskarized.rvmat"
 		};
 	};
 	class BCG_Backpack_Z6: tgf_backpacks_Z6 {
-		displayName="[BCG] Z6 Sexmobile";
+		displayName="[BCG] Z6 Draigon Pack";
 		JLTS_energy[]={15,150};
 		JLTS_isJumppack=1;
 		JLTS_jumpLimits[]={50,{2,50},"default"};
@@ -590,10 +595,13 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\backpacks\jumppack\Z6\camo1_co.paa"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\backpacks\jumppack\Z6\beskarized.rvmat"
 		};
 	};
 	class BCG_Backpack_Z6_LR: tgf_backpacks_Z6_LR {
-		displayName="[BCG] Z6 Sexmobile LR";
+		displayName="[BCG] Z6 Draigon Pack LR";
 		JLTS_energy[]={15,150};
 		JLTS_isJumppack=1;
 		JLTS_jumpLimits[]={50,{2,50},"default"};
@@ -611,6 +619,9 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\backpacks\jumppack\Z6\camo1_co.paa"
+			};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\backpacks\jumppack\Z6\beskarized.rvmat"
 		};
 	};
 	class BCG_AlicePackUCN: TKE_AlicePackUCN {
