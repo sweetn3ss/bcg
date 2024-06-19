@@ -1,1 +1,0 @@
-class LST_Armor_Hyperion;
