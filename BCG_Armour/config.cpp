@@ -348,6 +348,11 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};	
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Battle\beskarized.rvmat",
+			"BCG_Armour\data\vests\Forge\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\Battle\camo1_co.paa",
@@ -359,6 +364,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Forge\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\Forge\camo1_co.paa",
@@ -370,6 +379,11 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Heavy\beskarized.rvmat",
+			"BCG_Armour\data\vests\Forge\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\Heavy\camo1_co.paa",
@@ -381,6 +395,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Light\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\Light\camo1_co.paa",
@@ -392,6 +410,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Medium\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\Medium\camo1_co.paa",
@@ -403,6 +425,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\SLight\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\SLight\camo1_co.paa",
@@ -414,6 +440,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\WarChief\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\WarChief\camo1_co.paa",
@@ -425,6 +455,10 @@ class cfgWeapons
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\vests\Arbiter\beskarized.rvmat"
+			
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\Arbiter\camo1_co.paa",
