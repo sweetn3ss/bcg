@@ -55,6 +55,10 @@ class cfgWeapons
 			"camo1",
 			"camo2"
 		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\beskarshiny.rvmat"
+		
+		};
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\vests\Battle\camo1_co.paa",
 			"BCG_Armour\data\vests\Battle\camo2_co.paa"
