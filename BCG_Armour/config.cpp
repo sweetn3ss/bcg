@@ -518,31 +518,8 @@ class cfgVehicles
 	};
 	
 	// backpacks
-	class BCG_Back_JT12: JLTS_Clone_jumppack_JT12 {
-		displayName = "[BCG] JT12 Ascension Pack";
-		maximumLoad = 300;
-		mass = 40;
-		hiddenSelections[] = {
-			"camo1"
-		};
-		hiddenSelectionsTextures[] = {
-			"\BCG_Armour\data\backpacks\jumppack\BCG_jumppack_co.paa"
-		};
-	};
 	class BCG_Backpack_JT12: tgf_backpacks_JT12 {
 		displayName="[BCG] JT12 Ascension Pack";
-		JLTS_energy[]={15,150};
-		JLTS_isJumppack=1;
-		JLTS_jumpLimits[]={50,{2,50},"default"};
-		JLTS_recharge=2;
-		JLTS_settingsDialog="JLTS_clone_jumppack_dialog";
-		JLTS_sounds[]={
-			{"MRC\JLTS\jumppacks\sounds\ignite.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\ignite_fail.wss",3,1},
-			{"MRC\JLTS\jumppacks\sounds\stop.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\stop_emergency.wss",5,1},
-			"JLTS_jumppack_error","JLTS_SFX_jumppack_idle"};
-		JLTS_steeringCoef=0.1;
 		hiddenSelections[]={
 			"camo1"
 		};
@@ -551,21 +528,10 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[]={
 			"BCG_Armour\data\backpacks\jumppack\JT12\beskarized.rvmat"
+		};
 	};
 	class BCG_Backpack_JT12_LR: tgf_backpacks_JT12_LR {
 		displayName="[BCG] JT12 Ascencion Pack LR";
-		JLTS_energy[]={15,150};
-		JLTS_isJumppack=1;
-		JLTS_jumpLimits[]={50,{2,50},"default"};
-		JLTS_recharge=2;
-		JLTS_settingsDialog="JLTS_clone_jumppack_dialog";
-		JLTS_sounds[]={
-			{"MRC\JLTS\jumppacks\sounds\ignite.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\ignite_fail.wss",3,1},
-			{"MRC\JLTS\jumppacks\sounds\stop.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\stop_emergency.wss",5,1},
-			"JLTS_jumppack_error","JLTS_SFX_jumppack_idle"};
-		JLTS_steeringCoef=0.1;
 		hiddenSelections[]={
 			"camo1"
 		};
@@ -578,18 +544,6 @@ class cfgVehicles
 	};
 	class BCG_Backpack_Z6: tgf_backpacks_Z6 {
 		displayName="[BCG] Z6 Draigon Pack";
-		JLTS_energy[]={15,150};
-		JLTS_isJumppack=1;
-		JLTS_jumpLimits[]={50,{2,50},"default"};
-		JLTS_recharge=2;
-		JLTS_settingsDialog="JLTS_clone_jumppack_dialog";
-		JLTS_sounds[]={
-			{"MRC\JLTS\jumppacks\sounds\ignite.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\ignite_fail.wss",3,1},
-			{"MRC\JLTS\jumppacks\sounds\stop.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\stop_emergency.wss",5,1},
-			"JLTS_jumppack_error","JLTS_SFX_jumppack_idle"};
-		JLTS_steeringCoef=0.1;
 		hiddenSelections[]={
 			"camo1"
 		};
@@ -602,18 +556,6 @@ class cfgVehicles
 	};
 	class BCG_Backpack_Z6_LR: tgf_backpacks_Z6_LR {
 		displayName="[BCG] Z6 Draigon Pack LR";
-		JLTS_energy[]={15,150};
-		JLTS_isJumppack=1;
-		JLTS_jumpLimits[]={50,{2,50},"default"};
-		JLTS_recharge=2;
-		JLTS_settingsDialog="JLTS_clone_jumppack_dialog";
-		JLTS_sounds[]={
-			{"MRC\JLTS\jumppacks\sounds\ignite.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\ignite_fail.wss",3,1},
-			{"MRC\JLTS\jumppacks\sounds\stop.wss",1,1},
-			{"MRC\JLTS\jumppacks\sounds\stop_emergency.wss",5,1},
-			"JLTS_jumppack_error","JLTS_SFX_jumppack_idle"};
-		JLTS_steeringCoef=0.1;
 		hiddenSelections[]={
 			"camo1"
 		};
