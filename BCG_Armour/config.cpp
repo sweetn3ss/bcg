@@ -337,6 +337,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Warlord\camo1_co.paa",
+			"BCG_Armour\data\helmets\Warlord\camo2_co.paa",
 			
 		};
 	};
