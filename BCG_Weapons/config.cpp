@@ -125,7 +125,7 @@ class cfgWeapons {
 		class BCG_VibroBladeB : acklay_sv {
 		scope=2
 		scopeArsenal=2
-		displayName="[BCG] Beska Vibro-Blade";
+		displayName="[BCG] Beskar Vibro-Blade";
 		baseWeapon="BCG_VibroBladeB";
 		};
 		class BCG_VibroGS : demi_sv {
