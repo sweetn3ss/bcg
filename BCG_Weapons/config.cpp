@@ -25,6 +25,19 @@ class cfgMagazines {
 class cfgWeapons {
 	class OPTRE_CQS48_Bulldog_Automatic;
 	class SWLW_Westar35S;
+	class SWLW_westar35c;
+	class SWLW_Westar35SA;
+	class MTI_RSKF44;
+	class LFP_RazorBlade;
+	class 3AS_Chaingun;
+	class LFP_hi12;
+	class LFP_lw7;
+	
+	class DpSword;
+	class WBK_SciFi_Sword_1;
+	class acklay_sv;
+	class demi_sv;
+	
 	
 	class BCG_Bulldog: OPTRE_CQS48_Bulldog_Automatic {
 		scope=2;
@@ -48,7 +61,77 @@ class cfgWeapons {
 	class BCG_Westar35S: SWLW_Westar35S {
 		scope=2;
 		scopeArsenal=2;
-		displayName="[BCG] Westar-35S";
+		displayName="[BCG] Westar 35S";
 		baseWeapon="BCG_Westar35S";
 	};
+	class BCG_Westar35C: SWLW_westar35c {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] Westar 35C";
+		baseWeapon="BCG_Westar35C";
+	};
+	class BCG_Westar35SA: SWLW_Westar35SA {
+		scope=2
+		scopeArsenal=2
+		displayName="[BCG] Westar 35SA";
+		baseWeapon="BCG_Westar35SA";
+	};
+	class BCG_RSKF44: MTI_RSKF44 {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] RSK44";
+		baseWeapon="BCG_RSK44";
+	};
+	class BCG_DC15SA: LFP_RazorBlade {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] DC-15SA";
+		baseWeapon="BCG_DC15SA";
+	};
+	class BCG_Chaingun: 3AS_Chaingun {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] Chaingun";
+		baseWeapon="BCG_Chaingun";
+		hiddenSelections[]={
+			"camo_1",
+			"camo_2"
+		};
+	};
+	class BCG_HI12: LFP_hi12 {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] HI-12 Marksman Blaster";
+		baseWeapon="BCG_HI12";
+	};
+	class BCG_LW7: LFP_lw7 {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] LW-7 Sniper";
+		baseWeapon="BCG_LW7";
+		};
+	class BCG_VibroBlade: DpSword {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] Vibro-Blade";
+		baseWeapon="BCG_VibroBlade";
+		};
+	class BCG_VibroTanto : WBK_SciFi_Sword_1 {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] Vibro-Tanto";
+		baseWeapon="BCG_VibroTanto";
+		};
+		class BCG_VibroBladeB : acklay_sv {
+		scope=2
+		scopeArsenal=2
+		displayName="[BCG] Beska Vibro-Blade";
+		baseWeapon="BCG_VibroBladeB";
+		};
+		class BCG_VibroGS : demi_sv {
+		scope=2
+		scopeArsenal=2
+		displayName="[BCG] Vibro Greatsword";
+		baseWeapon="BCG_VibroGS";
+		};
 };
