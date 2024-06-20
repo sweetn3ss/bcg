@@ -46,6 +46,11 @@ class cfgWeapons
 	class tgf_armour_arbiter_armour;
 	
 	class tgf_undersuit_uniform_black_seal;
+		
+	class tgf_nvg_rangefinder_r;
+	class tgf_nvg_recon_antenna_L;
+	class tgf_nvg_heavy_nv;
+	class tgf_nvg_circuit;
 	
 	// helmets
 	class BCG_Helmet_RallyMaster: tgf_helmets_battle_master {
@@ -486,7 +491,70 @@ class cfgWeapons
 			uniformClass="BCG_Uni_Black";
 		};
 	};
-};
+
+	// nvg
+		class BCG_nvg_circuit: tgf_nvg_circuit {
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Integrated NVG Circuit";
+		hiddenSelections[]={
+			"camo1",
+	};
+	class ItemInfo
+    {
+            type=616;
+            hmdType=0;
+            hiddenSelections[]={
+				"camo1"
+			};
+            mass=2;
+		};
+	};
+	class BCG_Rangefinder_R : tgf_nvg_rangefinder_r {
+		displayName="[BCG] Rangefinder R";
+		hiddenSelections[]={
+			"camo1",
+			
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\nvg\rangefinder\beskarized.rvmat",
+			
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\nvg\rangefinder\camo1_co.paa",
+		};
+	};
+	class BCG_antenna_L : tgf_nvg_recon_antenna_L {
+		displayName="[BCG] Recon Antenna L";
+		hiddenSelections[]={
+			"camo1",
+			
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\nvg\recon\beskarized.rvmat",
+			
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\nvg\recon\camo1_co.paa",
+		};
+	};
+	class BCG_heavy_nv : tgf_nvg_heavy_nv {
+		displayName="[BCG] Rangefinder R";
+		hiddenSelections[]={
+			"camo1",
+			
+		};		
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\nvg\heavy\beskarized.rvmat",
+			
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\nvg\heavy\camo1_co.paa",
+		};
+	};
+
+
+
 class cfgVehicles
 {
 	class tgf_undersuit_unit_black_seal;

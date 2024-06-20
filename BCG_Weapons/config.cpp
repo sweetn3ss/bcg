@@ -38,7 +38,8 @@ class cfgWeapons {
 	class acklay_sv;
 	class demi_sv;
 	
-	
+
+		
 	class BCG_Bulldog: OPTRE_CQS48_Bulldog_Automatic {
 		scope=2;
 		scopeArsenal=2;
@@ -91,11 +92,14 @@ class cfgWeapons {
 	class BCG_Chaingun: 3AS_Chaingun {
 		scope=2 
 		scopeArsenal=2
-		displayName="[BCG] Chaingun";
+		displayName="[BCG] Heavy Rotary Blaster";
 		baseWeapon="BCG_Chaingun";
 		hiddenSelections[]={
 			"camo_1",
 			"camo_2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Weapons\Chaingun\back_CO.paa"
 		};
 	};
 	class BCG_HI12: LFP_hi12 {
