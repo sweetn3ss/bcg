@@ -9,6 +9,19 @@ class CfgPatches
 		authors[]={"Gray","Neifer","Indie Beninging"};
 	};
 };
+class cfgMagazines {
+	class OPTRE_12Rnd_12Gauge_Pellets_Tracer;
+	
+	class BCG_12Rnd_12Gauge_Pellets_Tracer: OPTRE_12Rnd_12Gauge_Pellets_Tracer {
+		displayname="[BCG] 12Rnd 12 Gauge Pellets (Tracer)";
+		hiddenSelections[]={
+			"camoBody"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Weapons\dullbog\Body_Black.paa",
+		};
+	};
+};
 class cfgWeapons {
 	class OPTRE_CQS48_Bulldog_Automatic;
 	class SWLW_Westar35S;
@@ -18,6 +31,7 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] Bulldog Slugthrower";
 		baseWeapon="BCG_Bulldog";
+		magazines[]={"BCG_12Rnd_12Gauge_Pellets_Tracer"};
 		hiddenSelections[]={
 			"camoBody",
 			"camoDecal"
@@ -32,6 +46,8 @@ class cfgWeapons {
 		};
 	};
 	class BCG_Westar35S: SWLW_Westar35S {
+		scope=2;
+		scopeArsenal=2;
 		displayName="[BCG] Westar-35S";
 		baseWeapon="BCG_Westar35S";
 	};
