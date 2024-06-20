@@ -29,7 +29,6 @@ class cfgWeapons {
 	class SWLW_Westar35SA;
 	class MTI_RSKF44;
 	class LFP_RazorBlade;
-	class 3AS_Chaingun;
 	class LFP_hi12;
 	class LFP_lw7;
 	
@@ -37,6 +36,10 @@ class cfgWeapons {
 	class WBK_SciFi_Sword_1;
 	class acklay_sv;
 	class demi_sv;
+	
+	class 3AS_Chaingun;
+	class JLTS_RPS6;
+	class 3AS_PLX1_F;
 	
 
 		
@@ -132,10 +135,26 @@ class cfgWeapons {
 		displayName="[BCG] Beskar Vibro-Blade";
 		baseWeapon="BCG_VibroBladeB";
 		};
-		class BCG_VibroGS : demi_sv {
+	class BCG_VibroGS : demi_sv {
 		scope=2
 		scopeArsenal=2
 		displayName="[BCG] Vibro Greatsword";
 		baseWeapon="BCG_VibroGS";
 		};
+	class BCG_RPS6: JLTS_RPS6 {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] RPS6 Heavy Projectile Launcher";
+		baseWeapon="BCG_RPS6";
+		};
+	class BCG_PLX1: 3AS_PLX1_F {
+		scope=2 
+		scopeArsenal=2
+		displayName="[BCG] PLX1 Proton Torpedo Launcher";
+		baseWeapon="BCG_PLX1";
+		};
+		
 };
+
+
+
