@@ -480,7 +480,8 @@ class cfgWeapons
 	};
 	
 	// uniforms
-	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal {
+	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal 
+	{
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -493,66 +494,81 @@ class cfgWeapons
 	};
 
 	// nvg
-		class BCG_nvg_circuit: tgf_nvg_circuit {
+	class BCG_nvg_circuit: tgf_nvg_circuit 
+	{
 		scope=2;
 		scopeArsenal=2;
 		displayName="[BCG] Integrated NVG Circuit";
-		hiddenSelections[]={
+		hiddenSelections[]=
+		{
+			
 			"camo1",
-	};
+		};
 	class ItemInfo
     {
             type=616;
             hmdType=0;
-            hiddenSelections[]={
+            hiddenSelections[]=
+			{
 				"camo1"
 			};
             mass=2;
 		};
 	};
-	class BCG_Rangefinder_R : tgf_nvg_rangefinder_r {
+	class BCG_Rangefinder_R : tgf_nvg_rangefinder_r 
+	{
 		displayName="[BCG] Rangefinder R";
-		hiddenSelections[]={
+		hiddenSelections[]=
+		{
 			"camo1",
 			
 		};		
-		hiddenSelectionsMaterials[]={
+		hiddenSelectionsMaterials[]=
+		{
 			"BCG_Armour\data\nvg\rangefinder\beskarized.rvmat",
 			
 		};
-		hiddenSelectionsTextures[]={
+		hiddenSelectionsTextures[]=
+		{
 			"BCG_Armour\data\nvg\rangefinder\camo1_co.paa",
 		};
 	};
-	class BCG_antenna_L : tgf_nvg_recon_antenna_L {
+	class BCG_antenna_L : tgf_nvg_recon_antenna_L 
+	{
 		displayName="[BCG] Recon Antenna L";
-		hiddenSelections[]={
+		hiddenSelections[]=
+		{
 			"camo1",
 			
 		};		
-		hiddenSelectionsMaterials[]={
+		hiddenSelectionsMaterials[]=
+		{
 			"BCG_Armour\data\nvg\recon\beskarized.rvmat",
 			
 		};
-		hiddenSelectionsTextures[]={
+		hiddenSelectionsTextures[]=
+		{
 			"BCG_Armour\data\nvg\recon\camo1_co.paa",
 		};
 	};
-	class BCG_heavy_nv : tgf_nvg_heavy_nv {
-		displayName="[BCG] Rangefinder R";
+	class BCG_heavy_nv : tgf_nvg_heavy_nv 
+	{
+		displayName="[BCG] Heavy Attachment";
 		hiddenSelections[]={
 			"camo1",
 			
 		};		
-		hiddenSelectionsMaterials[]={
+		hiddenSelectionsMaterials[]=
+		{
 			"BCG_Armour\data\nvg\heavy\beskarized.rvmat",
 			
 		};
-		hiddenSelectionsTextures[]={
+		hiddenSelectionsTextures[]=
+		{
 			"BCG_Armour\data\nvg\heavy\camo1_co.paa",
 		};
 	};
-
+};
 
 
 class cfgVehicles
