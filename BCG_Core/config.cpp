@@ -7,8 +7,7 @@ class cfgPatches {
 		requiredVersion=0.1;
 		requiredAddons[]={
 			"a3_Characters_F",
-			"OPTRE_Misc",
-			"tgf_facewear_base"
+			"OPTRE_Misc"
 		};
 	};
 };
