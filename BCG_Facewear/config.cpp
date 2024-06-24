@@ -6,7 +6,7 @@ class cfgPatches {
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={
-			"tgf_facewear_base"
+			"tgf_facewear"
 		};
 	};
 };
@@ -49,7 +49,7 @@ class cfgGlasses {
 		{
 			"BCG_Facewear\data\forge\camo1_co.paa"
 		};
-	}
+	};
 	class BCG_heavy_belt: tgf_facewear_heavy_belt
 	{
 		scope=2;
@@ -63,7 +63,7 @@ class cfgGlasses {
 		{
 			"BCG_Facewear\data\heavy\camo1_co.paa"
 		};
-	}
+	};
 	class BCG_light_belt: tgf_facewear_light_belt
 	{
 		scope=2;
@@ -77,7 +77,7 @@ class cfgGlasses {
 		{
 			"BCG_Facewear\data\light\camo1_co.paa"
 		};
-	}
+	};
 	class BCG_medium_belt: tgf_facewear_medium_belt
 	{
 		scope=2;
@@ -91,7 +91,7 @@ class cfgGlasses {
 		{
 			"BCG_Facewear\data\medium\camo1_co.paa"
 		};
-	}
+	};
 	class BCG_pilot_belt: tgf_facewear_pilot_belt
 	{
 		scope=2;
@@ -105,6 +105,6 @@ class cfgGlasses {
 		{
 			"BCG_Facewear\data\pilot\camo1_co.paa"
 		};
-	}
+	};
 	
 };
