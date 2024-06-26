@@ -438,7 +438,8 @@ class cfgWeapons
 		};		
 		hiddenSelectionsMaterials[]={
 			"BCG_Armour\data\vests\SLight\beskarized.rvmat",
-			"BCG_Armour\data\vests\SLight\beskarized.rvmat"
+			"BCG_Armour\data\vests\SLight\beskarized.rvmat",
+			"BCG_Armour\data\vests\SLight\pouches.rvmat"
 			
 		};
 		hiddenSelectionsTextures[]={
