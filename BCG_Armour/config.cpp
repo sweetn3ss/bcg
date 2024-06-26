@@ -437,10 +437,10 @@ class cfgWeapons
 			"camo2"
 		};		
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\vests\SLight\beskarized.rvmat",
-			"BCG_Armour\data\vests\SLight\beskarized.rvmat",
-			"BCG_Armour\data\vests\SLight\pouches.rvmat"
 			
+			"BCG_Armour\data\vests\SLight\beskarized.rvmat",
+			"BCG_Armour\data\vests\SLight\beskarized.rvmat"
+					
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\vests\SLight\camo1_co.paa",
