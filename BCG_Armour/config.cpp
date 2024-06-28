@@ -494,25 +494,18 @@ class cfgWeapons
 			uniformClass="BCG_Uni_Black";
 		};
 	};	
-	class BCG_Suit_Medic: BCG_Suit_Black 
+	class BCG_Suit_Medic: tgf_undersuit_uniform_black_seal 
 	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
 		displayName="[BCG] Undersuit Medic";
-		hiddenSelections[]=
-		{
-		
-		"camo1",
-		"camo2"
-		
-		};
-		hiddenSelectionsTextures[]= 
-		{
-		
-		"BCG_Armour\data\uniforms\medic\camo1_medic_co.paa",
-		"BCG_Armour\data\uniforms\camo2_co.paa"
-		
+		class ItemInfo: UniformItem {
+			containerClass="Supply200";
+			mass=40;
+			uniformClass="BCG_Uni_Medic";
 		};
 	};
-
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -608,16 +601,38 @@ class cfgVehicles
 	class TKE_RadioPackUCN;
 	
 	// uniforms
-	class BCG_Uni_Black: tgf_undersuit_unit_black_seal {
+	class BCG_Uni_Black: tgf_undersuit_unit_black_seal
+	{
 		displayName="[BCG] Undersuit Standard";
 		uniformClass="BCG_Suit_Black";
-		hiddenSelections[]={
+		hiddenSelections[]=
+		{
 			"camo1",
 			"camo2"
 		};
-		hiddenSelectionsTextures[]={
+		hiddenSelectionsTextures[]=
+		{
 			"BCG_Armour\data\uniforms\camo1_black_co.paa",
 			"BCG_Armour\data\uniforms\camo2_co.paa"
+		};
+	};
+	class BCG_Uni_Medic: tgf_undersuit_unit_black_seal 
+	{
+		displayName="[BCG] Undersuit Medic";
+		uniformClass="BCG_Suit_Medic";
+		hiddenSelections[]=
+		{
+		
+		"camo1",
+		"camo2"
+		
+		};
+		hiddenSelectionsTextures[]= 
+		{
+		
+		"BCG_Armour\data\uniforms\medic\camo1_medic_co.paa",
+		"BCG_Armour\data\uniforms\camo2_co.paa"
+		
 		};
 	};
 	
