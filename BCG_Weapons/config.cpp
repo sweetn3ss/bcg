@@ -25,6 +25,7 @@ class cfgMagazines {
 class cfgWeapons {
 	
 	class OPTRE_CQS48_Bulldog_Automatic;
+	class OPTRE_M393S_DMR;
 	class SWLW_Westar35S;
 	class SWLW_westar35c;
 	class SWLW_Westar35SA;
@@ -66,6 +67,23 @@ class cfgWeapons {
 			"BCG_Weapons\dullbog\body.rvmat",
 			"BCG_Weapons\dullbog\decal.rvmat"
 		};
+	};
+	class BCG_M393S: OPTRE_M393S_DMR 
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] M393S Slugthrower";
+		baseWeapon="BCG_M393S";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Weapons\M393S\MainBody1_CO.paa",
+			"BCG_Weapons\M393S\MainBody2_CO.paa"
+		}; 	
 	};
 	
 	class BCG_Westar35S: SWLW_Westar35S 

@@ -89,7 +89,7 @@ class cfgGlasses {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BCG_Facewear\data\medium\camo1_co.paa"
+			"BCG_Facewear\data\medium\whatthefuck.paa"
 		};
 	};
 	class BCG_pilot_belt: tgf_facewear_pilot_belt

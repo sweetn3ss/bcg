@@ -46,6 +46,7 @@ class cfgWeapons
 	class tgf_armour_arbiter_armour;
 	
 	class tgf_undersuit_uniform_black_seal;
+	
 		
 	class tgf_nvg_rangefinder_r;
 	class tgf_nvg_recon_antenna_L;
@@ -491,6 +492,24 @@ class cfgWeapons
 			containerClass="Supply200";
 			mass=40;
 			uniformClass="BCG_Uni_Black";
+		};
+	};	
+	class BCG_Suit_Medic: BCG_Suit_Black 
+	{
+		displayName="[BCG] Undersuit Medic";
+		hiddenSelections[]=
+		{
+		
+		"camo1",
+		"camo2"
+		
+		};
+		hiddenSelectionsTextures[]= 
+		{
+		
+		"BCG_Armour\data\uniforms\medic\camo1_medic_co.paa",
+		"BCG_Armour\data\uniforms\camo2_co.paa"
+		
 		};
 	};
 
