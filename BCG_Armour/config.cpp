@@ -401,7 +401,25 @@ class cfgWeapons
 			
 		};
 	};
-	
+	class BCG_Helmet_Funny: tgf_helmets_traditional {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Funny";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\customs\funny.paa",
+			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
+		};
+	};
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
