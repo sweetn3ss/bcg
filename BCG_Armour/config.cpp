@@ -347,6 +347,24 @@ class cfgWeapons
 			
 		};
 	};
+	class BCG_Helmet_Gryffin: tgf_helmets_warlord {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Warlord Gryffin";
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\customs\Warlord_Gryffin_Custom.paa",
+			"BCG_Armour\data\helmets\Warlord\camo2_co.paa",
+			
+		};
+	};
 	
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
