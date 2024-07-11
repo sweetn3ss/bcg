@@ -386,6 +386,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Warlord Gryffin";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
