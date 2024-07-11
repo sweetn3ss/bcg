@@ -59,6 +59,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Rally Master Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -76,6 +78,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Arbiter";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -93,6 +97,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Forge Master";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -110,6 +116,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Gar Saxon";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -127,6 +135,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Gunslinger";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -144,6 +154,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Gunslinger Vet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -161,6 +173,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Heavy";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -178,6 +192,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Pilot";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2",
@@ -197,6 +213,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Shrike";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -214,6 +232,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Super Commando";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -231,6 +251,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Super Commando Vet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -248,6 +270,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Traditional";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -265,6 +289,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Veteran";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -282,6 +308,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Viper";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -299,6 +327,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Viper Vet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -316,6 +346,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet War Chief";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -334,6 +366,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Warlord";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
