@@ -7,7 +7,7 @@ class cfgPatches
 		weapons[] = {};
 		units[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit"}; 
+		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit", "knd_Aranov_Solid_f", "knd_vest_aranov"}; 
 	};
 };
 class cfgWeapons
@@ -46,6 +46,8 @@ class cfgWeapons
 	class tgf_armour_arbiter_armour;
 	
 	class tgf_undersuit_uniform_black_seal;
+	class knd_Aranov_Solid_F;
+	class knd_vest_aranov;
 	
 		
 	class tgf_nvg_rangefinder_r;
@@ -552,10 +554,22 @@ class cfgWeapons
 			"BCG_Armour\data\vests\Arbiter\camo2_co.paa"
 		};
 	};
-	
+	class BCG_Test_Vest: knd_vest_aranov {
+		displayName="[BCG] Test Vest";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\uniforms\testing\Vest\beskarshiny.rvmat"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\uniforms\testing\Vest\vest_co.paa"
+		
+		};
+	};
 	// uniforms
-	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal 
-	{
+	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -566,8 +580,7 @@ class cfgWeapons
 			uniformClass="BCG_Uni_Black";
 		};
 	};	
-	class BCG_Suit_Medic: tgf_undersuit_uniform_black_seal 
-	{
+	class BCG_Suit_Medic: tgf_undersuit_uniform_black_seal {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -575,9 +588,21 @@ class cfgWeapons
 		class ItemInfo: UniformItem {
 			containerClass="Supply200";
 			mass=40;
-			uniformClass="BCG_Uni_Medic";
+			uniformClass="BCG_Uni_Medic";			
 		};
 	};
+	class BCG_Heavy_Plate: knd_Aranov_Solid_F {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="[BCG Heavy Plate]";
+		class Iteminfo: UniformItem {
+			containerClass="Supply200";
+			mass=40;
+			uniformClass="BCG_Plate_Heavy";
+		};
+	};
+	
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -671,6 +696,7 @@ class cfgVehicles
 	class TKE_BackPack2;
 	class TKE_CamelBakV2UCN;
 	class TKE_RadioPackUCN;
+	class knd_Aranov_Solid_F;
 	
 	// uniforms
 	class BCG_Uni_Black: tgf_undersuit_unit_black_seal
@@ -707,7 +733,29 @@ class cfgVehicles
 		
 		};
 	};
-	
+	class BCG_Plate_Heavy: knd_Aranov_Solid_F
+	{
+		displayName="[BCG] Testing";
+		uniformClass="BCG_Heavy_Plate";
+		hiddenSelections[]=
+		{
+			
+			"camo1",
+			"camo2"
+			
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"BCG_Armour\data\beskarshiny.rvmat",
+			"BCG_Armour\data\beskarshiny1.rvmat"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			
+		"BCG_Armour\data\uniforms\testing\armor\camo1_co.paa",
+		"BCG_Armour\data\uniforms\testing\armor\camo2_co.paa"
+		};
+	};
 	// backpacks
 	class BCG_Backpack_JT12: tgf_backpacks_JT12 {
 		displayName="[BCG] JT12 Ascension Pack";
