@@ -46,7 +46,7 @@ class cfgWeapons
 	class tgf_armour_arbiter_armour;
 	
 	class tgf_undersuit_uniform_black_seal;
-	class knd_Aranov_Solid_F;
+	class knd_Aranov_Solid;
 	class knd_vest_aranov;
 	class knd_dalverd;
 	class knd_helmet_Wren;
@@ -608,7 +608,7 @@ class cfgWeapons
 			uniformClass="BCG_Uni_Medic";			
 		};
 	};
-	class BCG_Heavy_Plate: knd_Aranov_Solid_F {
+	class BCG_Heavy_Plate: knd_Aranov_Solid {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
