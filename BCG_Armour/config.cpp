@@ -48,6 +48,8 @@ class cfgWeapons
 	class tgf_undersuit_uniform_black_seal;
 	class knd_Aranov_Solid_F;
 	class knd_vest_aranov;
+	class knd_dalverd;
+	class knd_helmet_Wren;
 	
 		
 	class tgf_nvg_rangefinder_r;
@@ -422,6 +424,20 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
 		};
 	};
+	class BCG_Helmet_Wren_Gray: knd_helmet_Wren {
+		displayName = "[BCG] Wren Gray";
+		author = "Gray";
+		scope = 2;
+		model = "\knd_newHelmets\data\Wren\helmet.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\camo1_co.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
+		class iteminfo: ItemInfo
+		{
+			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
+			hiddenSelections[] = {"camo1","camo2"};
+		};
+	};
+	
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
@@ -568,6 +584,7 @@ class cfgWeapons
 		
 		};
 	};
+	
 	// uniforms
 	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal {
 		scope=2;
@@ -602,7 +619,21 @@ class cfgWeapons
 			uniformClass="BCG_Plate_Heavy";
 		};
 	};
-	
+	class BCG_Dalverd_Gray: knd_dalverd {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Dal'verd Gray";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformModel = "knd_dalverd\data\dalverd.p3d";
+			uniformClass = "BCG_Uni_Dalverd_Gray";
+			containerClass = "Supply200";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -683,12 +714,25 @@ class cfgWeapons
 
 class cfgVehicles
 {
+	//uniforms
 	class tgf_undersuit_unit_black_seal;
+	class knd_Aranov_Solid_F;
+	class knd_dalverd_F;
+	
+	//jetpacks
 	class JLTS_Clone_jumppack_JT12;
 	class tgf_backpacks_JT12;
 	class tgf_backpacks_JT12_LR;
 	class tgf_backpacks_Z6;
 	class tgf_backpacks_Z6_LR;
+	class knd_jetpack_maxim6_light;
+	class knd_jetpack_maxim6_light_LR;
+	class knd_jetpack_JT12_Maxim_Light;
+	class knd_jetpack_JT12_Maxim_Light_LR;
+	class knd_jetpack_JT13;
+	class knd_jetpack_JT13_LR;
+	
+	//backpacks
 	class TKE_AlicePackUCN;
 	class TKE_AlicePackUCNM;
 	class TKE_CamelBakUCN;
@@ -696,7 +740,6 @@ class cfgVehicles
 	class TKE_BackPack2;
 	class TKE_CamelBakV2UCN;
 	class TKE_RadioPackUCN;
-	class knd_Aranov_Solid_F;
 	
 	// uniforms
 	class BCG_Uni_Black: tgf_undersuit_unit_black_seal
@@ -739,10 +782,8 @@ class cfgVehicles
 		uniformClass="BCG_Heavy_Plate";
 		hiddenSelections[]=
 		{
-			
 			"camo1",
 			"camo2"
-			
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -751,60 +792,19 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			
-		"BCG_Armour\data\uniforms\testing\armor\camo1_co.paa",
-		"BCG_Armour\data\uniforms\testing\armor\camo2_co.paa"
+			"BCG_Armour\data\uniforms\testing\armor\camo1_co.paa",
+			"BCG_Armour\data\uniforms\testing\armor\camo2_co.paa"
 		};
+	};
+	class BCG_Uni_Dalverd_Gray: knd_dalverd_F
+	{
+		scope = 1;
+		model = "knd_dalverd\data\dalverd.p3d";
+		uniformClass = "BCG_Dalverd_Gray";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
 	};
 	// backpacks
-	class BCG_Backpack_JT12: tgf_backpacks_JT12 {
-		displayName="[BCG] JT12 Ascension Pack";
-		hiddenSelections[]={
-			"camo1"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\backpacks\jumppack\JT12\camo1_co.paa"
-		};
-		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\backpacks\jumppack\JT12\beskarized.rvmat"
-		};
-	};
-	class BCG_Backpack_JT12_LR: tgf_backpacks_JT12_LR {
-		displayName="[BCG] JT12 Ascencion Pack LR";
-		hiddenSelections[]={
-			"camo1"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\backpacks\jumppack\JT12\camo1_co.paa"
-		};
-		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\backpacks\jumppack\JT12\beskarized.rvmat"
-		};
-	};
-	class BCG_Backpack_Z6: tgf_backpacks_Z6 {
-		displayName="[BCG] Z6 Draigon Pack";
-		hiddenSelections[]={
-			"camo1"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\backpacks\jumppack\Z6\camo1_co.paa"
-		};
-		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\backpacks\jumppack\Z6\beskarized.rvmat"
-		};
-	};
-	class BCG_Backpack_Z6_LR: tgf_backpacks_Z6_LR {
-		displayName="[BCG] Z6 Draigon Pack LR";
-		hiddenSelections[]={
-			"camo1"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\backpacks\jumppack\Z6\camo1_co.paa"
-			};
-		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\backpacks\jumppack\Z6\beskarized.rvmat"
-		};
-	};
 	class BCG_AlicePackUCN: TKE_AlicePackUCN {
 		displayName = "[BCG] Alice Pack";
 		maximumLoad = 550;
@@ -885,5 +885,66 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\backpacks\radio pack\BCG_RadioPack_co.paa"
 		};
+	};
+	
+	//jetpacks
+	class BCG_Backpack_JT12: knd_jetpack_JT12_Maxim_Light
+	{
+		displayName = "[BCG] JT12 Ascension Pack";
+		scope = 2;
+		picture = "knd_jetpacks\data\JT12_icon_co.paa";
+		author = "Maxim + Jenna";
+		model = "\knd_jetpacks\data\jt12\jt12.p3d";
+		hiddenselections[] = {"rocket","pack"};
+		hiddenselectionstextures[] = {"\knd_jetpacks\data\jt12\rocket_co.paa","\knd_jetpacks\data\jt12\pack_co.paa"};
+		knd_jetpack_acceleration = 1.8;
+		knd_jetpack_resistance = 4;
+		knd_jetpack_fuelCoef = 1.5;
+		knd_jetpack_heatCoef = 1.1;
+		knd_jetpack_coolCoef = 1;
+		knd_jetpack_ascensionCoef = 1;
+		knd_jetpack_jumpCoef = 1;
+		knd_jetpack_fuelCapacity = 400;
+		knd_jetpack_strafeCoef = 0.3;
+		maximumLoad = 500;
+	};
+	class BCG_Backpack_JT12_LR: knd_jetpack_JT12_Maxim_Light_LR
+	{
+		displayName = "[BCG] JT12 Ascension Pack LR";
+		model = "\knd_jetpacks\data\jt12RTO\jt12RTO.p3d";
+		hiddenselections[] = {"rocket","pack"};
+		hiddenselectionstextures[] = {"\knd_jetpacks\data\jt12\rocket_co.paa","\knd_jetpacks\data\jt12RTO\pack_co.paa"};
+		maximumLoad = 500;
+	};
+	class BCG_Backpack_JT13: knd_jetpack_JT13
+	{
+		author = "Maxim + Jenna";
+		displayName = "[BCG] JT13 Cliff Racer Pack";
+		scope = 2;
+		hiddenselections[] = {"camo1"};
+		hiddenselectionstextures[] = {"knd_jetpacks\data\jt13\camo1_co.paa"};
+		maximumLoad = 500;
+	};
+	class BCG_Backpack_JT13_LR: knd_jetpack_JT13_LR
+	{
+		displayName = "[BCG] JT13 Cliff Racer Pack LR";
+		model = "knd_jetpacks\data\jt13RTO\JT13RTO.p3d";
+		hiddenselectionstextures[] = {"knd_jetpacks\data\jt13RTO\camo1_co.paa"};
+		maximumLoad = 500;
+	};
+	class BCG_Backpack_Z6: knd_jetpack_maxim6_light
+	{
+		displayName = "[BCG] Z-6 Draigon Pack";
+		scope = 2;
+		model = "knd_jetpacks\data\z6\z6_final.p3d";
+		hiddenselections[] = {"rocket","pack"};
+		hiddenselectionstextures[] = {"knd_jetpacks\data\Z6\Rocket_co.paa","BCG_Armour\data\backpacks\z6\pack_co.paa"};
+		maximumLoad = 500;
+	};
+	class BCG_Backpack_Z6_LR: knd_jetpack_maxim6_light_LR {
+		displayName = "[BCG] Z-6 Draigon Pack LR";
+		model = "knd_jetpacks\data\z6RTO\z6RTO.p3d";
+		hiddenselectionstextures[] = {"knd_jetpacks\data\Z6\Rocket_co.paa","BCG_Armour\data\backpacks\z6rto\pack_co.paa"};
+		maximumLoad = 500;
 	};
 };

@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -22,6 +22,10 @@ class cfgMagazines {
 		};
 	};
 };
+
+class Mode_SemiAuto;
+class Mode_FullAuto;
+class Mode_Burst;	
 class cfgWeapons {
 	
 	class OPTRE_CQS48_Bulldog_Automatic;
@@ -42,6 +46,9 @@ class cfgWeapons {
 	class 3AS_Chaingun;
 	class JLTS_RPS6;
 	class 3AS_PLX1_F;
+	
+	class JLTS_stun_muzzle;
+	class 3AS_DWBlaster_F;
 	
 
 		
@@ -205,6 +212,53 @@ class cfgWeapons {
 		{
 			"BCG_Weapons\Chaingun\back_CO.paa"
 		};
+	};
+	
+	class BCG_Gauntlet_BS: 3AS_DWBlaster_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] WIP Wrist Blaster"; // blaster + stun
+		baseWeapon="BCG_Gauntlet_BS";
+		recoil = "3as_recoil_light";
+		modes[]={"Single","Burst"};
+		muzzles[]={"this","stun"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_B2_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {""};
+			};
+			reloadTime = 0.1;
+			dispersion = 0.00399;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+		};
+		class Burst: Mode_Burst {};
+		class stun: JLTS_stun_muzzle
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\DC15A\DC15aReload",1,1,30};
+		};
+	};
+	class BCG_Gauntlet_BF: 3AS_DWBlaster_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] WIP Wrist Blaster (F)"; // blaster + flamethrower
+		baseWeapon="BCG_Gauntlet_BF";
 	};
 };
 
