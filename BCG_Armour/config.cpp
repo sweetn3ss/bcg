@@ -7,7 +7,7 @@ class cfgPatches
 		weapons[] = {};
 		units[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit", "knd_Aranov_Solid_f", "knd_vest_aranov"}; 
+		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit", "knd_Aranov", "knd_dalverd"};
 	};
 };
 class cfgWeapons
