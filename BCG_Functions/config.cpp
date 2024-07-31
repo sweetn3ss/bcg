@@ -15,4 +15,10 @@ class cfgFunctions {
 			class injuryAssign {};
 		};
 	};
+	class bcg_funny {
+		class functions {
+			file = "BCG_Functions\functions";
+			class porg {};
+		};
+	};
 };
