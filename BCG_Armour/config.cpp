@@ -571,7 +571,7 @@ class cfgWeapons
 		};
 	};
 	class BCG_Plate_Vest: knd_vest_aranov {
-		displayName="[BCG] Shoulder Plate Neifer";
+		displayName="[BCG] Neifer's Shoulder Plates";
 		hiddenSelections[]={
 			"camo1"
 		};
@@ -786,7 +786,7 @@ class cfgVehicles
 	};
 	class BCG_Plate_Heavy: knd_Aranov_Solid_F
 	{
-		displayName="[BCG] Heavy Plate Neifer";
+		displayName="[BCG] Neifer's Armor";
 		uniformClass="BCG_Heavy_Plate";
 		hiddenSelections[]=
 		{
