@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -35,8 +35,15 @@ class cfgWeapons {
 	class SWLW_Westar35SA;
 	class MTI_RSKF44;
 	class LFP_RazorBlade;
-	class LFP_hi12;
-	class LFP_lw7;
+	class knd_EE3;
+	class knd_ee3_plastic;
+	class knd_MK;
+	class knd_silverhand;
+	class knd_VORNSK_F;
+	class knd_amban_F;
+	class knd_roba_F;
+	class knd_de10;
+	class KND_KGoodBye;
 	
 	class DpSword;
 	class WBK_SciFi_Sword_1;
@@ -131,22 +138,6 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] DC-15SA";
 		baseWeapon="BCG_DC15SA";
-	};
-	
-	class BCG_HI12: LFP_hi12 
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] HI-12 Marksman Blaster";
-		baseWeapon="BCG_HI12";
-	};
-	
-	class BCG_LW7: LFP_lw7 
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] LW-7 Sniper";
-		baseWeapon="BCG_LW7";
 	};
 	
 	class BCG_VibroBlade: DpSword 
@@ -259,6 +250,75 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] WIP Wrist Blaster (F)"; // blaster + flamethrower
 		baseWeapon="BCG_Gauntlet_BF";
+	};
+	class BCG_MK_DMR: knd_MK
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] MK Blaster Rifle";
+		baseWeapon="BCG_MK_DMR";
+	};
+	class BCG_ee3_wd: knd_ee3
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] EE-3 Wooden Stock";
+		baseWeapon="BCG_ee3_wd";
+	};
+	class BCG_ee3_plymr: knd_ee3_plastic
+	{
+		scope=2
+		scopeArsenal=2
+		displayName="[BCG] EE-3 Polymer Stock";
+		baseWeapon="BCG_ee3_plymr";
+	};
+	class BCG_johnnygun: knd_silverhand
+	{
+		scope=2
+		scopeArsenal=2 
+		displayName="[BCG] Malorian Slugthrower";
+		baseWeapon="BCG_johnnygun"
+	};
+	class BCG_vornsk: knd_VORNSK_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Vornsk Slugthrower";
+		baseWeapon="BCG_vornsk";
+	};
+	class BCG_amban: knd_amban_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Amban Phase-Pulse Rifle";
+		baseWeapon="BCG_amban";
+	};
+	class BCG_m69: knd_roba_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] M-69 Repeating Blaster";
+		baseWeapon="BCG_m69";
+	};
+	class BCG_bigiron: knd_de10
+	{ 
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] DE-10 Blaster";
+		baseWeapon="BCG_bigiron";
+	};
+	class BCG_biggeriron: KND_KGoodBye
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] KG-96 Plasma Revolver"
+		baseWeapon="BCG_biggeriron"
+	
+	
+	
+	
+	
+	
 	};
 };
 
