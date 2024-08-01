@@ -570,21 +570,20 @@ class cfgWeapons
 			"BCG_Armour\data\vests\Arbiter\camo2_co.paa"
 		};
 	};
-	class BCG_Test_Vest: knd_vest_aranov {
-		displayName="[BCG] Test Vest";
+	class BCG_Plate_Vest: knd_vest_aranov {
+		displayName="[BCG] Shoulder Plate Neifer";
 		hiddenSelections[]={
 			"camo1"
 		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\uniforms\testing\Vest\beskarshiny.rvmat"
+		"BCG_Armour\data\uniforms\neiferheavy\Vest\beskarshiny.rvmat"
 		};
 		hiddenSelectionsTextures[]={
 		
-		"BCG_Armour\data\uniforms\testing\Vest\vest_co.paa"
-		
+		"BCG_Armour\data\uniforms\neiferheavy\Vest\vest_co.paa"
+	
 		};
 	};
-	
 	// uniforms
 	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal {
 		scope=2;
@@ -592,7 +591,7 @@ class cfgWeapons
 		scopeCurator=2;
 		displayName="[BCG] Undersuit Standard";
 		class ItemInfo: UniformItem {
-			containerClass="Supply200";
+			containerClass="Supply250";
 			mass=40;
 			uniformClass="BCG_Uni_Black";
 		};
@@ -603,7 +602,7 @@ class cfgWeapons
 		scopeCurator=2;
 		displayName="[BCG] Undersuit Medic";
 		class ItemInfo: UniformItem {
-			containerClass="Supply200";
+			containerClass="Supply250";
 			mass=40;
 			uniformClass="BCG_Uni_Medic";			
 		};
@@ -612,9 +611,9 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[BCG Heavy Plate]";
+	displayName="[BCG] Heavy Plate Neifer";
 		class Iteminfo: UniformItem {
-			containerClass="Supply200";
+			containerClass="Supply550";
 			mass=40;
 			uniformClass="BCG_Plate_Heavy";
 		};
@@ -629,7 +628,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem {
 			uniformModel = "knd_dalverd\data\dalverd.p3d";
 			uniformClass = "BCG_Uni_Dalverd_Gray";
-			containerClass = "Supply200";
+			containerClass = "Supply250";
 			mass = 20;
 			hiddenSelections[] = {"camo"};
 		};
@@ -731,6 +730,7 @@ class cfgVehicles
 	class knd_jetpack_JT12_Maxim_Light_LR;
 	class knd_jetpack_JT13;
 	class knd_jetpack_JT13_LR;
+	class knd_jetpack_JT13_Uptuned_LR;
 	
 	//backpacks
 	class TKE_AlicePackUCN;
@@ -740,6 +740,14 @@ class cfgVehicles
 	class TKE_BackPack2;
 	class TKE_CamelBakV2UCN;
 	class TKE_RadioPackUCN;
+	
+	class ContainerSupply;
+	class Supply550: ContainerSupply 
+	{
+		maximumLoad = 550;
+	};
+	
+	
 	
 	// uniforms
 	class BCG_Uni_Black: tgf_undersuit_unit_black_seal
@@ -778,7 +786,7 @@ class cfgVehicles
 	};
 	class BCG_Plate_Heavy: knd_Aranov_Solid_F
 	{
-		displayName="[BCG] Testing";
+		displayName="[BCG] Heavy Plate Neifer";
 		uniformClass="BCG_Heavy_Plate";
 		hiddenSelections[]=
 		{
@@ -792,8 +800,8 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BCG_Armour\data\uniforms\testing\armor\camo1_co.paa",
-			"BCG_Armour\data\uniforms\testing\armor\camo2_co.paa"
+			"BCG_Armour\data\uniforms\neiferheavy\armor\camo1_co.paa",
+			"BCG_Armour\data\uniforms\neiferheavy\armor\camo2_co.paa"
 		};
 	};
 	class BCG_Uni_Dalverd_Gray: knd_dalverd_F
@@ -946,5 +954,12 @@ class cfgVehicles
 		model = "knd_jetpacks\data\z6RTO\z6RTO.p3d";
 		hiddenselectionstextures[] = {"knd_jetpacks\data\Z6\Rocket_co.paa","BCG_Armour\data\backpacks\z6rto\pack_co.paa"};
 		maximumLoad = 500;
+	};
+	class BCG_Backpack_Neifer: knd_jetpack_JT13_Uptuned_LR {
+		displayName = "[BCG] Neifer's JT13";
+		hiddenselections[] = {"camo1"};
+		hiddenSelectionsMaterials[]= {"BCG_Armour\data\backpacks\jetpack\customs\beskarized.rvmat"};
+		hiddenselectionstextures[] = {"BCG_Armour\data\backpacks\jetpack\customs\neifer_co.paa"};
+		maximumLoad = 500;	
 	};
 };

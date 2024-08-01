@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="BCG_Armour\data\uniforms\testing\Armor\camo2_smdi.paa";
+	texture="BCG_Armour\data\uniforms\neiferheavy\Armor\camo2_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
