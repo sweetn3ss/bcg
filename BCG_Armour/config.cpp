@@ -665,7 +665,7 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-	displayName="[BCG] Heavy Plate Neifer";
+		displayName="[BCG] Heavy Plate Neifer";
 		class Iteminfo: UniformItem {
 			containerClass="Supply550";
 			mass=40;
@@ -675,13 +675,13 @@ class cfgWeapons
 				class Head
 				{
 					hitpointName="HitHead";
-					armor=15;
+					armor=16;
 					passThrough=0.1;
 				};
 				class Face
 				{
 					hitpointName="HitFace";
-					armor=15;
+					armor=16;
 					passThrough=0.1;
 				};
 				class Diaphragm
