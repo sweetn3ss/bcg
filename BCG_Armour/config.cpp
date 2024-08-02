@@ -51,6 +51,7 @@ class cfgWeapons
 	class knd_dalverd;
 	class knd_helmet_Wren;
 	class knd_beroya;
+	class tgf_undersuit_uniform_male_neo;
 	
 		
 	class tgf_nvg_rangefinder_r;
@@ -670,77 +671,7 @@ class cfgWeapons
 			containerClass="Supply550";
 			mass=40;
 			uniformClass="BCG_Plate_Heavy";
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=16;
-					passThrough=0.1;
-				};
-				class Face
-				{
-					hitpointName="HitFace";
-					armor=16;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor=16;//16 is a class 4 armour protection. For anything under, minus/add 4 to go through each class level
-					passThrough = 0.2; //chance the round goes through the armour anyway
-					explosiveShielding= 12; 
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-				class Legs
-				{
-					hitpointName="HitLegs";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor=16;
-					passThrough = 0.2; 
-					explosiveShielding= 12; 
-				};
-			};
+			
 		};
 	};
 	class BCG_Dalverd_Gray: knd_dalverd {
@@ -801,6 +732,21 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class BCG_michelin: tgf_undersuit_uniform_male_neo {
+		scope=2;
+		scopeArsenal=2;
+		author="neifer";
+		displayName="Michelin Man";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_funny";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo1"};
+		};
+	};
+	
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -886,6 +832,7 @@ class cfgVehicles
 	class knd_Aranov_Solid_F;
 	class knd_dalverd_F;
 	class knd_beroya_F;
+	class tgf_undersuit_uniform_male_neo;
 	
 	//jetpacks
 	class JLTS_Clone_jumppack_JT12;
@@ -1050,6 +997,14 @@ class cfgVehicles
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\camo1light_co.paa","BCG_Armour\data\uniforms\base\camo2light_co.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
 	};
+	class BCG_funny : tgf_undersuit_uniform_male_neo
+	{
+		scope = 1;
+		uniformClass = "BCG_michelin";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\funny\camo1_co.paa"};	
+	};
+
 	// backpacks
 	class BCG_AlicePackUCN: TKE_AlicePackUCN {
 		displayName = "[BCG] Alice Pack";
