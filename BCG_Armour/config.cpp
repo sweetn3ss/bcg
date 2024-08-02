@@ -431,7 +431,60 @@ class cfgWeapons
 		scope = 2;
 		model = "\knd_newHelmets\data\Wren\helmet.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\camo1_co.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
+		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_blk.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
+		class iteminfo: ItemInfo
+		{
+			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
+			hiddenSelections[] = {"camo1","camo2"};
+		};
+	};
+	class BCG_Wren_Gray_BLK: knd_helmet_Wren {
+		displayName = "[BCG] Wren Gray BLK";
+		author = "Gray";
+		scope = 2;
+		model = "\knd_newHelmets\data\Wren\helmet.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_blk.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
+		class iteminfo: ItemInfo
+		{
+			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
+			hiddenSelections[] = {"camo1","camo2"};
+		};
+		camoTypes[]={ "BLK", "DES", "SNO", "WDL" };
+	};
+	class BCG_Wren_Gray_DES: knd_helmet_Wren {
+		displayName = "[BCG] Wren Gray DES";
+		author = "Gray";
+		scope = 2;
+		model = "\knd_newHelmets\data\Wren\helmet.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_des.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
+		class iteminfo: ItemInfo
+		{
+			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
+			hiddenSelections[] = {"camo1","camo2"};
+		};
+	};
+	class BCG_Wren_Gray_SNO: knd_helmet_Wren {
+		displayName = "[BCG] Wren Gray SNO";
+		author = "Gray";
+		scope = 2;
+		model = "\knd_newHelmets\data\Wren\helmet.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_sno.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
+		class iteminfo: ItemInfo
+		{
+			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
+			hiddenSelections[] = {"camo1","camo2"};
+		};
+	};
+	class BCG_Wren_Gray_WDL: knd_helmet_Wren {
+		displayName = "[BCG] Wren Gray WDL";
+		author = "Gray";
+		scope = 2;
+		model = "\knd_newHelmets\data\Wren\helmet.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_wdl.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
 		class iteminfo: ItemInfo
 		{
 			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
@@ -634,6 +687,21 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class BCG_Dalverd_Gray_BLK: knd_dalverd {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Dal'verd Gray BLK";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformModel = "knd_dalverd\data\dalverd.p3d";
+			uniformClass = "BCG_Uni_Gray_BLK";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	class BCG_base_armor_d: knd_beroya {
 		scope=2;
 		scopeArsenal=2;
@@ -776,7 +844,55 @@ class cfgVehicles
 	{
 		maximumLoad = 550;
 	};
-	
+	class Man;
+	class CAManBase: Man
+	{
+		class ACE_SelfActions
+		{
+			class Personalization
+			{
+                displayName="Personalization";
+                condition="(uniform player) in [""BCG_Dalverd_Gray_BLK""]";
+                statement="";
+                icon = "";
+                class Camo_Select
+				{
+                    displayName="Change Camouflage";
+                    condition="(uniform player) in [""BCG_Dalverd_Gray_BLK""]";
+                    statement="";
+                    icon = "";
+                    class Urban
+                    {
+                        displayName="Urban";
+                        condition="true";
+                        statement="[player, ""Urban""] call personalizeArmor_fnc_camoChange;";
+                        icon = "";
+                    };
+                    class Desert
+                    {
+                        displayName="Desert";
+                        condition="true";
+                        statement="[_player, ""Desert""] call personalizeArmor_fnc_camoChange;";
+                        icon = "";
+                    };
+                    class Winter
+                    {
+                        displayName="Winter";
+                        condition="true";
+                        statement="[_player, ""Winter""] call personalizeArmor_fnc_camoChange;";
+                        icon = "";
+                    };
+                    class Woodland
+                    {
+                        displayName="Woodland";
+                        condition="true";
+                        statement="[_player, ""Woodland""] call personalizeArmor_fnc_camoChange;";
+                        icon = "";
+                    };
+                };
+			};
+		};
+	};
 	
 	// uniforms
 	class BCG_Uni_Black: tgf_undersuit_unit_black_seal
@@ -838,6 +954,14 @@ class cfgVehicles
 		scope = 1;
 		model = "knd_dalverd\data\dalverd.p3d";
 		uniformClass = "BCG_Dalverd_Gray";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
+	};
+	class BCG_Uni_Dalverd_Gray_BLK: knd_dalverd_F
+	{
+		scope = 1;
+		model = "knd_dalverd\data\dalverd.p3d";
+		uniformClass = "BCG_Dalverd_Gray_BLK";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
 	};
