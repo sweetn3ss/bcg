@@ -21,4 +21,12 @@ class cfgFunctions {
 			class porg {};
 		};
 	};
+	class personalizeArmor {
+		class functions {
+			file = "BCG_Functions\functions";
+			class camoChange {};
+			class uniformChange {};
+			class vestChange {};
+		};
+	};
 };
