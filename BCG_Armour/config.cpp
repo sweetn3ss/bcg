@@ -617,6 +617,77 @@ class cfgWeapons
 			containerClass="Supply550";
 			mass=40;
 			uniformClass="BCG_Plate_Heavy";
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=15;
+					passThrough=0.1;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=15;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor=16;//16 is a class 4 armour protection. For anything under, minus/add 4 to go through each class level
+					passThrough = 0.2; //chance the round goes through the armour anyway
+					explosiveShielding= 12; 
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor=16;
+					passThrough = 0.2; 
+					explosiveShielding= 12; 
+				};
+			};
 		};
 	};
 	class BCG_Dalverd_Gray: knd_dalverd {
