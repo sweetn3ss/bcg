@@ -33,7 +33,6 @@ class cfgWeapons {
 	class SWLW_Westar35S;
 	class SWLW_westar35c;
 	class SWLW_Westar35SA;
-	class MTI_RSKF44;
 	class LFP_RazorBlade;
 	class knd_EE3;
 	class knd_ee3_plastic;
@@ -123,15 +122,7 @@ class cfgWeapons {
 		displayName="[BCG] Westar 35SA";
 		baseWeapon="BCG_Westar35SA";
 	};
-	
-	class BCG_RSKF44: MTI_RSKF44 
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] RSK44";
-		baseWeapon="BCG_RSK44";
-	};
-	
+		
 	class BCG_DC15SA: LFP_RazorBlade 
 	{
 		scope=2;
