@@ -7,7 +7,7 @@ class cfgPatches
 		weapons[] = {};
 		units[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit", "knd_Aranov", "knd_dalverd"};
+		requiredAddons[] = {"ls_armor_greenfor", "tgf_helmets", "tgf_armour", "tgf_undersuit", "knd_Aranov", "knd_dalverd", "knd_newArmor"};
 	};
 };
 class cfgWeapons
@@ -50,6 +50,7 @@ class cfgWeapons
 	class knd_vest_aranov;
 	class knd_dalverd;
 	class knd_helmet_Wren;
+	class knd_beroya;
 	
 		
 	class tgf_nvg_rangefinder_r;
@@ -633,6 +634,34 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class BCG_base_armor_d: knd_beroya {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Base Armor Dark";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Uni_base_armor_d";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class BCG_base_armor_l: knd_beroya {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Base Armor Light";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Uni_base_armor_l";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -717,6 +746,7 @@ class cfgVehicles
 	class tgf_undersuit_unit_black_seal;
 	class knd_Aranov_Solid_F;
 	class knd_dalverd_F;
+	class knd_beroya_F;
 	
 	//jetpacks
 	class JLTS_Clone_jumppack_JT12;
@@ -746,7 +776,6 @@ class cfgVehicles
 	{
 		maximumLoad = 550;
 	};
-	
 	
 	
 	// uniforms
@@ -811,6 +840,20 @@ class cfgVehicles
 		uniformClass = "BCG_Dalverd_Gray";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
+	};
+	class BCG_Uni_base_armor_d: knd_beroya_F
+	{
+		scope = 1;
+		uniformClass = "BCG_base_armor_d";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\camo1_co.paa","BCG_Armour\data\uniforms\base\camo2_co.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
+	};
+	class BCG_Uni_base_armor_l: knd_beroya_F
+	{
+		scope = 1;
+		uniformClass = "BCG_base_armor_l";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\camo1light_co.paa","BCG_Armour\data\uniforms\base\camo2light_co.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
 	};
 	// backpacks
 	class BCG_AlicePackUCN: TKE_AlicePackUCN {

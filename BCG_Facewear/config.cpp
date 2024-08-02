@@ -22,6 +22,7 @@ class cfgGlasses {
 	class tgf_facewear_pilot_belt;
 	
 	
+	
 	class BCG_arbiter_belt: tgf_facewear_arbiter_belt
 	{
 		scope=2;
@@ -106,5 +107,5 @@ class cfgGlasses {
 			"BCG_Facewear\data\pilot\camo1_co.paa"
 		};
 	};
-	
+
 };
