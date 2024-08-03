@@ -24,36 +24,38 @@ class cfgVehicles {
 			};
 		textureList[]={
 			"buycegal",1,
-			"neif",0,
-			"balls"0
+			"neif",1,
+			"balls",1
 		};
-		class buycegal
-		{
-			displayName = "Buy'ce Gal Cabur";
-			author = "your mom";
-			textures[] = { 
-				"\knd_fang\data\fuselage_co.paa",
-				"\knd_fang\data\wings_co.paa",
-				"\knd_fang\data\cockpit_co.paa"
+		textureSources {
+			class buycegal
+			{
+				displayName = "Buy'ce Gal Cabur";
+				author = "your mom";
+				textures[] = { 
+					"\knd_fang\data\fuselage_co.paa",
+					"\knd_fang\data\wings_co.paa",
+					"\knd_fang\data\cockpit_co.paa"
+				};
+				factions[]={};
 			};
-			factions[]={};
-		};
-		class neif: buycegal
-		{
-			displayName = "Neifer";
-			textures[] = { 
-				"\knd_fang\data\fuselage_co.paa",
-				"\knd_fang\data\wings_co.paa",
-				"\knd_fang\data\cockpit_co.paa"
+			class neif: buycegal
+			{
+				displayName = "Neifer";
+				textures[] = { 
+					"\knd_fang\data\fuselage_co.paa",
+					"\knd_fang\data\wings_co.paa",
+					"\knd_fang\data\cockpit_co.paa"
+				};
 			};
-		};
-		class balls: buycegal
-		{
-			displayName = "Balls";
-			textures[] = { 
-				"\knd_fang\data\fuselage_co.paa",
-				"\knd_fang\data\wings_co.paa",
-				"\knd_fang\data\cockpit_co.paa"
+			class balls: buycegal
+			{
+				displayName = "Balls";
+				textures[] = { 
+					"\knd_fang\data\fuselage_co.paa",
+					"\knd_fang\data\wings_co.paa",
+					"\knd_fang\data\cockpit_co.paa"
+				};
 			};
 		};
 	};
