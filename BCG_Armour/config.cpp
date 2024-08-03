@@ -1002,7 +1002,7 @@ class cfgVehicles
 		scope = 1;
 		uniformClass = "BCG_michelin";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\funny\camo1_co.paa"};	
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\funny\camo1_co.paa"};		
 	};
 
 	// backpacks

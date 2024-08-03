@@ -15,22 +15,22 @@ class cfgVehicles {
 		textureList[]={
 			"buycegal",1,
 			"neif",0,
-			"balls"0
+			"balls",0
 		};
 		class buycegal
 		{
-			displayName = "Buy'ce Gal Cabur";
+			displayName = "[BCG] Factory Paint";
 			author = "your mom";
 			textures[] = { 
-				"\knd_fang\data\fuselage_co.paa",
-				"\knd_fang\data\wings_co.paa",
-				"\knd_fang\data\cockpit_co.paa"
+				"BCG_Vehicles\fang\fuselage_co.paa",
+				"BCG_Vehicles\fang\wings_co.paa",
+				"BCG_Vehicles\fang\cockpit_co.paa"
 			};
 			factions[]={};
 		};
 		class neif: buycegal
 		{
-			displayName = "Neifer";
+			displayName = "ooh shiny";
 			textures[] = { 
 				"\knd_fang\data\fuselage_co.paa",
 				"\knd_fang\data\wings_co.paa",
@@ -39,7 +39,7 @@ class cfgVehicles {
 		};
 		class balls: buycegal
 		{
-			displayName = "Balls";
+			displayName = "Night Fighter";
 			textures[] = { 
 				"\knd_fang\data\fuselage_co.paa",
 				"\knd_fang\data\wings_co.paa",
