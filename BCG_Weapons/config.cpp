@@ -22,6 +22,43 @@ class cfgMagazines {
 		};
 	};
 };
+class CfgMovesBasic
+{
+	class DefaultDie;
+	class ManActions
+	{
+		reloadMyWeapon = "reloadMyWeapon";
+	};
+};
+
+class CfgGesturesMale
+{
+	class Default;
+	class States
+	{
+		class reloadMyWeapon : Default
+		{
+			file = "3AS_Reloads\anims\3AS_Vent_Reload.rtm";
+			looped = 0;
+			speed = 0.400000;
+			mask = "handsWeapon";
+			headBobStrength = 0.200000;
+			headBobMode = 2;
+			rightHandIKBeg = 1;
+			rightHandIKEnd = 1;
+			leftHandIKCurve[] = { 0, 1, 0.050000, 0, 0.950000, 0, 1, 1 };
+		};
+	};
+};
+
+class cfgWeapons
+{
+	class myWeapon
+	{
+		reloadAction = "reloadMyWeapon";
+	};
+};
+
 
 class Mode_SemiAuto;
 class Mode_FullAuto;
