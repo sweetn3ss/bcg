@@ -12,6 +12,16 @@ class cfgVehicles {
 		displayName = "[BCG] Fang-class Fighter";
 		scope = 2;
 		scopeArsenal = 2;
+		hiddenSelections[] = {
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[] = {
+				"\knd_fang\data\fuselage_co.paa",
+				"\knd_fang\data\wings_co.paa",
+				"\knd_fang\data\cockpit_co.paa"
+			};
 		textureList[]={
 			"buycegal",1,
 			"neif",0,
