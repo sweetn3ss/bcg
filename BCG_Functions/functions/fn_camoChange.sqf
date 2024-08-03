@@ -18,6 +18,8 @@
 		[_player, ""Urban""] call changeCamo_fnc_camoChange
 */
 
+private _return = true;
+
 params [
 	["_unit", objNull], 
 	["_selectedCamoType", "Urban"]
@@ -111,11 +113,11 @@ if (_currentUniform != "") then {
 			};
 		};
 		// log happy boy behavior
-		_errorLog append 1;
+		_errorLog pushBack 1;
 	} else {
 		// log sad boy behavior
 		diag_log "[ERROR] MM_CamoSwapper | " +str _currentUniform+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 81)";
-		_errorLog append 0;
+		_errorLog pushBack 0;
 	};
 };
 systemChat str "Uniforms Completed";
@@ -159,10 +161,10 @@ if !(_currentVest == "") then {
 				_unit addMagazine _x;
 			} forEach _vestMags; 
 		};
-		_errorLog append 1;
+		_errorLog pushBack 1;
 	} else {
 		diag_log "[ERROR] MM_CamoSwapper | " +str _currentVest+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 81)";
-		_errorLog append 0;
+		_errorLog pushBack 0;
 	};
 };
 // Please ignore this shit
@@ -207,10 +209,10 @@ if (_currentBackpack != "") then {
 				_unit setObjectTextureGlobal [_i, _backpackTexturePath];
 			};
 		};
-		_errorLog append 1;
+		_errorLog pushBack 1;
 	} else {
-		diag_log "[ERROR] MM_CamoSwapper | " +str _currentBackpack+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 111)"
-		_errorLog append 0;
+		diag_log "[ERROR] MM_CamoSwapper | " +str _currentBackpack+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 111)";
+		_errorLog pushBack 0;
 	};
 };
 	
@@ -478,8 +480,9 @@ if !(_currentRifle == "") then {
 	};
 };
 
-{
-	if (_x == 0) exitWith {hintSilent "MM_CamoSwapper | One or more errors have occured in execution of fn_camoChange. Please check your .rpt file for additional information."; return false;};
-} forEach _errorLog;
+for "_i" from 0 to (count _errorLog) do {
+	private _element = _errorLog # _i;
+	if (_element == 0) exitWith {hintSilent "MM_CamoSwapper | One or more errors have occured in execution of fn_camoChange. Please check your .rpt file for additional information.";_return = false;};
+};
 
-return true;
+_return;
