@@ -364,6 +364,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\WarChief\camo1_co.paa",
+			"BCG_Armour\data\helmets\WarChief\camo2_co.paa"
 		
 		};
 	};
