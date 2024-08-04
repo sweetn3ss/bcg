@@ -27,7 +27,7 @@ class CfgMovesBasic
 	class DefaultDie;
 	class ManActions
 	{
-		reloadMyWeapon = "reloadMyWeapon";
+		reloadMyWeapon = "ventreload";
 	};
 };
 
@@ -36,7 +36,7 @@ class CfgGesturesMale
 	class Default;
 	class States
 	{
-		class reloadMyWeapon : Default
+		class ventreload : Default
 		{
 			file = "3AS_Reloads\anims\3AS_Vent_Reload.rtm";
 			looped = 0;
@@ -50,15 +50,6 @@ class CfgGesturesMale
 		};
 	};
 };
-
-class cfgWeapons
-{
-	class myWeapon
-	{
-		reloadAction = "reloadMyWeapon";
-	};
-};
-
 
 class Mode_SemiAuto;
 class Mode_FullAuto;
@@ -150,6 +141,7 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] Westar 35C";
 		baseWeapon="BCG_Westar35C";
+		reloadAction="ventreload";
 	};
 	
 	class BCG_Westar35SA: SWLW_Westar35SA 
