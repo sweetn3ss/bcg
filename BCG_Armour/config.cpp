@@ -34,6 +34,7 @@ class cfgWeapons
 	class tgf_helmets_viper_vet;
 	class tgf_helmets_war_chief;
 	class tgf_helmets_warlord;
+	class tgf_helmets_avenger_helmet;
 	
 	class tgf_armour_base;
 	class tgf_armour_heavy_armour;
@@ -491,6 +492,26 @@ class cfgWeapons
 		{
 			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
 			hiddenSelections[] = {"camo1","camo2"};
+		};
+	};
+	class BCG_Helmet_Avenger: tgf_helmets_avenger_helmet {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Avenger Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\Gunslinger\beskarized.rvmat"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\Avenger\camo1_co.paa",
+			"BCG_Armour\data\helmets\Avenger\camo2_co.paa",
+			
 		};
 	};
 	
