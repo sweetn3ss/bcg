@@ -22,34 +22,34 @@ class cfgMagazines {
 		};
 	};
 };
-class CfgMovesBasic
-{
-	class DefaultDie;
-	class ManActions
-	{
-		reloadMyWeapon = "ventreload";
-	};
-};
+///class CfgMovesBasic
+///{
+///	class DefaultDie;
+///	class ManActions
+///	{
+///		reloadMyWeapon = "ventreload";
+///	};
+///};
 
-class CfgGesturesMale
-{
-	class Default;
-	class States
-	{
-		class ventreload : Default
-		{
-			file = "3AS_Reloads\anims\3AS_Vent_Reload.rtm";
-			looped = 0;
-			speed = 0.400000;
-			mask = "handsWeapon";
-			headBobStrength = 0.200000;
-			headBobMode = 2;
-			rightHandIKBeg = 1;
-			rightHandIKEnd = 1;
-			leftHandIKCurve[] = { 0, 1, 0.050000, 0, 0.950000, 0, 1, 1 };
-		};
-	};
-};
+///class CfgGesturesMale
+///{
+///	class Default;
+///	class States
+///	{
+///		class ventreload : Default
+///		{
+///			file = "3AS_Reloads\anims\3AS_Vent_Reload.rtm";
+///			looped = 0;
+///			speed = 0.400000;
+///			mask = "handsWeapon";
+///			headBobStrength = 0.200000;
+///			headBobMode = 2;
+///			rightHandIKBeg = 1;
+///			rightHandIKEnd = 1;
+///			leftHandIKCurve[] = { 0, 1, 0.050000, 0, 0.950000, 0, 1, 1 };
+///		};
+///	};
+///};
 
 class Mode_SemiAuto;
 class Mode_FullAuto;
@@ -141,7 +141,7 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] Westar 35C";
 		baseWeapon="BCG_Westar35C";
-		reloadAction="ventreload";
+		///reloadAction="ventreload";
 	};
 	
 	class BCG_Westar35SA: SWLW_Westar35SA 
