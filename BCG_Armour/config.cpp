@@ -35,6 +35,8 @@ class cfgWeapons
 	class tgf_helmets_war_chief;
 	class tgf_helmets_warlord;
 	class tgf_helmets_avenger_helmet;
+	class tgf_helmets_rook; 
+	class tgf_helmets_executioner;
 	
 	class tgf_armour_base;
 	class tgf_armour_heavy_armour;
@@ -427,6 +429,44 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\customs\funny.paa",
 			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
+		};
+	};
+	class BCG_Helmet_Rook: tgf_helmets_rook {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Rook Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\Rook\beskarized.rvmat"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\Rook\camo1_co.paa",
+			"BCG_Armour\data\helmets\Rook\camo2_co.paa"
+		};
+	};
+	class BCG_Helmet_Exec: tgf_helmets_executioner {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Executioner Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\Executioner\beskarized.rvmat"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\Executioner\camo1_co.paa",
+			"BCG_Armour\data\helmets\Executioner\camo2_co.paa"
 		};
 	};
 	class BCG_Helmet_Wren_Gray: knd_helmet_Wren {
