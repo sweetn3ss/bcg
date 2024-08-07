@@ -59,6 +59,7 @@ class cfgWeapons
 	class tgf_nvg_recon_antenna_L;
 	class tgf_nvg_heavy_nv;
 	class tgf_nvg_circuit;
+	class tgf_nvg_avenger_nv;
 	
 	// helmets
 	class BCG_Helmet_RallyMaster: tgf_helmets_battle_master {
@@ -796,13 +797,11 @@ class cfgWeapons
 		displayName="[BCG] Rangefinder R";
 		hiddenSelections[]=
 		{
-			"camo1",
-			
+			"camo1",			
 		};		
 		hiddenSelectionsMaterials[]=
 		{
-			"BCG_Armour\data\nvg\rangefinder\beskarized.rvmat",
-			
+			"BCG_Armour\data\nvg\rangefinder\beskarized.rvmat",		
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -814,13 +813,11 @@ class cfgWeapons
 		displayName="[BCG] Recon Antenna L";
 		hiddenSelections[]=
 		{
-			"camo1",
-			
+			"camo1",			
 		};		
 		hiddenSelectionsMaterials[]=
 		{
-			"BCG_Armour\data\nvg\recon\beskarized.rvmat",
-			
+			"BCG_Armour\data\nvg\recon\beskarized.rvmat",	
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -831,17 +828,30 @@ class cfgWeapons
 	{
 		displayName="[BCG] Heavy Attachment";
 		hiddenSelections[]={
-			"camo1",
-			
+			"camo1",			
 		};		
 		hiddenSelectionsMaterials[]=
 		{
-			"BCG_Armour\data\nvg\heavy\beskarized.rvmat",
-			
+			"BCG_Armour\data\nvg\heavy\beskarized.rvmat",	
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"BCG_Armour\data\nvg\heavy\camo1_co.paa",
+		};
+	};
+	class BCG_avenger_nv : tgf_nvg_avenger_nv 
+	{
+		displayName="[BCG] Avenger Antenna";
+		hiddenSelections[]={
+			"camo1",			
+		};		
+		hiddenSelectionsMaterials[]=
+		{
+			"BCG_Armour\data\nvg\avenger\beskarized.rvmat",	
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Armour\data\nvg\avenger\camo1_co.paa",
 		};
 	};
 };
