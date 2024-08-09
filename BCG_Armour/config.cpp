@@ -48,6 +48,12 @@ class cfgWeapons
 	class tgf_armour_super_light_armour;
 	class tgf_armour_war_chief_armour;
 	class tgf_armour_arbiter_armour;
+	class knd_vest_beroya;
+	class knd_vest_beroya_dual;
+	class knd_vest_beroya_dual_light;
+	class knd_vest_dalverd;
+	class knd_vest_dalverd_dual;
+	class knd_vest_dalverd_dual_light;
 	
 	class tgf_undersuit_uniform_black_seal;
 	class knd_Aranov_Solid;
@@ -720,6 +726,72 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 		
 		"BCG_Armour\data\uniforms\neiferheavy\Vest\vest_co.paa"
+	
+		};
+	};
+	class BCG_Base_Holster: knd_vest_beroya {
+		displayName="[BCG] Holster and Pouches";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\vests\BHolster\camo3_co.paa"
+	
+		};
+	};
+	class BCG_Dual_Holster: knd_vest_beroya_dual {
+		displayName="[BCG] Dual Holsters";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\vests\BHolster\camo3_co.paa"
+	
+		};
+	};
+	class BCG_LightDual_Holster: knd_vest_beroya_dual_light {
+		displayName="[BCG] Light Dual Holsters";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\vests\BHolster\camo3_co.paa"
+	
+		};
+	}
+	class BCG_NiteO_Holster: knd_vest_dalverd {
+		displayName="[BCG] Nite Owl Holster";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\vests\DHolster\camo3_co.paa"
+	
+		};
+	};
+	class BCG_NiteOD_Holster: knd_vest_dalverd_dual {
+		displayName="[BCG] Nite Owl Dual Holsters";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\vests\DHolster\camo3_co.paa"
+	
+		};
+	};
+	class BCG_NiteODL_Holster: knd_vest_dalverd_dual_light {
+		displayName="[BCG] Nite Owl Dual Holsters Light";
+		hiddenSelections[]={
+			"camo1"
+		};
+		hiddenSelectionsTextures[]={
+		
+		"BCG_Armour\data\vests\DHolster\camo3_co.paa"
 	
 		};
 	};
