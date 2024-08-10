@@ -761,7 +761,7 @@ class cfgWeapons
 		"BCG_Armour\data\vests\BHolster\camo3_co.paa"
 	
 		};
-	}
+	};
 	class BCG_NiteO_Holster: knd_vest_dalverd {
 		displayName="[BCG] Nite Owl Holster";
 		hiddenSelections[]={
