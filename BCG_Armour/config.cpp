@@ -75,7 +75,7 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayname="[BCG] Rally Master Helmet";
+		displayname="[BCG] Neifer's Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
 		knd_hasLowLight = 1;
@@ -911,6 +911,34 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class BCG_baseF_armor_d: knd_dalverd {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Nite Owl Armor Dark";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Uni_baseF_armor_d";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class BCG_baseF_armor_l: knd_dalverd {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Nite Owl Armor Light";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Uni_baseF_armor_l";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	class BCG_michelin: tgf_undersuit_uniform_male_neo {
 		scope=2;
 		scopeArsenal=2;
@@ -1184,6 +1212,20 @@ class cfgVehicles
 		uniformClass = "BCG_base_armor_l";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\camo1light_co.paa","BCG_Armour\data\uniforms\base\camo2light_co.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
+	};
+	class BCG_Uni_baseF_armor_d: knd_dalverd_F
+	{
+		scope = 1;
+		uniformClass = "BCG_base_armor_d";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\baseF\camo1_co.paa","BCG_Armour\data\uniforms\baseF\camo2_co.paa","BCG_Armour\data\uniforms\baseF\camo3_co.paa"};	
+	};
+	class BCG_Uni_baseF_armor_l: knd_dalverd_F
+	{
+		scope = 1;
+		uniformClass = "BCG_base_armor_l";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\baseF\camo1light_co.paa","BCG_Armour\data\uniforms\baseF\camo2light_co.paa","BCG_Armour\data\uniforms\baseF\camo3_co.paa"};	
 	};
 	class BCG_funny : tgf_undersuit_uniform_male_neo
 	{
