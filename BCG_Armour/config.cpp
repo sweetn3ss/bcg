@@ -78,6 +78,7 @@ class cfgWeapons
 		displayname="[BCG] Rally Master Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
