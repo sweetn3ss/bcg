@@ -98,6 +98,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Arbiter";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -117,6 +118,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Forge Master";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -136,6 +138,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Gar Saxon";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -155,6 +158,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Gunslinger";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -174,6 +178,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Gunslinger Vet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -193,6 +198,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Heavy";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -212,6 +218,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Pilot";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2",
@@ -233,6 +240,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Shrike";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -252,6 +260,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Super Commando";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -271,6 +280,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Super Commando Vet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -290,6 +300,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Traditional";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -309,6 +320,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Veteran";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -328,6 +340,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Viper";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -347,6 +360,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Viper Vet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -366,6 +380,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet War Chief";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -387,6 +402,7 @@ class cfgWeapons
 		displayname="[BCG] Helmet Warlord";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -407,6 +423,7 @@ class cfgWeapons
 		displayname="[BCG] Warlord Gryffin";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -427,6 +444,7 @@ class cfgWeapons
 		displayname="[BCG] Funny";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -446,6 +464,7 @@ class cfgWeapons
 		displayname="[BCG] Rook Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -465,6 +484,7 @@ class cfgWeapons
 		displayname="[BCG] Executioner Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -550,6 +570,7 @@ class cfgWeapons
 		displayname="[BCG] Avenger Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -570,6 +591,7 @@ class cfgWeapons
 		displayname="[BCG] Heritage Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
