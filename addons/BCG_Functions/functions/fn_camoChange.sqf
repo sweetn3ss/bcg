@@ -23,19 +23,19 @@ private _fnc_camoSwapper = {
 };
 
 /*
-	Author: Max, Mesa
+	Author: Daisy, Max, Mesa
 
 	Description:
 		Changes the compatible equipment on a player to be camouflaged in the manner chosen.
-		The Vest and Helmet are swapped to different versioned objects (with items in the vest duplicated into the new vest)
-		The Uniform and Backpack are the same objects, but have their texture changed globally.
+		The Helmet is swapped to a different versioned object
+		The Uniform, Vest, and Backpack are the same objects, but have their texture changed globally.
 
 	Parameter(s):
 		0: OBJECT - (Required, default 'objNull') The player
 		1: STRING - (Required, default "Urban") The identifier of the camouflage to change to
 
 	Returns:
-		BOOLEAN (TODO: Actually return BOOLEAN for log purposes)
+		BOOLEAN 
 
 	Examples:
 		[_player, ""Woodland""] call changeCamo_fnc_camoChange
@@ -71,10 +71,10 @@ private _currentBackpack 	= backpack _unit;
 // This is not necessarily the string that is sent to the function
 private _camoType = "BLK";
 switch (_selectedCamoType) do {
-	case "urban":    	{ _camoType = "BLK" };
-	case "desert":   	{ _camoType = "DES" };
-	case "winter":   	{ _camoType = "SNO" };
-	case "woodland": 	{ _camoType = "WDL" };
+	case "urban":    	{ /*_camoType = "BLK";*/ };
+	case "desert":   	{ _camoType = "DES"; };
+	case "winter":   	{ _camoType = "SNO"; };
+	case "woodland": 	{ _camoType = "WDL"; };
 	default          	{  // error in type. no code should execute after this as it would be a waste of resources.
 							_camoType = false;	// set to boolean for exit statement
 					 	};

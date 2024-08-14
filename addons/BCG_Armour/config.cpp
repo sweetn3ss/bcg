@@ -875,9 +875,10 @@ class cfgWeapons
 		displayName="[BCG] Dal'verd Gray BLK";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
+		camoTypes[] = {"BLK","DES","SNO","WDL"};
 		class ItemInfo: UniformItem {
 			uniformModel = "knd_dalverd\data\dalverd.p3d";
-			uniformClass = "BCG_Uni_Gray_BLK";
+			uniformClass = "BCG_Uni_Dalverd_Gray_BLK";
 			containerClass = "Supply250";
 			mass = 20;
 			hiddenSelections[] = {"camo"};
@@ -1099,28 +1100,28 @@ class cfgVehicles
                     {
                         displayName="Urban";
                         condition="true";
-                        statement="[player, ""Urban""] call personalizeArmor_fnc_camoChange;";
+                        statement="[ACE_player, 'Urban'] call bcg_armor_fnc_camoChange;";
                         icon = "";
                     };
                     class Desert
                     {
                         displayName="Desert";
                         condition="true";
-                        statement="[_player, ""Desert""] call personalizeArmor_fnc_camoChange;";
+                        statement="[ACE_player, 'Desert'] call bcg_armor_fnc_camoChange;";
                         icon = "";
                     };
                     class Winter
                     {
                         displayName="Winter";
                         condition="true";
-                        statement="[_player, ""Winter""] call personalizeArmor_fnc_camoChange;";
+                        statement="[ACE_player, 'Winter'] call bcg_armor_fnc_camoChange;";
                         icon = "";
                     };
                     class Woodland
                     {
                         displayName="Woodland";
                         condition="true";
-                        statement="[_player, ""Woodland""] call personalizeArmor_fnc_camoChange;";
+                        statement="[ACE_player, 'Woodland'] call bcg_armor_fnc_camoChange;";
                         icon = "";
                     };
                 };
@@ -1195,7 +1196,7 @@ class cfgVehicles
 	{
 		scope = 1;
 		model = "knd_dalverd\data\dalverd.p3d";
-		uniformClass = "BCG_Dalverd_Gray_BLK";
+		uniformClass = "BCG_Uni_Gray_BLK";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
 	};
