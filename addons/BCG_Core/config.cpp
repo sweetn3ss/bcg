@@ -8,7 +8,8 @@ class cfgPatches {
 		requiredAddons[]={
 			"a3_Characters_F",
 			"OPTRE_Misc",
-			"tgf_facewear"
+			"tgf_facewear",
+			"442_misc_data_pad"
 		};
 	};
 };
@@ -30,5 +31,29 @@ class cfgGlasses {
 		{
 			"BCG_Core\data\shawggles.paa"
 		};
+	};
+};
+class cfgMarkers {
+	class bcg_flag {
+		name="BCG Flaggot";
+		author = "Gray";
+		icon = "\BCG_Core\data\bcg_flag";
+		color[]={1,1,1,1};
+		size=32;
+		shadow=0;
+		scope=2;
+		markerClass="Flags";
+	};
+};
+class cfgVehicles {
+	class Items_base_F;
+	class 442_data_pad;
+	class bcg_data_pad: 442_data_pad {
+		scope=2;
+		scopeCurator=2;
+		author="Gray";
+		displayName="Blanket";
+		hiddenselections[] = {"camo1","screen"};
+		hiddenselectionstextures[] = {"kobra\442_misc\data_pad\data\camo1_co.paa","BCG_Core\data\screen_co_bridget.paa"};
 	};
 };
