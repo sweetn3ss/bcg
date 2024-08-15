@@ -54,6 +54,7 @@ class cfgWeapons
 	class knd_vest_dalverd;
 	class knd_vest_dalverd_dual;
 	class knd_vest_dalverd_dual_light;
+	class knd_kama;
 	
 	class tgf_undersuit_uniform_black_seal;
 	class knd_Aranov_Solid;
@@ -1159,7 +1160,7 @@ class cfgVehicles
 		scope = 1;
 		uniformClass = "BCG_base_armor_l";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\baseF\camo1light_co.paa","BCG_Armour\data\uniforms\baseF\camo2light_co.paa","BCG_Armour\data\uniforms\baseF\camo3_co.paa"};	
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\baseF\camo1light_co.paa","BCG_Armour\data\uniforms\baseF\camo2_co.paa","BCG_Armour\data\uniforms\baseF\camo3_co.paa"};	
 	};
 	class BCG_funny : tgf_undersuit_uniform_male_neo
 	{

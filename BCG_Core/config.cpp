@@ -9,7 +9,8 @@ class cfgPatches {
 			"a3_Characters_F",
 			"OPTRE_Misc",
 			"tgf_facewear",
-			"442_misc_data_pad"
+			"442_misc_data_pad",
+			"tgf_vests"
 		};
 	};
 };

@@ -6,7 +6,7 @@ class cfgPatches {
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={
-			"tgf_facewear"
+			"tgf_facewear", "tgf_vests"
 		};
 	};
 };
@@ -20,6 +20,7 @@ class cfgGlasses {
 	class tgf_facewear_light_belt;
 	class tgf_facewear_medium_belt;
 	class tgf_facewear_pilot_belt;
+	class knd_kama;
 	
 	
 	
@@ -105,6 +106,20 @@ class cfgGlasses {
 		hiddenSelectionsTextures[]=
 		{
 			"BCG_Facewear\data\pilot\camo1_co.paa"
+		};
+	};
+	class BCG_MedicKama: knd_kama
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Medic Kama";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Facewear\data\MedicKama\camo1_co.paa"
 		};
 	};
 
