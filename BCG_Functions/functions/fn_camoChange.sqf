@@ -110,31 +110,16 @@ if (_currentUniform == "") then {
 		private _uniformCamoArr = getObjectTextures _unit;
 		// change all camo texture paths
 		[_unit,_camoPaa,_uniformCamoArr] call _fnc_camoSwapper;
-/*
-		for "_i" from 0 to ((count _uniformCamoArr) - 1) do {
-			// get current camo
-			private _currentCamoPath = _uniformCamoArr # _i;
-			// split string into array
-			private _currentCamoArr = _currentCamoPath splitString "\";
-			// delete current camo index
-			_currentCamoArr deleteAt (count _currentCamoArr-1);
-			// pushback new camo index
-			_currentCamoArr pushBack _camoPaa;
-			// join new string path
-			private _newCamoPath = _currentCamoArr joinString "\";
-			// set texture
-			_unit setObjectTextureGlobal [_i,_newCamoPath];
-		};
-*/
 		// log happy boy behavior
 		_errorLog pushBack 1;
 		// rpt log it
 		_msg = format ["INFO: Uniform camo change on unit <%1> executed successfully to <%2>.",_unit,_camoType];
 		RPT_DTAIL(_msg,__FILE__,__LINE__);
-		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	} else {
+		_errorLog pushBack 0;
 		_msg = format ["WARNING: Camo type <%1> is not a viable camo under the 'camoTypes' config field of the current uniform, <%2>. The camo was not changed.",_camoType,_currentUniform];
 		RPT_DTAIL(_msg,__FILE__,__LINE__);
+		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	};
 };
 
@@ -166,10 +151,11 @@ if (_currentVest == "") then {
 		// rpt log it
 		_msg = format ["INFO: Vest camo change on unit <%1> executed successfully to <%2>.",_unit,_camoType];
 		RPT_DTAIL(_msg,__FILE__,__LINE__);
-		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	} else {
+		_errorLog pushBack 0;
 		_msg = format ["WARNING: Vest type <%1> is not a viable camo under the 'camoTypes' config field of the current vest, <%2>. The camo was not changed.",_camoType,_currentUniform];
 		RPT_DTAIL(_msg,__FILE__,__LINE__);
+		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	};
 };
 // Please ignore this shit
@@ -207,50 +193,14 @@ if (_currentBackpack == "") then {
 		// rpt log it
 		_msg = format ["INFO: Backpack camo change on unit <%1> executed successfully to <%2>.",_unit,_camoType];
 		RPT_DTAIL(_msg,__FILE__,__LINE__);
-		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	} else {
+		_errorLog pushBack 0;
 		_msg = format ["WARNING: Backpack type <%1> is not a viable camo under the 'camoTypes' config field of the current backpack, <%2>. The camo was not changed.",_camoType,_currentUniform];
 		RPT_DTAIL(_msg,__FILE__,__LINE__);
+		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	};
 };
-/*
-if (_currentBackpack != "") then {	
-	private _backpackCamoTypes = (configFile >> "CfgWeapons" >> _currentBackpack >> "camoTypes") call BIS_fnc_getCfgData;
-	private _backpackTempArray = [_currentBackpack, "_"] call BIS_fnc_splitString;
-	
-	// This is the last item
-	private _backpackCamoRef = _backpackTempArray # ((count _backpackTempArray) - 1);
-	if ((_backpackTempArray # 0) find UnitTexturePrefixes != -1 && _backpackCamoTypes find _camoType != -1) then {
-		// Get the entire array of textures for the item
-		private _backpackCamoTexture = getObjectTextures _unit;
-		
-		// Replace the value of the last item in array with the preferred camo
-		// for loop replacing each texture
-		for "_i" from 0 to ((count _backpackCamoTexture) -1) do {
-			private _currentTexture = (_backpackCamoTexture select _i); // Grab the nth texture
-			private _currentBackpackTempArray = [_currentTexture, "_"] call BIS_fnc_splitString;
-			if ((count _currentBackpackTempArray) > 0) then {
-				private _currentBackpackTempArrayExtension = [(_currentBackpackTempArray # ((count _currentBackpackTempArray) -1)), "."] call BIS_fnc_splitString;
-				
-				// Set ABC.paa to XYZ.paa
-				_currentBackpackTempArrayExtension set [0, _camoType];
-				
-				// Move XYZ.paa back into the texture path
-				_currentBackpackTempArray set [(count _currentBackpackTempArray) -1, (_currentBackpackTempArrayExtension joinString ".")];
-				
-				// Recombines the original array, but with our replaced value
-				private _backpackTexturePath = _currentBackpackTempArray joinString "_";
-				_unit setObjectTextureGlobal [_i, _backpackTexturePath];
-			};
-		};
-		_errorLog pushBack 1;
-	} else {
-		diag_log "[ERROR] MM_CamoSwapper | " +str _currentBackpack+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 111)";
-		_errorLog pushBack 0;
-	};
-};
-*/
-systemChat str _camoType;
+
 // ###############
 // ###  Helmet ###
 // ###############
@@ -259,32 +209,28 @@ systemChat str _camoType;
 // This makes hud management easier and is compatible with the way visor opaqueness works.
 // All 'duplicate' helmets of non-default camouflage are marked with 'scope = 1;' in their classes
 if (_currentHelmet != "") then {
-	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgData;
-	private _helmetCamoTypes = _checkedHelmet; // May be able to remove this depending on how much arma has a fit about it
-	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
-	if ((count _helmetTempArray) > 1) then {
-		// This is the last item
-		private _helmetCamoRef = _helmetTempArray # ((count _helmetTempArray) -1);
-		// Helmets can have their camo be in the last or 2nd-to-last item in the array depending on if they are using a depolarized version
-		private _helmetCamoRef_DP = _helmetTempArray # ((count _helmetTempArray) -2);
-		if ((_helmetTempArray # 0) find UnitTexturePrefixes != -1 && _helmetCamoTypes find _camoType != -1) then {
-			//Replace the value of the last or second-to-last item in array with the preferred camo
-			if (_helmetCamoTypes find _helmetCamoRef_DP != -1) then {
-				_helmetTempArray set [((count _helmetTempArray) - 2), _camoType];
-			} else {
-				_helmetTempArray set [((count _helmetTempArray) - 1), _camoType];
-			};
+	private _helmetCamoTypes = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgDataArray;
+
+	if (_helmetCamoTypes find _camoType != -1) then {
+
+			// Get the entire array of textures for the helmet
+			private _helmetCamoArr = getObjectTextures _currentHelmet;
 			
-			// Recombines the original array but with our replaced value
-			private _newHelmet = _helmetTempArray joinString "_";
-			systemChat str _newHelmet;
-			removeHeadgear _unit;
-			_unit addHeadgear _newHelmet;
-		};
+			// change all camo texture paths
+			[_unit,_camoPaa,_helmetCamoArr] call _fnc_camoSwapper;
+
+			// log happy boy behavior
+			_errorLog pushBack 1;
+			// rpt log it
+			_msg = format ["INFO: Helmet camo change on unit <%1> executed successfully to <%2>.",_unit,_camoType];
+			RPT_DTAIL(_msg,__FILE__,__LINE__);
+	} else {
+		_errorLog pushBack 0;
+		_msg = format ["WARNING: Camo type <%1> is not a viable camo under the 'camoTypes' config field of the current helmet, <%2>. The camo was not changed.",_camoType,_currentUniform];
+		RPT_DTAIL(_msg,__FILE__,__LINE__);
+		HINT_DTAIL(_msg,__FILE__,__LINE__);
 	};
 };
-
-systemChat str "Helmets Completed";
 
 for "_i" from 0 to (count _errorLog) do {
 	private _element = _errorLog # _i;
