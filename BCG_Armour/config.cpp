@@ -475,23 +475,6 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Executioner\camo2_co.paa"
 		};
 	};
-		class BCG_Helmet_sabine: knd_helmet_Sabine {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Sabine Helmet";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\sabine\camo1_co.paa",
-			"BCG_Armour\data\helmets\sabine\camo2_co.paa"
-		};
-	};
 	class BCG_Helmet_Wren_Gray: knd_helmet_Wren {
 		displayName = "[BCG] Wren Gray";
 		author = "Gray";
