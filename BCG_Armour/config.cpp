@@ -63,6 +63,9 @@ class cfgWeapons
 	class knd_helmet_Wren;
 	class knd_beroya;
 	class tgf_undersuit_uniform_male_neo;
+	class knd_helmet_classic;
+	class knd_helmet_Paz;
+	class knd_helmet_Sabine;
 	
 		
 	class tgf_nvg_rangefinder_r;
@@ -70,6 +73,7 @@ class cfgWeapons
 	class tgf_nvg_heavy_nv;
 	class tgf_nvg_circuit;
 	class tgf_nvg_avenger_nv;
+	class knd_nvg_nya;
 	
 	// helmets
 	class BCG_Helmet_RallyMaster: tgf_helmets_battle_master {
@@ -194,6 +198,23 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Heavy\camo2_co.paa"
 		};
 	};
+		class BCG_Helmet_paz: knd_helmet_Paz {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Helmet PAZ";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\paz\camo1_co.paa",
+			"BCG_Armour\data\helmets\paz\camo2_co.paa"
+		};
+	};
 	class BCG_Helmet_Pilot: tgf_helmets_pilot {
 		scope=2;
 		scopeArsenal=2;
@@ -279,6 +300,23 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Traditional\camo1_co.paa",
 			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
+		};
+	};
+		class BCG_Helmet_beroya: knd_helmet_classic {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Helmet Beroya";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\beroya\camo1_co.paa",
+			"BCG_Armour\data\helmets\beroya\camo2_co.paa"
 		};
 	};
 	class BCG_Helmet_Veteran: tgf_helmets_Veteran {
@@ -435,6 +473,23 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Executioner\camo1_co.paa",
 			"BCG_Armour\data\helmets\Executioner\camo2_co.paa"
+		};
+	};
+		class BCG_Helmet_sabine: knd_helmet_Sabine {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Sabine Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\sabine\camo1_co.paa",
+			"BCG_Armour\data\helmets\sabine\camo2_co.paa"
 		};
 	};
 	class BCG_Helmet_Wren_Gray: knd_helmet_Wren {
@@ -971,6 +1026,17 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"BCG_Armour\data\nvg\avenger\camo1_co.paa",
+		};
+	};
+		class BCG_nya_nv : knd_nvg_nya
+	{
+		displayName="[BCG] Nya Antenna";
+		hiddenSelections[]={
+			"camo1",			
+		};		
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Armour\data\nvg\nya\camo1_co.paa",
 		};
 	};
 };
