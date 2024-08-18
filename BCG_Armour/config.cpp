@@ -441,6 +441,23 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
 		};
 	};
+	class BCG_Helmet_Sabine: knd_helmet_Sabine {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Sabine Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\Sabine\camo1_co.paa",
+			"BCG_Armour\data\helmets\Sabine\camo2_co.paa"
+		};
+	};
 	class BCG_Helmet_Rook: tgf_helmets_rook {
 		scope=2;
 		scopeArsenal=2;
