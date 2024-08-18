@@ -38,6 +38,7 @@ class cfgWeapons
 	class tgf_helmets_rook; 
 	class tgf_helmets_executioner;
 	class tgf_helmets_heritage;
+	class knd_helmet_Armorer;
 	
 	class tgf_armour_base;
 	class tgf_armour_heavy_armour;
@@ -591,6 +592,24 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Heritage\camo1_co.paa",
 			"BCG_Armour\data\helmets\Heritage\camo2_co.paa",
+			
+		};
+	};
+		class BCG_Helmet_Armorer: knd_helmet_armorer {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Armorer Helmet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\Armorer\camo1_co.paa",
+			"BCG_Armour\data\helmets\Armorer\camo2_co.paa",
 			
 		};
 	};

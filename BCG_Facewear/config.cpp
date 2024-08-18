@@ -6,7 +6,7 @@ class cfgPatches {
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={
-			"tgf_facewear", "tgf_vests"
+			"tgf_facewear", "knd_vests"
 		};
 	};
 };
