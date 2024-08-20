@@ -1,5 +1,5 @@
 class cfgPatches {
-	class BCG_Facewear {
+	class BCG_Core {
 		authors[]={"Gray","Neifer","Indie Beninging"};
 		name="Buy'ce Gal Cabur Core";
 		units[]={};
@@ -9,8 +9,7 @@ class cfgPatches {
 			"a3_Characters_F",
 			"OPTRE_Misc",
 			"tgf_facewear",
-			"442_misc_data_pad",
-			"knd_vests"
+			"442_misc_data_pad"
 		};
 	};
 };

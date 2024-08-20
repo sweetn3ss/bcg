@@ -257,7 +257,28 @@ class cfgWeapons {
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 25;
 		};
-		class Burst: Mode_Burst {};
+		class Burst: Mode_Burst {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_B2_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {""};
+			};
+			reloadTime = 0.1;
+			dispersion = 0.00399;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+		};
 		class stun: JLTS_stun_muzzle
 		{
 			reloadAction = "GestureReloadMX";
@@ -287,17 +308,17 @@ class cfgWeapons {
 	};
 	class BCG_ee3_plymr: knd_ee3_plastic
 	{
-		scope=2
-		scopeArsenal=2
+		scope=2;
+		scopeArsenal=2;
 		displayName="[BCG] EE-3 Polymer Stock";
 		baseWeapon="BCG_ee3_plymr";
 	};
 	class BCG_johnnygun: knd_silverhand
 	{
-		scope=2
-		scopeArsenal=2 
+		scope=2;
+		scopeArsenal=2 ;
 		displayName="[BCG] Malorian Slugthrower";
-		baseWeapon="BCG_johnnygun"
+		baseWeapon="BCG_johnnygun";
 	};
 	class BCG_vornsk: knd_VORNSK_F
 	{
@@ -331,14 +352,8 @@ class cfgWeapons {
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[BCG] KG-96 Plasma Revolver"
-		baseWeapon="BCG_biggeriron"
-	
-	
-	
-	
-	
-	
+		displayName="[BCG] KG-96 Plasma Revolver";
+		baseWeapon="BCG_biggeriron";
 	};
 };
 
