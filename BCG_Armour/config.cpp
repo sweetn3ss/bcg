@@ -907,8 +907,8 @@ class cfgWeapons
 		};
 	};
 	class BCG_base_armor_l: knd_beroya {
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		author="Gray";
 		displayName="[BCG] Base Armor Light";
 		hiddenSelections[]={};
@@ -935,8 +935,8 @@ class cfgWeapons
 		};
 	};
 	class BCG_baseF_armor_l: knd_dalverd {
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		author="Gray";
 		displayName="[BCG] Nite Owl Armor Light";
 		hiddenSelections[]={};
@@ -948,21 +948,6 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	class BCG_michelin: tgf_undersuit_uniform_male_neo {
-		scope=2;
-		scopeArsenal=2;
-		author="neifer";
-		displayName="Michelin Man";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: UniformItem {
-			uniformClass = "BCG_funny";
-			containerClass = "Supply250";
-			mass = 20;
-			hiddenSelections[] = {"camo1"};
-		};
-	};
-	
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -1224,7 +1209,7 @@ class cfgVehicles
 		scope = 1;
 		uniformClass = "BCG_base_armor_d";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\camo1_co.paa","BCG_Armour\data\uniforms\base\camo2_co.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\newberoya.paa","BCG_Armour\data\uniforms\base\newberoyapants.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
 	};
 	class BCG_Uni_base_armor_l: knd_beroya_F
 	{
