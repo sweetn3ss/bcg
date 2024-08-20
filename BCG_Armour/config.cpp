@@ -510,6 +510,7 @@ class cfgWeapons
 		displayName = "[BCG] Wren Gray BLK";
 		author = "Gray";
 		scope = 2;
+		scopeArsenal = 1;
 		model = "\knd_newHelmets\data\Wren\helmet.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_blk.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
@@ -524,6 +525,7 @@ class cfgWeapons
 		displayName = "[BCG] Wren Gray DES";
 		author = "Gray";
 		scope = 2;
+		scopeArsenal = 1;
 		model = "\knd_newHelmets\data\Wren\helmet.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_des.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
@@ -537,6 +539,7 @@ class cfgWeapons
 		displayName = "[BCG] Wren Gray SNO";
 		author = "Gray";
 		scope = 2;
+		scopeArsenal = 1;
 		model = "\knd_newHelmets\data\Wren\helmet.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_sno.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
@@ -550,6 +553,7 @@ class cfgWeapons
 		displayName = "[BCG] Wren Gray WDL";
 		author = "Gray";
 		scope = 2;
+		scopeArsenal = 1;
 		model = "\knd_newHelmets\data\Wren\helmet.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_wdl.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
