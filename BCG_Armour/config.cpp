@@ -35,10 +35,17 @@ class cfgWeapons
 	class tgf_helmets_war_chief;
 	class tgf_helmets_warlord;
 	class tgf_helmets_avenger_helmet;
-	class tgf_helmets_rook; 
 	class tgf_helmets_executioner;
 	class tgf_helmets_heritage;
 	class knd_helmet_Armorer;
+	class knd_helmet_classic;
+	class knd_helmet_Paz;
+	class knd_helmet_Sabine;
+	class knd_helmet_Foreman;
+	class knd_helmet_Guardian;
+	class knd_helmet_Grunt;
+	class knd_helmet_Liege;
+	class knd_helmet_Rook; 
 	
 	class tgf_armour_base;
 	class tgf_armour_heavy_armour;
@@ -64,9 +71,7 @@ class cfgWeapons
 	class knd_helmet_Wren;
 	class knd_beroya;
 	class tgf_undersuit_uniform_male_neo;
-	class knd_helmet_classic;
-	class knd_helmet_Paz;
-	class knd_helmet_Sabine;
+
 	
 		
 	class tgf_nvg_rangefinder_r;
@@ -459,14 +464,11 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Sabine\camo2_co.paa"
 		};
 	};
-	class BCG_Helmet_Rook: tgf_helmets_rook {
+	class BCG_Helmet_Rook: knd_helmet_Rook {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Rook Helmet";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -606,7 +608,6 @@ class cfgWeapons
 		displayname="[BCG] Armorer Helmet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -617,7 +618,58 @@ class cfgWeapons
 			
 		};
 	};
-	
+	class BCG_Helmet_Foreman: knd_helmet_Foreman {
+		displayName = "[BCG] Foreman Helmet";
+		author = "Neifer";
+		scope = 2;
+		hiddenSelections[] = {
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionstextures[] = {
+			"BCG_Armour\data\helmets\Foreman\camo1_co.paa",
+			"BCG_Armour\data\helmets\Foreman\camo2_co.paa"
+		};
+	};
+	class BCG_Helmet_Guardian: knd_helmet_Guardian {
+		displayName = "[BCG] Guardian Helmet";
+		author = "Neifer";
+		scope = 2;
+		hiddenSelections[] = {
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionstextures[] = {
+			"BCG_Armour\data\helmets\Guardian\camo1_co.paa",
+			"BCG_Armour\data\helmets\Guardian\camo2_co.paa"
+		};
+	};
+		class BCG_Helmet_Grunt: knd_helmet_Grunt {
+		displayName = "[BCG] Grunt Helmet";
+		author = "Neifer";
+		scope = 2;
+		hiddenSelections[] = {
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionstextures[] = {
+			"BCG_Armour\data\helmets\Grunt\camo1_co.paa",
+			"BCG_Armour\data\helmets\Grunt\camo2_co.paa"
+		};
+	};
+		class BCG_Helmet_Liege: knd_helmet_Liege {
+		displayName = "[BCG] Liege Helmet";
+		author = "Neifer";
+		scope = 2;
+		hiddenSelections[] = {
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionstextures[] = {
+			"BCG_Armour\data\helmets\Liege\camo1_co.paa",
+			"BCG_Armour\data\helmets\Liege\camo2_co.paa"
+		};
+	};
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
