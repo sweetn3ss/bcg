@@ -100,13 +100,13 @@ class cfgWeapons {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BCG_Weapons\dullbog\Body_Black.paa",
-			"BCG_Weapons\dullbog\DecalSheet_co.paa"
+			"BCG_Weapons\data\dullbog\Body_Black.paa",
+			"BCG_Weapons\data\dullbog\DecalSheet_co.paa"
 		}; 
 		hiddenSelectionsMaterials[]=
 		{
-			"BCG_Weapons\dullbog\body.rvmat",
-			"BCG_Weapons\dullbog\decal.rvmat"
+			"BCG_Weapons\data\dullbog\body.rvmat",
+			"BCG_Weapons\data\dullbog\decal.rvmat"
 		};
 	};
 	class BCG_M393S: OPTRE_M393S_DMR 
@@ -122,8 +122,8 @@ class cfgWeapons {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BCG_Weapons\M393S\MainBody1_CO.paa",
-			"BCG_Weapons\M393S\MainBody2_CO.paa"
+			"BCG_Weapons\data\M393S\MainBody1_CO.paa",
+			"BCG_Weapons\data\M393S\MainBody2_CO.paa"
 		}; 	
 	};
 	
@@ -221,7 +221,7 @@ class cfgWeapons {
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BCG_Weapons\Chaingun\back_CO.paa"
+			"BCG_Weapons\data\Chaingun\back_CO.paa"
 		};
 	};
 	
