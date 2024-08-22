@@ -18,7 +18,7 @@ class cfgMagazines {
 			"camoBody"
 		};
 		hiddenSelectionsTextures[]={
-			"BCG_Weapons\dullbog\Body_Black.paa",
+			"BCG_Weapons\data\dullbog\Body_Black.paa",
 		};
 	};
 };
