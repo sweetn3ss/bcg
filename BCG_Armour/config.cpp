@@ -45,7 +45,8 @@ class cfgWeapons
 	class knd_helmet_Guardian;
 	class knd_helmet_Grunt;
 	class knd_helmet_Liege;
-	class knd_helmet_Rook; 
+	class knd_helmet_Rook;
+	class knd_helmet_Wren;	
 	
 	class tgf_armour_base;
 	class tgf_armour_heavy_armour;
@@ -68,9 +69,9 @@ class cfgWeapons
 	class knd_Aranov_Solid;
 	class knd_vest_aranov;
 	class knd_dalverd;
-	class knd_helmet_Wren;
 	class knd_beroya;
-	class tgf_undersuit_uniform_male_neo;
+	class knd_akior;
+	class knd_kovshukur;
 
 	
 		
@@ -204,7 +205,7 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Heavy\camo2_co.paa"
 		};
 	};
-		class BCG_Helmet_paz: knd_helmet_Paz {
+	class BCG_Helmet_paz: knd_helmet_Paz {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -308,7 +309,7 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
 		};
 	};
-		class BCG_Helmet_beroya: knd_helmet_classic {
+	class BCG_Helmet_beroya: knd_helmet_classic {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -601,7 +602,7 @@ class cfgWeapons
 			
 		};
 	};
-		class BCG_Helmet_Armorer: knd_helmet_armorer {
+	class BCG_Helmet_Armorer: knd_helmet_armorer {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -644,7 +645,7 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Guardian\camo2_co.paa"
 		};
 	};
-		class BCG_Helmet_Grunt: knd_helmet_Grunt {
+	class BCG_Helmet_Grunt: knd_helmet_Grunt {
 		displayName = "[BCG] Grunt Helmet";
 		author = "Neifer";
 		scope = 2;
@@ -657,7 +658,7 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Grunt\camo2_co.paa"
 		};
 	};
-		class BCG_Helmet_Liege: knd_helmet_Liege {
+	class BCG_Helmet_Liege: knd_helmet_Liege {
 		displayName = "[BCG] Liege Helmet";
 		author = "Neifer";
 		scope = 2;
@@ -905,7 +906,7 @@ class cfgWeapons
 			uniformClass="BCG_Uni_Medic";			
 		};
 	};
-	class BCG_Heavy_Plate: knd_Aranov_Solid {
+	class BCG_Heavy_neifer: knd_Aranov_Solid {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -913,7 +914,7 @@ class cfgWeapons
 		class Iteminfo: UniformItem {
 			containerClass="Supply550";
 			mass=40;
-			uniformClass="BCG_Plate_Heavy";
+			uniformClass="BCG_Plate_neifer";
 			
 		};
 	};
@@ -1002,6 +1003,46 @@ class cfgWeapons
 			containerClass = "Supply250";
 			mass = 20;
 			hiddenSelections[] = {"camo"};
+		};
+	};
+	class BCG_akior: knd_akior {
+		scope=2;
+		scopeArsenal=2;
+		author="Neifer";
+		displayName="[BCG] Akior Armor";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Uni_discountjedi";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class BCG_kyramud: knd_kovshukur {
+		scope=2;
+		scopeArsenal=2;
+		author="Neifer";
+		displayName="[BCG] Kyramud Armor";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Uni_kyramud";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class BCG_Heavy_Plate: knd_Aranov_Solid {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="[BCG] Heavy Armor";
+		class Iteminfo: UniformItem {
+			containerClass="Supply550";
+			mass=40;
+			uniformClass="BCG_Plate_Heavy";
+			
 		};
 	};
 	// nvg
@@ -1109,7 +1150,8 @@ class cfgVehicles
 	class knd_Aranov_Solid_F;
 	class knd_dalverd_F;
 	class knd_beroya_F;
-	class tgf_undersuit_uniform_male_neo;
+	class knd_akior_F;
+	class knd_kovshukur_F;
 	
 	//jetpacks
 	class JLTS_Clone_jumppack_JT12;
@@ -1224,10 +1266,10 @@ class cfgVehicles
 		
 		};
 	};
-	class BCG_Plate_Heavy: knd_Aranov_Solid_F
+	class BCG_Plate_neifer: knd_Aranov_Solid_F
 	{
 		displayName="[BCG] Neifer's Armor";
-		uniformClass="BCG_Heavy_Plate";
+		uniformClass="BCG_Heavy_neifer";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1288,12 +1330,34 @@ class cfgVehicles
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\baseF\camo1light_co.paa","BCG_Armour\data\uniforms\baseF\camo2_co.paa","BCG_Armour\data\uniforms\baseF\camo3_co.paa"};	
 	};
-	class BCG_funny : tgf_undersuit_uniform_male_neo
+	class BCG_Uni_discountjedi: knd_akior_F
 	{
-		scope = 1;
-		uniformClass = "BCG_michelin";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\funny\camo1_co.paa"};		
+		scope = 2;
+		uniformClass = "BCG_akior";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\akior\camo1_co.paa","BCG_Armour\data\uniforms\akior\camo2_co.paa","BCG_Armour\data\uniforms\akior\camo3_co.paa"};	
+	};
+	class BCG_Uni_kyramud: knd_kovshukur_F
+	{
+		scope = 2;
+		uniformClass = "BCG_kyramud";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\Kyramud\camo1_co.paa"," ","BCG_Armour\data\uniforms\Kyramud\camo3_co.paa"};	
+	};
+	class BCG_Plate_Heavy: knd_Aranov_Solid_F
+	{
+		displayName="[BCG] Heavy Armor";
+		uniformClass="BCG_Heavy_Plate";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Armour\data\uniforms\heavy\camo1_co.paa",
+			"BCG_Armour\data\uniforms\heavy\camo2_co.paa"
+		};
 	};
 
 	// backpacks
