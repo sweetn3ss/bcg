@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -58,6 +58,7 @@ class cfgWeapons {
 	
 	class OPTRE_CQS48_Bulldog_Automatic;
 	class OPTRE_M393S_DMR;
+	class OPTRE_M6GGNR;
 	class SWLW_Westar35S;
 	class SWLW_westar35c;
 	class SWLW_Westar35SA;
@@ -223,6 +224,23 @@ class cfgWeapons {
 		{
 			"BCG_Weapons\data\Chaingun\back_CO.paa"
 		};
+	};
+	class BCG_Sponklo: OPTRE_M6GGNR
+	{
+		author="ya mum";
+		displayName="[BCG] Rhodesian Sponkler";
+		class WeaponSlotsInfo {
+			mass=15;
+		};
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Weapons\data\sponklo\Spartan_Laser_Camo1_co.paa",
+			"BCG_Weapons\data\sponklo\Spartan_Laser_Camo2_co.paa"
+		};
+		baseWeapon="BCG_Sponklo";
 	};
 	
 	class BCG_Gauntlet_BS: 3AS_DWBlaster_F
