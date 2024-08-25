@@ -1277,8 +1277,8 @@ class cfgVehicles
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"BCG_Armour\data\beskarshiny.rvmat",
-			"BCG_Armour\data\beskarshiny1.rvmat"
+			"BCG_Armour\data\uniforms\neiferheavy\Armor\beskarshiny.rvmat",
+			"BCG_Armour\data\uniforms\neiferheavy\Armor\beskarshiny1.rvmat"
 		};
 		hiddenSelectionsTextures[]=
 		{

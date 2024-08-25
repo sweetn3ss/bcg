@@ -431,8 +431,15 @@ class CfgMusic
 	class BCG_mando0
 	{
 		name = "Warframe - We All Lift Together";
-		sound[] = {"BCG_Music\music\Post_Sex_Cig\Warframe_We_all_lift.ogg",1,1};
+		sound[] = {"BCG_Music\music\mando\Warframe_We_all_lift.ogg",1,1};
 		duration = 151;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando1
+	{
+		name = "David Ferguson - The House Building Song";
+		sound[] = {"BCG_Music\music\mando\The_House_Building_Song",1,1};
+		duration = 186;
 		musicClass = "bcgmanmusic_mando";
 	};
 };

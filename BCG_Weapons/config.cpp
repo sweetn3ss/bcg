@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_rotary", "knd_amr"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -72,6 +72,9 @@ class cfgWeapons {
 	class knd_roba_F;
 	class knd_de10;
 	class KND_KGoodBye;
+	class knd_thompson_UGL_F;
+	class knd_rotary;
+	class knd_AMR_F;
 	
 	class DpSword;
 	class WBK_SciFi_Sword_1;
@@ -142,7 +145,6 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] Westar 35C";
 		baseWeapon="BCG_Westar35C";
-		///reloadAction="ventreload";
 	};
 	
 	class BCG_Westar35SA: SWLW_Westar35SA 
@@ -351,6 +353,27 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] Amban Phase-Pulse Rifle";
 		baseWeapon="BCG_amban";
+	};
+	class BCG_jd69: knd_thompson_UGL_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] JD-69 Kivaroa";
+		baseWeapon="BCG_jd69";
+	};
+	class BCG_immenseiron: knd_AMR_F
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] NCR-2281";
+		baseWeapon="BCG_immenseiron";
+	};
+	class BCG_jd70: knd_rotary
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] JD-70 Rancor";
+		baseWeapon="BCG_jd70";
 	};
 	class BCG_m69: knd_roba_F
 	{
