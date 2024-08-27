@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_rotary", "knd_amr"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_amr"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -73,7 +73,7 @@ class cfgWeapons {
 	class knd_de10;
 	class KND_KGoodBye;
 	class knd_thompson_UGL_F;
-	class knd_rotary;
+	class knd_rotary_dangle;
 	class knd_AMR_F;
 	
 	class DpSword;
@@ -81,7 +81,8 @@ class cfgWeapons {
 	class acklay_sv;
 	class demi_sv;
 	
-	class 3AS_Chaingun;
+	
+	
 	class JLTS_RPS6;
 	class 3AS_PLX1_F;
 	
@@ -210,23 +211,7 @@ class cfgWeapons {
 		displayName="[BCG] PLX1 Proton Torpedo Launcher";
 		baseWeapon="BCG_PLX1";
 	};
-	
-	class BCG_Chaingun: 3AS_Chaingun 
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] Heavy Rotary Blaster";
-		baseWeapon="BCG_Chaingun";
-		hiddenSelections[]=
-		{
-			"camo_1",
-			"camo_2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BCG_Weapons\data\Chaingun\back_CO.paa"
-		};
-	};
+
 	class BCG_Sponklo: OPTRE_M6GGNR
 	{
 		author="ya mum";
@@ -367,13 +352,6 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] NCR-2281";
 		baseWeapon="BCG_immenseiron";
-	};
-	class BCG_jd70: knd_rotary
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] JD-70 Rancor";
-		baseWeapon="BCG_jd70";
 	};
 	class BCG_m69: knd_roba_F
 	{
