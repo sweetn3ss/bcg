@@ -1,5 +1,5 @@
 class cfgPatches {
-	class BCG_Core {
+	class BCG_Facewear {
 		authors[]={"Gray","Neifer","Indie Beninging"};
 		name="Buy'ce Gal Cabur Core";
 		units[]={};
