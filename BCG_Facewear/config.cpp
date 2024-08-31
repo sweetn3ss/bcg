@@ -122,5 +122,20 @@ class cfgGlasses {
 			"BCG_Facewear\data\MedicKama\camo1_co.paa"
 		};
 	};
+		class BCG_MaviKama: knd_kama
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Mavi Kama";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Facewear\data\Customs\MaviKama.paa"
+		};
+	};
+	
 
 };
