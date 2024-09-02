@@ -67,6 +67,7 @@ class cfgWeapons
 	class knd_beroya;
 	class knd_akior;
 	class knd_kovshukur;
+	class knd_helmet_punk;
 
 	
 		
@@ -335,6 +336,26 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\customs\Warlord_Gryffin_Custom.paa",
 			"BCG_Armour\data\helmets\Warlord\camo2_co.paa",
+			
+		};
+	};
+		class BCG_Helmet_Mavi: knd_helmet_punk {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Ambassador Mavi";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2",
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\customs\Mavi\mavi1_co",
+			"BCG_Armour\data\helmets\customs\Mavi\mavi2_co",
+			"BCG_Armour\data\helmets\customs\Mavi\mavi3_co",
 			
 		};
 	};
