@@ -20,21 +20,14 @@ class cfgWeapons
 	class tgf_helmets_battle_master;
 	class tgf_helmets_arbiter;
 	class tgf_helmets_forgemaster;
-	class tgf_helmets_gar_saxon;
-	class tgf_helmets_gunslinger;
-	class tgf_helmets_gunslinger_vet;
-	class tgf_helmets_heavy;
 	class tgf_helmets_pilot;
 	class tgf_helmets_shrike;
 	class tgf_helmets_super_commando;
 	class tgf_helmets_super_commando_vet;
-	class tgf_helmets_traditional;
-	class tgf_helmets_Veteran;
 	class tgf_helmets_viper;
 	class tgf_helmets_viper_vet;
 	class tgf_helmets_war_chief;
 	class tgf_helmets_warlord;
-	class tgf_helmets_avenger_helmet;
 	class tgf_helmets_executioner;
 	class tgf_helmets_heritage;
 	class knd_helmet_Armorer;
@@ -47,6 +40,8 @@ class cfgWeapons
 	class knd_helmet_Liege;
 	class knd_helmet_Rook;
 	class knd_helmet_Wren;	
+	class knd_helmet_Djarin;
+	class tgf_helmets_traditional;
 	
 	class tgf_armour_base;
 	class tgf_armour_heavy_armour;
@@ -77,9 +72,7 @@ class cfgWeapons
 		
 	class tgf_nvg_rangefinder_r;
 	class tgf_nvg_recon_antenna_L;
-	class tgf_nvg_heavy_nv;
 	class tgf_nvg_circuit;
-	class tgf_nvg_avenger_nv;
 	class knd_nvg_nya;
 	
 	// helmets
@@ -137,31 +130,13 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\ForgeMaster\camo2_co.paa"
 		};
 	};
-	class BCG_Helmet_GarSaxon: tgf_helmets_gar_saxon {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Helmet Gar Saxon";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\GarSaxon\camo1_co.paa",
-			"BCG_Armour\data\helmets\GarSaxon\camo2_co.paa"
-		};
-	};
-	class BCG_Helmet_Gunslinger: tgf_helmets_gunslinger {
+	class BCG_Helmet_Gunslinger: knd_helmet_Djarin {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayname="[BCG] Helmet Gunslinger";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -169,40 +144,6 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Gunslinger\camo1_co.paa",
 			"BCG_Armour\data\helmets\Gunslinger\camo2_co.paa"
-		};
-	};
-	class BCG_Helmet_GunslingerVet: tgf_helmets_gunslinger_vet {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Helmet Gunslinger Vet";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\GunslingerVet\camo1_co.paa",
-			"BCG_Armour\data\helmets\GunslingerVet\camo2_co.paa"
-		};
-	};
-	class BCG_Helmet_Heavy: tgf_helmets_heavy {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Helmet Heavy";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\Heavy\camo1_co.paa",
-			"BCG_Armour\data\helmets\Heavy\camo2_co.paa"
 		};
 	};
 	class BCG_Helmet_paz: knd_helmet_Paz {
@@ -292,23 +233,6 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\SuperCommandoVet\camo2_co.paa"
 		};
 	};
-	class BCG_Helmet_Traditional: tgf_helmets_traditional {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Helmet Traditional";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\Traditional\camo1_co.paa",
-			"BCG_Armour\data\helmets\Traditional\camo2_co.paa"
-		};
-	};
 	class BCG_Helmet_beroya: knd_helmet_classic {
 		scope=2;
 		scopeArsenal=2;
@@ -324,23 +248,6 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\beroya\camo1_co.paa",
 			"BCG_Armour\data\helmets\beroya\camo2_co.paa"
-		};
-	};
-	class BCG_Helmet_Veteran: tgf_helmets_Veteran {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Helmet Veteran";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\Veteran\camo1_co.paa",
-			"BCG_Armour\data\helmets\Veteran\camo2_co.paa"
 		};
 	};
 	class BCG_Helmet_Viper: tgf_helmets_viper {
@@ -566,24 +473,6 @@ class cfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 		};
 	};
-	class BCG_Helmet_Avenger: tgf_helmets_avenger_helmet {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Avenger Helmet";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\Avenger\camo1_co.paa",
-			"BCG_Armour\data\helmets\Avenger\camo2_co.paa",
-			
-		};
-	};
 	class BCG_Helmet_Heritage: tgf_helmets_heritage {
 		scope=2;
 		scopeArsenal=2;
@@ -621,7 +510,6 @@ class cfgWeapons
 	};
 	class BCG_Helmet_Foreman: knd_helmet_Foreman {
 		displayName = "[BCG] Foreman Helmet";
-		author = "Neifer";
 		scope = 2;
 		hiddenSelections[] = {
 			"camo1",
@@ -634,7 +522,6 @@ class cfgWeapons
 	};
 	class BCG_Helmet_Guardian: knd_helmet_Guardian {
 		displayName = "[BCG] Guardian Helmet";
-		author = "Neifer";
 		scope = 2;
 		hiddenSelections[] = {
 			"camo1",
@@ -647,7 +534,6 @@ class cfgWeapons
 	};
 	class BCG_Helmet_Grunt: knd_helmet_Grunt {
 		displayName = "[BCG] Grunt Helmet";
-		author = "Neifer";
 		scope = 2;
 		hiddenSelections[] = {
 			"camo1",
@@ -660,7 +546,6 @@ class cfgWeapons
 	};
 	class BCG_Helmet_Liege: knd_helmet_Liege {
 		displayName = "[BCG] Liege Helmet";
-		author = "Neifer";
 		scope = 2;
 		hiddenSelections[] = {
 			"camo1",
@@ -953,7 +838,7 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		author="Gray";
-		displayName="[BCG] Base Armor Dark";
+		displayName="[BCG] Base Armor";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: UniformItem {
@@ -981,7 +866,7 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		author="Gray";
-		displayName="[BCG] Nite Owl Armor Dark";
+		displayName="[BCG] Nite Owl Armor";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: UniformItem {
@@ -1098,38 +983,8 @@ class cfgWeapons
 		{
 			"BCG_Armour\data\nvg\recon\camo1_co.paa",
 		};
-	};
-	class BCG_heavy_nv : tgf_nvg_heavy_nv 
-	{
-		displayName="[BCG] Heavy Attachment";
-		hiddenSelections[]={
-			"camo1",			
-		};		
-		hiddenSelectionsMaterials[]=
-		{
-			"BCG_Armour\data\nvg\heavy\beskarized.rvmat",	
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BCG_Armour\data\nvg\heavy\camo1_co.paa",
-		};
-	};
-	class BCG_avenger_nv : tgf_nvg_avenger_nv 
-	{
-		displayName="[BCG] Avenger Antenna";
-		hiddenSelections[]={
-			"camo1",			
-		};		
-		hiddenSelectionsMaterials[]=
-		{
-			"BCG_Armour\data\nvg\avenger\beskarized.rvmat",	
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BCG_Armour\data\nvg\avenger\camo1_co.paa",
-		};
-	};
-		class BCG_nya_nv : knd_nvg_nya
+	};	
+	class BCG_nya_nv : knd_nvg_nya
 	{
 		displayName="[BCG] Nya Antenna";
 		hiddenSelections[]={
