@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_amr"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_amr", "knd_dl44", "knd_beskad", "knd_westar"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -22,34 +22,6 @@ class cfgMagazines {
 		};
 	};
 };
-///class CfgMovesBasic
-///{
-///	class DefaultDie;
-///	class ManActions
-///	{
-///		reloadMyWeapon = "ventreload";
-///	};
-///};
-
-///class CfgGesturesMale
-///{
-///	class Default;
-///	class States
-///	{
-///		class ventreload : Default
-///		{
-///			file = "3AS_Reloads\anims\3AS_Vent_Reload.rtm";
-///			looped = 0;
-///			speed = 0.400000;
-///			mask = "handsWeapon";
-///			headBobStrength = 0.200000;
-///			headBobMode = 2;
-///			rightHandIKBeg = 1;
-///			rightHandIKEnd = 1;
-///			leftHandIKCurve[] = { 0, 1, 0.050000, 0, 0.950000, 0, 1, 1 };
-///		};
-///	};
-///};
 
 class Mode_SemiAuto;
 class Mode_FullAuto;
@@ -75,13 +47,15 @@ class cfgWeapons {
 	class knd_thompson_UGL_F;
 	class knd_rotary_dangle;
 	class knd_AMR_F;
+	class knd_dl44;
+	class knd_westar_bo;
 	
 	class DpSword;
-	class WBK_SciFi_Sword_1;
-	class acklay_sv;
 	class demi_sv;
-	
-	
+	class knd_orikad;
+	class knd_axe;
+	class knd_hammer;
+	class knd_beskad;
 	
 	class JLTS_RPS6;
 	class 3AS_PLX1_F;
@@ -90,7 +64,6 @@ class cfgWeapons {
 	class 3AS_DWBlaster_F;
 	
 
-		
 	class BCG_Bulldog: OPTRE_CQS48_Bulldog_Automatic 
 	{
 		scope=2;
@@ -148,7 +121,7 @@ class cfgWeapons {
 		baseWeapon="BCG_Westar35C";
 	};
 	
-	class BCG_Westar35SA: SWLW_Westar35SA 
+	class BCG_Westar35SA: knd_westar_bo 
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -170,22 +143,6 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] Vibro-Blade";
 		baseWeapon="BCG_VibroBlade";
-	};
-	
-	class BCG_VibroTanto : WBK_SciFi_Sword_1 
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] Vibro-Tanto";
-		baseWeapon="BCG_VibroTanto";
-	};
-		class BCG_VibroBladeB : acklay_sv 
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[BCG] Beskar Vibro-Blade";
-		baseWeapon="BCG_VibroBladeB";
-		
 	};
 	
 	class BCG_VibroGS : demi_sv 
@@ -374,7 +331,39 @@ class cfgWeapons {
 		displayName="[BCG] KG-96 Plasma Revolver";
 		baseWeapon="BCG_biggeriron";
 	};
+	class BCG_solo: knd_dl44
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] DL-44 Blaster Pistol";
+		baseWeapon="BCG_solo";
+	};
+	class BCG_beskad: knd_beskad
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Beskad";
+		baseWeapon="BCG_beskad";
+	};
+	class BCG_gor: knd_hammer
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Gor";
+		baseWeapon="BCG_gor";
+	};
+	class BCG_axe: knd_axe
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Shaap'shuk";
+		baseWeapon="BCG_axe";
+	};
+	class BCG_reallybigknife: knd_orikad
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[BCG] Ori'kad";
+		baseWeapon="BCG_reallybigknife";
+	};
 };
-
-
-
