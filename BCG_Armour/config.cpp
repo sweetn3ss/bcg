@@ -41,6 +41,7 @@ class cfgWeapons
 	class knd_helmet_Rook;
 	class knd_helmet_Wren;	
 	class knd_helmet_Djarin;
+	class knd_helmet_Matriarch;
 	class tgf_helmets_traditional;
 	
 	class tgf_armour_base;
@@ -339,7 +340,7 @@ class cfgWeapons
 			
 		};
 	};
-		class BCG_Helmet_Mavi: knd_helmet_punk {
+	class BCG_Helmet_Mavi: knd_helmet_punk {
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -575,6 +576,19 @@ class cfgWeapons
 		hiddenSelectionstextures[] = {
 			"BCG_Armour\data\helmets\Liege\camo1_co.paa",
 			"BCG_Armour\data\helmets\Liege\camo2_co.paa"
+		};
+	};
+	class BCG_Helmet_Wolves: knd_helmet_Matriarch {
+		displayName = "[BCG] Matriarch Wolves";
+		author = "Gray";
+		scope = 2;
+		model = "\knd_newHelmets\data\Matriarch\helmet.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"bcg_armour\data\helmets\customs\wolves\bcg_matriarch_wolves_blk.paa","knd_newHelmets\tex\Matriarch\camo2_co.paa"};
+		class iteminfo: ItemInfo
+		{
+			uniformmodel = "\knd_newHelmets\data\Matriarch\helmet.p3d";
+			hiddenSelections[] = {"camo1","camo2"};
 		};
 	};
 	// vests
