@@ -591,6 +591,22 @@ class cfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 		};
 	};
+	class BCG_Helmet_Jacks: BCG_Helmet_Gunslinger {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Gunslinger Jacks";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\customs\jacks\bcg_gunslinger_jacks_blk.paa",
+			"BCG_Armour\data\helmets\Gunslinger\camo2_co.paa"
+		};
+	};
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
