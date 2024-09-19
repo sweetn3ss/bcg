@@ -59,24 +59,22 @@ class cfgVehicles {
 			};
 		};
 	};
-	class BCG_Fang_chromedome: BCG_Fang_NeiferTesticles {
-		displayName = "[BCG] Shiny Fang-class Fighter";
-		scope = 2;
-		scopeArsenal = 2;
-		hiddenSelections[] = {
-			"Camo1",
-			"Camo2",
-			"Camo3"
+	class C_Offroad_02_unarmed_F;
+	class BCG_Jeep: C_Offroad_02_unarmed_F {
+		displayName = "[BCG] Jeep";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
 		};
-		hiddenSelectionsMaterials[]={
-			"BCG_Vehicles\fang\chrome\Fuselage.rvmat",
-			"BCG_Vehicles\fang\chrome\Wings.rvmat",
-			"BCG_Vehicles\fang\chrome\Cockpit"
-		};
-		hiddenSelectionsTextures[] = {
-			"BCG_Vehicles\fang\chrome\fuselage_co.paa",
-			"BCG_Vehicles\fang\chrome\wings_co.paa",
-			"BCG_Vehicles\fang\chrome\cockpit_co.paa"
+		hiddenSelectionsTextures[]=
+		{
+			"\BCG_Vehicles\jeep\jeep12.paa",
+			"\BCG_Vehicles\jeep\jeep12.paa",
+			"\BCG_Vehicles\jeep\jeep34.paa",
+			"\BCG_Vehicles\jeep\jeep34.paa""
 		};
 	};
 };
