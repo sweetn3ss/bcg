@@ -74,7 +74,7 @@ class cfgVehicles {
 			"\BCG_Vehicles\jeep\jeep12.paa",
 			"\BCG_Vehicles\jeep\jeep12.paa",
 			"\BCG_Vehicles\jeep\jeep34.paa",
-			"\BCG_Vehicles\jeep\jeep34.paa""
+			"\BCG_Vehicles\jeep\jeep34.paa"
 		};
 	};
 };
