@@ -283,4 +283,91 @@ class cfgVehicles {
 			1
 		};
 	};
+	class LT_01_cannon_base_F;
+	class BCG_weezy: LT_01_cannon_base_F {
+		author = "Jonk Morselbo";
+		scope=2;
+		scopeCurator=2;
+		displayName = "[BCG] Wiesel 5";
+		hiddenSelectionsTextures[]=
+		{
+			"A3\armor_f_tank\lt_01\data\lt_01_main_co.paa",
+			"A3\armor_f_tank\lt_01\data\lt_01_cannon_co.paa",
+			"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa",
+			"A3\armor_f\data\cage_aaf_co.paa"
+		};
+		textureList[]=
+		{
+			"Indep_Olive",
+			1
+		};
+		class TextureSources
+		{
+			class Indep_01
+			{
+				displayName="$STR_A3_TEXTURESOURCES_INDEP0";
+				author="$STR_A3_Bohemia_Interactive";
+				textures[]=
+				{
+					"A3\armor_f_tank\lt_01\data\lt_01_main_co.paa",
+					"A3\armor_f_tank\lt_01\data\lt_01_radar_co.paa",
+					"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa",
+					"A3\armor_f\data\cage_aaf_co.paa"
+				};
+				factions[]=
+				{
+					"IND_F"
+				};
+			};
+			class Indep_02
+			{
+				displayName="$STR_A3_texturesources_indepjungle0";
+				author="$STR_A3_Bohemia_Interactive";
+				textures[]=
+				{
+					"A3\armor_f_tank\lt_01\data\lt_01_main_co.paa",
+					"A3\armor_f_tank\lt_01\data\lt_01_radar_co.paa",
+					"A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa",
+					"A3\armor_f\data\cage_G1_co.paa"
+				};
+				factions[]=
+				{
+					"IND_F"
+				};
+			};
+			class Indep_03
+			{
+				displayName="$STR_A3_texturesources_indepdesert0";
+				author="$STR_A3_Bohemia_Interactive";
+				textures[]=
+				{
+					"A3\armor_f_tank\lt_01\data\lt_01_main_co.paa",
+					"A3\armor_f_tank\lt_01\data\lt_01_radar_co.paa",
+					"A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa",
+					"A3\armor_f\data\cage_G3_co.paa"
+				};
+				factions[]=
+				{
+					"IND_F"
+				};
+			};
+			class Indep_Olive
+			{
+				displayName="$STR_A3_TEXTURESOURCES_OLIVE0";
+				author="$STR_A3_Bohemia_Interactive";
+				textures[]=
+				{
+					"A3\armor_f_tank\lt_01\data\lt_01_main_olive_co.paa",
+					"A3\armor_f_tank\lt_01\data\lt_01_radar_olive_co.paa",
+					"A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa",
+					"A3\armor_f\data\cage_olive_co.paa"
+				};
+				factions[]=
+				{
+					"IND_F"
+				};
+			};
+		};
+		
+	};
 };
