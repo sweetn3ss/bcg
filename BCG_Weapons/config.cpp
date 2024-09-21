@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BCG_Weapons
 	{
-		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_amr", "knd_dl44", "knd_beskad", "knd_westar_pistol", "knd_rotarycanon"};
+		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_amr", "knd_dl44", "knd_beskad", "knd_westar_pistol", "knd_rotarycanon", "knd_galaar"};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]={};
@@ -32,7 +32,6 @@ class cfgWeapons {
 	class OPTRE_M393S_DMR;
 	class OPTRE_M6GGNR;
 	class SWLW_Westar35S;
-	class SWLW_westar35c;
 	class SWLW_Westar35SA;
 	class LFP_RazorBlade;
 	class knd_EE3;
@@ -44,11 +43,12 @@ class cfgWeapons {
 	class knd_roba_F;
 	class knd_de10;
 	class KND_KGoodBye;
-	class knd_thompson_UGL_F;
+	class knd_thompson_UGL_NoStock_F;
 	class knd_rotary;
 	class knd_AMR_F;
 	class knd_dl44;
 	class knd_westar_bo;
+	class knd_galaar_F;
 	
 	class DpSword;
 	class demi_sv;
@@ -113,7 +113,7 @@ class cfgWeapons {
 		baseWeapon="BCG_Westar35S";
 	};
 	
-	class BCG_Westar35C: SWLW_westar35c 
+	class BCG_Westar35C: knd_galaar_F 
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -240,6 +240,7 @@ class cfgWeapons {
 			maxRangeProbab = 0.1;
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 25;
+			burst = 7;
 		};
 		class stun: JLTS_stun_muzzle
 		{
@@ -296,12 +297,21 @@ class cfgWeapons {
 		displayName="[BCG] Amban Phase-Pulse Rifle";
 		baseWeapon="BCG_amban";
 	};
-	class BCG_jd69: knd_thompson_UGL_F
+	class BCG_jd69: knd_thompson_UGL_NoStock_F
 	{
 		scope=2;
 		scopeArsenal=2;
 		displayName="[BCG] JD-69 Kivaroa";
 		baseWeapon="BCG_jd69";
+		hiddenSelections[]={
+			"camo1",
+			"camo2",
+			"stock"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Weapons\data\tommygun\camo1_CO.paa",
+			"BCG_Weapons\data\tommygun\camo2_CO.paa"
+		};
 	};
 	class BCG_rancor: knd_rotary
 	{
