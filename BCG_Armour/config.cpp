@@ -899,6 +899,20 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class BCG_jacks_custom: knd_beroya {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Jacks' Armor";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_jacks";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	class BCG_base_armor_l: knd_beroya {
 		scope=1;
 		scopeArsenal=1;
@@ -1214,6 +1228,13 @@ class cfgVehicles
 		uniformClass = "BCG_base_armor_d";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\newberoya.paa","BCG_Armour\data\uniforms\base\newberoyapants.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
+	};
+	class BCG_jacks: knd_beroya_F
+	{
+		scope = 1;
+		uniformClass = "BCG_jacks_custom";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\customs\jacks.paa","BCG_Armour\data\uniforms\base\newberoyapants.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
 	};
 	class BCG_Uni_base_armor_l: knd_beroya_F
 	{

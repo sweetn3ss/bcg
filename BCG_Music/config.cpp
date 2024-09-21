@@ -438,8 +438,50 @@ class CfgMusic
 	class BCG_mando1
 	{
 		name = "David Ferguson - The House Building Song";
-		sound[] = {"BCG_Music\music\mando\The_House_Building_Song",1,1};
+		sound[] = {"BCG_Music\music\mando\The_House_Building_Song.ogg",1,1};
 		duration = 186;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando2
+	{
+		name = "David Bowie - The Man Who Sold the World";
+		sound[] = {"BCG_Music\music\mando\The_Man_Who_Sold_the_World.ogg",1,1};
+		duration = 343;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando3
+	{
+		name = "Madonna - Like a Prayer";
+		sound[] = {"BCG_Music\music\mando\Like_a_Prayer.ogg",1,1};
+		duration = 342;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando4
+	{
+		name = "C418 - Aria Math";
+		sound[] = {"BCG_Music\music\mando\C418_Aria_Math.ogg",1,1};
+		duration = 309;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando5
+	{
+		name = "AM - Poker Plans";
+		sound[] = {"BCG_Music\music\mando\AM_Poker_plans.ogg",1,1};
+		duration = 93;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando6
+	{
+		name = "Kenny Loggins - Danger Zone";
+		sound[] = {"BCG_Music\music\mando\Danger_Zone.ogg",1,1};
+		duration = 225;
+		musicClass = "bcgmanmusic_mando";
+	};
+	class BCG_mando7
+	{
+		name = "PSY - Gangam Style";
+		sound[] = {"BCG_Music\music\mando\Gangnam_Style.ogg",1,1};
+		duration = 248;
 		musicClass = "bcgmanmusic_mando";
 	};
 };
