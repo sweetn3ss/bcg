@@ -384,4 +384,11 @@ class cfgWeapons {
 		displayName="[BCG] Ori'kad";
 		baseWeapon="BCG_reallybigknife";
 	};
+	class BCG_Bajablaster: SWLW_Westar35SA {
+		author = "Yeetster";
+		displayName = "[BCG] Baja Blaster";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"bcg_weapons\data\westar35sa\vatreides.paa"};
+		baseWeapon = "BCG_Bajablaster";
+	};
 };
