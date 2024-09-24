@@ -607,6 +607,27 @@ class cfgWeapons
 			"BCG_Armour\data\helmets\Gunslinger\camo2_co.paa"
 		};
 	};
+	class BCG_Helmet_Yeetster: BCG_Helmet_Gunslinger {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Gunslinger Yeet";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Armour\data\helmets\customs\tacobell\gunslinger.paa",
+			"BCG_Armour\data\helmets\customs\tacobell\camo2_co.paa"
+		};
+		hiddenSelectionsMaterials[]={
+			"BCG_Armour\data\helmets\customs\tacobell\camo1.rvmat",
+			"BCG_Armour\data\helmets\customs\tacobell\camo2.rvmat"
+		};
+	};
+	
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
