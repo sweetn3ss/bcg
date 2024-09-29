@@ -909,7 +909,7 @@ class cfgWeapons
 	class BCG_base_armor_d: knd_beroya {
 		scope=2;
 		scopeArsenal=2;
-		author="Gray";
+		author="Neifer";
 		displayName="[BCG] Base Armor";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
@@ -934,15 +934,15 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	class BCG_base_armor_l: knd_beroya {
-		scope=1;
-		scopeArsenal=1;
-		author="Gray";
-		displayName="[BCG] Base Armor Light";
+	class BCG_camo_test: knd_beroya {
+		scope=2;
+		scopeArsenal=2;
+		author="Neifer";
+		displayName="[BCG] Camo Test";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: UniformItem {
-			uniformClass = "BCG_Uni_base_armor_l";
+			uniformClass = "BCG_camo";
 			containerClass = "Supply250";
 			mass = 20;
 			hiddenSelections[] = {"camo"};
@@ -1257,12 +1257,12 @@ class cfgVehicles
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\customs\jacks.paa","BCG_Armour\data\uniforms\base\newberoyapants.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
 	};
-	class BCG_Uni_base_armor_l: knd_beroya_F
+	class BCG_camo: knd_beroya_F
 	{
 		scope = 1;
-		uniformClass = "BCG_base_armor_l";
+		uniformClass = "BCG_camo_test";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\camo1light_co.paa","BCG_Armour\data\uniforms\base\camo2light_co.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\camotest\camotest1.paa","BCG_Armour\data\uniforms\camotest\camotest2.paa","BCG_Armour\data\uniforms\camotest\camo3_co.paa"};	
 	};
 	class BCG_Uni_baseF_armor_d: knd_dalverd_F
 	{
