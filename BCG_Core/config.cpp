@@ -35,7 +35,7 @@ class cfgGlasses {
 };
 class cfgMarkers {
 	class bcg_flag {
-		name="BCG Flaggot";
+		name="BCG Flag Test";
 		author = "Gray";
 		icon = "\BCG_Core\data\bcg_flag";
 		color[]={1,1,1,1};
@@ -55,5 +55,26 @@ class cfgVehicles {
 		displayName="Blanket";
 		hiddenselections[] = {"camo1","screen"};
 		hiddenselectionstextures[] = {"kobra\442_misc\data_pad\data\camo1_co.paa","BCG_Core\data\screen_co_bridget.paa"};
+	};
+};
+class cfgEditorCategories {
+	class BCG_House {
+		displayName = "House Buy'ce Gal";
+	};
+};
+class cfgEditorSubcategories {
+	class BCG_VTOL {
+		displayName = "VTOL Aircraft";
+	};
+	class BCG_Cars {
+		displayName = "Cars";
+	};
+};
+class cfgFactionClasses {
+	class BCG_Units {
+		displayName = "[BCG] Buy'ce Gal Units";
+		dlc = "BCG";
+		priority = 99;
+		side = 2;
 	};
 };
