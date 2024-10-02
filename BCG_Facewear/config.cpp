@@ -10,6 +10,15 @@ class cfgPatches {
 		};
 	};
 };
+class cfgFunctions {
+	class bcg_MLG {
+		class functions { // bcg_MLG_fnc_mlgmode;
+			file="BCG_Facewear\functions";
+			class mlgmode {};		// bcg_MLG_fnc_mlgmode;
+			class cringemode {};	// bcg_MLG_fnc_cringemode;
+		};
+	};
+};
 class cfgGlasses {
 	
 
@@ -21,7 +30,7 @@ class cfgGlasses {
 	class tgf_facewear_medium_belt;
 	class tgf_facewear_pilot_belt;
 	class knd_kama;
-	
+	class G_Combat;
 	
 	
 	class BCG_arbiter_belt: tgf_facewear_arbiter_belt
@@ -122,7 +131,7 @@ class cfgGlasses {
 			"BCG_Facewear\data\MedicKama\camo1_co.paa"
 		};
 	};
-		class BCG_MaviKama: knd_kama
+	class BCG_MaviKama: knd_kama
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -136,6 +145,47 @@ class cfgGlasses {
 			"BCG_Facewear\data\Customs\MaviKama.paa"
 		};
 	};
-	
-
+	class BCG_HaveItTheWay: G_Combat
+	{
+		scope = 2;
+		displayName = "[BCG] Crown of Vibe'trei'des";
+		model = "\BCG_Facewear\data\BK\bk_crownT.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\BK\BK_Crown_co.paa"};
+		picture = "\BCG_Facewear\data\BK\bk_icon.paa";
+	};
+	class BCG_HaveItNoWay: G_Combat
+	{
+		scope = 1;
+		displayName = "[BCG] Crown of The MLG";
+		model = "\BCG_Facewear\data\BK\bk_crownT.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\BK\BK_Crown_co.paa"};
+		picture = "\BCG_Facewear\data\BK\bk_icon.paa";
+		ACE_Overlay = "\BCG_Facewear\data\BK\vibetreides.paa";
+		ACE_OverlayCracked = "\BCG_Facewear\data\BK\CombatGogglesCracked.paa";
+	};
+};
+class cfgVehicles {
+	class Man;
+	class CAManBase: Man
+	{
+		class ACE_SelfActions
+		{
+			class bcg_MLG
+			{
+                displayName="Activate Gamer Mode";
+                condition="(goggles player) in [""BCG_HaveItTheWay""]";
+                statement="_player call bcg_MLG_fnc_mlgmode";
+                icon = "BCG_Facewear\data\BK\vatreicon.paa";
+			};
+			class bcg_cringe
+			{
+                displayName="Activate Cringe Mode";
+                condition="(goggles player) in [""BCG_HaveItNoWay""]";
+                statement="_player call bcg_MLG_fnc_cringemode";
+                icon = "BCG_Facewear\data\BK\vatreicon2.paa";
+			};
+		};
+	};
 };
