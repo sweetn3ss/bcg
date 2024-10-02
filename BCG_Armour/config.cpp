@@ -1016,6 +1016,18 @@ class cfgWeapons
 			
 		};
 	};
+	class BCG_Heavy_Wolves: knd_Aranov_Solid {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="[BCG] Heavy Wolves";
+		class Iteminfo: UniformItem {
+			containerClass="Supply550";
+			mass=40;
+			uniformClass="BCG_Plate_Wolves";
+			
+		};
+	};
 	// nvg
 	class BCG_nvg_circuit: tgf_nvg_circuit 
 	{
@@ -1116,6 +1128,10 @@ class cfgVehicles
 	class TKE_BackPack2;
 	class TKE_CamelBakV2UCN;
 	class TKE_RadioPackUCN;
+	class knd_backpack_fieldpack;
+	class knd_backpack_medic;
+	class knd_backpack_heavy_LR;
+	class knd_backpack_regular;
 	
 	class ContainerSupply;
 	class Supply550: ContainerSupply 
@@ -1233,7 +1249,7 @@ class cfgVehicles
 		model = "knd_dalverd\data\dalverd.p3d";
 		uniformClass = "BCG_Dalverd_Gray";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
+		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\bcg_dalverd_gray_blk.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
 	};
 	class BCG_Uni_Dalverd_Gray_BLK: knd_dalverd_F
 	{
@@ -1307,88 +1323,66 @@ class cfgVehicles
 			"BCG_Armour\data\uniforms\heavy\camo2_co.paa"
 		};
 	};
+	class BCG_Plate_Wolves: knd_Aranov_Solid_F
+	{
+		displayName="[BCG] Heavy Armor";
+		uniformClass="BCG_Heavy_Wolves";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Armour\data\uniforms\customs\wolves1.paa",
+			"BCG_Armour\data\uniforms\customs\wolves2.paa"
+		};
+	};
 
 	// backpacks
-	class BCG_AlicePackUCN: TKE_AlicePackUCN {
+	class BCG_AlicePackUCN: knd_backpack_fieldpack {
 		displayName = "[BCG] Alice Pack";
 		maximumLoad = 550;
-		mass = 40;
+		mass = 40;/*
 		hiddenSelections[] = {
 			"camo"
 		};
 		hiddenSelectionsTextures[] = {
 			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_AlicePackUCN_co.paa"
-		};
+		};*/
 	};
-	class BCG_AlicePackUCNM: TKE_AlicePackUCNM {
+	class BCG_AlicePackUCNM: knd_backpack_medic {
 		displayName = "[BCG] Medical Alice Pack";
 		maximumLoad = 550;
-		mass = 40;
+		mass = 40;/*
 		hiddenSelections[] = {
 			"camo"
 		};
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\backpacks\medic backpack\BCG_Medical_Alicepack_co.paa"
-		};
+		};*/
 	};
-	class BCG_CamelBakUCN: TKE_CamelBakUCN {
-		displayName = "[BCG] Camelbak";
-		maximumLoad = 250;
-		mass = 32;
-		hiddenSelections[] = {
-			"camo"
-		};
-		hiddenSelectionsTextures[] = {
-			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_CamelBak_co.paa"
-		};
-	};
-	class BCG_BackPack1: TKE_BackPack1 {
+	class BCG_BackPack1: knd_backpack_regular {
 		displayName = "[BCG] Combat Pack";
 		maximumLoad = 400;
-		mass = 32;
+		mass = 32;/*
 		hiddenSelections[] = {
 			"camo"
 		};
 		hiddenSelectionsTextures[] = {
 			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BackPack1_co.paa"
-		};
+		};*/
 	};
-	class BCG_BackPack2: TKE_BackPack2 {
-		displayName = "[BCG] Combat Pack (Bedroll)";
-		maximumLoad = 400;
-		mass = 32;
-		hiddenSelections[] = {
-			"camo"
-		};
-		hiddenSelectionsTextures[] = {
-			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BackPack1_co.paa"
-		};
-	};
-	class BCG_CamelBakV2UCN: TKE_CamelBakV2UCN {
-		displayName = "[BCG] Field Camelbak";
-		maximumLoad = 250;
-		mass = 32;
-		hiddenSelections[] = {
-			"camo",
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] = {
-			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_CamelBak_co.paa",
-			"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BedRoll_co",
-			"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa"
-		};
-	};
-	class BCG_RadioPackUCN: TKE_RadioPackUCN {
+	class BCG_RadioPackUCN: knd_backpack_heavy_LR {
 		displayName = "[BCG] Radio Pack";
 		maximumLoad = 250;
-		mass = 32;
+		mass = 32;/*
 		hiddenSelections[] = {
 			"camo"
 		};
 		hiddenSelectionsTextures[] = {
 			"BCG_Armour\data\backpacks\radio pack\BCG_RadioPack_co.paa"
-		};
+		};*/
 	};
 	
 	//jetpacks
