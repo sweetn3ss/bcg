@@ -2,7 +2,7 @@ class cfgPatches {
 	class BCG_Vehicles {
 		requiredVersion = 0.1;
 		requiredAddons[]= {"BCG_Core","knd_fang"};
-		units[]={"BCG_Fang_NeiferTesticles"};
+		units[]={"BCG_Fang_NeiferTesticles","BCG_Jeep"};
 		weapons[]={};
 	};
 };
@@ -12,6 +12,9 @@ class cfgVehicles {
 		displayName = "[BCG] Fang-class Fighter";
 		scope = 2;
 		scopeArsenal = 2;
+		editorCategory = "BCG_House";
+		editorSubcategory = "BCG_VTOL";
+		faction = "BCG_Units";
 		hiddenSelections[] = {
 			"Camo1",
 			"Camo2",
@@ -61,6 +64,12 @@ class cfgVehicles {
 	};
 	class C_Offroad_02_unarmed_F;
 	class BCG_Jeep: C_Offroad_02_unarmed_F {
+		scope=2;
+		scopeCurator=2;
+		side = 2;
+		editorCategory = "BCG_House";
+		editorSubcategory = "BCG_Cars";
+		faction = "BCG_Units";
 		displayName = "[BCG] Jeep";
 		hiddenSelections[]=
 		{
@@ -98,30 +107,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"CIV_F"
-				};
-			};
-			class Blue
-			{
-				displayName="fuxck your";
-				author="$STR_A3_Bohemia_Interactive";
-				textures[]=
-				{
-					"\BCG_Vehicles\jeep\jeep12.paa",
-					"\BCG_Vehicles\jeep\jeep12.paa",
-					"\BCG_Vehicles\jeep\jeep34.paa",
-					"\BCG_Vehicles\jeep\jeep34.paa"
-				};
-				materials[]=
-				{
-					"\a3\soft_f_exp\offroad_02\data\offroad_02_ext_metal.rvmat",
-					"\a3\soft_f_exp\offroad_02\data\offroad_02_ext_chrome.rvmat",
-					"\a3\soft_f_exp\offroad_02\data\offroad_02_int_metal.rvmat",
-					"\a3\soft_f_exp\offroad_02\data\offroad_02_int_chrome.rvmat"
-				};
-				factions[]=
-				{
-					"CIV_F"
+					"BCG_Units"
 				};
 			};
 			class Green
@@ -144,7 +130,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"CIV_F"
+					"BCG_Units"
 				};
 			};
 			class Orange
@@ -167,7 +153,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"CIV_F"
+					"BCG_Units"
 				};
 			};
 			class Red
@@ -190,7 +176,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"CIV_F"
+					"BCG_Units"
 				};
 			};
 			class White
@@ -199,10 +185,10 @@ class cfgVehicles {
 				author="$STR_A3_Bohemia_Interactive";
 				textures[]=
 				{
-					"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa",
-					"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa",
-					"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_white_co.paa",
-					"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_white_co.paa"
+					"\BCG_Vehicles\jeep\jeep12.paa",
+					"\BCG_Vehicles\jeep\jeep12.paa",
+					"\BCG_Vehicles\jeep\jeep34.paa",
+					"\BCG_Vehicles\jeep\jeep34.paa"
 				};
 				materials[]=
 				{
@@ -213,7 +199,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"CIV_F"
+					"BCG_Units"
 				};
 			};
 			class Brown
@@ -236,7 +222,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"IND_C_F"
+					"BCG_Units"
 				};
 			};
 			class Olive
@@ -259,7 +245,7 @@ class cfgVehicles {
 				};
 				factions[]=
 				{
-					"IND_C_F"
+					"BCG_Units"
 				};
 			};
 		};
