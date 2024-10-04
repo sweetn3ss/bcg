@@ -20,5 +20,10 @@ class cfgWeapons {
 		model = "BCG_Melee\data\thunderhammer\thunderhammer.p3d";
 		displayName = "[BCG] Shuk'Orok";
 		descriptionShort = "Forged from 40,000 souls.";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={
+			"BCG_Melee\data\thunderhammer\camo1_CO.paa",
+			"BCG_Melee\data\thunderhammer\camo1_CO.paa"
+		};
 	};
 };
