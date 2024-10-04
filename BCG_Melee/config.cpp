@@ -19,6 +19,6 @@ class cfgWeapons {
 		IMS_Melee_Param_Damage = 0.8;
 		model = "BCG_Melee\data\thunderhammer\thunderhammer.p3d";
 		displayName = "[BCG] Shuk'Orok";
-		descriptionShort = "Forged with 40,000 souls.";
+		descriptionShort = "Forged from 40,000 souls.";
 	};
 };
