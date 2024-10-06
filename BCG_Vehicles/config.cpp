@@ -354,6 +354,18 @@ class cfgVehicles {
 				};
 			};
 		};
-		
+	};
+	class 3AS_Delta7_Purple;
+	class 3AS_Delta7_Purple: 3AS_Delta7_Base_F
+	{
+		author = "$STR_3as_Studio";
+		scope=2;
+		scopeCurator=2;
+		side = 2;
+		editorCategory = "BCG_House";
+		editorSubcategory = "BCG_VTOL";
+		faction = "BCG_Units";
+		displayName = "[BCG] Delta 7 (Purple)";
+		hiddenSelectionsTextures[] = {"3AS\3AS_Delta7\data\Textures\Delta7_Hull_Purple_co.paa","3AS\3AS_Delta7\data\Delta7_Landing_Gear_co.paa","3AS\3AS_Delta7\data\Delta7_Cockpit_co.paa","3as\3as_delta7\data\delta7_interfaces_ca.paa"};
 	};
 };
