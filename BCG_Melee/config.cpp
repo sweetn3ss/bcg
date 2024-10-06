@@ -23,7 +23,20 @@ class cfgWeapons {
 		hiddenSelections[]={"camo1","camo2"};
 		hiddenSelectionsTextures[]={
 			"BCG_Melee\data\thunderhammer\camo1_CO.paa",
-			"BCG_Melee\data\thunderhammer\camo1_CO.paa"
+			"BCG_Melee\data\thunderhammer\camo2_CO.paa"
+		};
+	};
+	class BCG_LegoSpear: WBK_survival_weapon_2
+	{
+		IMS_WeaponType = "Poleax";
+		IMS_Melee_Param_Sounds = "[""generis_empty_1"",""generis_empty_2"",""generis_empty_3"",""generis_empty_4"",""generis_empty_5""]";
+		IMS_Melee_Param_Damage = 0.5;
+		model = "BCG_Melee\data\beskar\spear.p3d";
+		displayName = "[BCG] Beviiragir";
+		descriptionShort = "The Danes cannot comprehend such comedy.";
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={
+			"BCG_Melee\data\beskar\camo_CO.paa",
 		};
 	};
 };
