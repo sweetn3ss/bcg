@@ -512,3 +512,180 @@ class CfgMusicClasses
 		displayName = "[BCG] Mando Tunes";
 	};
 };
+class cfgSounds {
+	class iPod_Devious {
+		name="Devious Ahh Beat";
+		sound[]={"BCG_Music\music\iPod\devious_beat.ogg",15,1,75};
+		titles[] = { 0, "*devious beat plays*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_Mando {
+		name="The Mandalorian";
+		sound[]={"BCG_Music\music\iPod\the_mandalorian.ogg",15,1,75};
+		titles[] = { 0, "*The Mandalorian*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_caramell {
+		name="Caramelldansen (Polski)";
+		sound[]={"BCG_Music\music\iPod\caramelldansen.ogg",15,1,75};
+		titles[] = { 0, "*swedish bitches*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_hltw {
+		name="Hungry Like the Wolf";
+		sound[]={"BCG_Music\music\iPod\Hungry_Like_The_Wolf.ogg",15,1,75};
+		titles[] = { 0, "*Duran Duran Moment*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_invisible {
+		name="Invisible";
+		sound[]={"BCG_Music\music\iPod\invisible.ogg",15,1,75};
+		titles[] = { 0, "*Va'trei'des Nat'l Anthem*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_pittl {
+		name="Push it to the limit";
+		sound[]={"BCG_Music\music\iPod\Push_it.ogg",15,1,75};
+		titles[] = { 0, "*Push it to the limit*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_judgement {
+		name="JUDGEMENT";
+		sound[]={"BCG_Music\music\iPod\JUDGEMENT.ogg",15,1,75};
+		titles[] = { 0, "*JUDGEMENT*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	
+	// yeet songs
+	class iPod_biblexmozart {
+		name="Bible mozart";
+		sound[]={"BCG_Music\music\iPod\biblexmozart.ogg",15,1,75};
+		titles[] = { 0, "*10000 iq*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_gcphonk {
+		name="gigachad phonk";
+		sound[]={"BCG_Music\music\iPod\gcphonk.ogg",15,1,75};
+		titles[] = { 0, "*who needs viagra lol*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_dtmis {
+		name="don't thug me i'm scared";
+		sound[]={"BCG_Music\music\iPod\dtmis.ogg",15,1,75};
+		titles[] = { 0, "*dont thug me*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_NeroBattle {
+		name="Nero's Battle Theme";
+		sound[]={"BCG_Music\music\iPod\NeroBattle.ogg",15,1,75};
+		titles[] = { 0, "*Get Rekt*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_RebelYell {
+		name="Rebel Yell";
+		sound[]={"BCG_Music\music\iPod\RebelYell.ogg",15,1,75};
+		titles[] = { 0, "*Rebel Yell*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_YoungGirl {
+		name="A Young Girl";
+		sound[]={"BCG_Music\music\iPod\YoungGirl.ogg",15,1,75};
+		titles[] = { 0, "*A Young Girl*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	
+	//ace songs
+	class iPod_nvrap {
+		name="New Vegas Rap";
+		sound[]={"BCG_Music\music\iPod\nvrap.ogg",15,1,75};
+		titles[] = { 0, "*The House Always Wins*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_pedro {
+		name="Pedro";
+		sound[]={"BCG_Music\music\iPod\PEDRO.ogg",15,1,75};
+		titles[] = { 0, "*PEDRO*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_vicente {
+		name="vicente";
+		sound[]={"BCG_Music\music\iPod\vicente.ogg",15,1,75};
+		titles[] = { 0, "*Vicente*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_BlueMoon {
+		name="Blue Moon";
+		sound[]={"BCG_Music\music\iPod\BlueMoon.ogg",15,1,75};
+		titles[] = { 0, "*Blue Moon*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_Frankie {
+		name="If Frank Sinatra Was a Good Singer";
+		sound[]={"BCG_Music\music\iPod\Frankie.ogg",15,1,75};
+		titles[] = { 0, "*FRAAANK*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+	class iPod_TNWP {
+		name="The New Workout Plan";
+		sound[]={"BCG_Music\music\iPod\TNWP.ogg",15,1,75};
+		titles[] = { 0, "*Kanye said some shit*" };
+		titlesFont = "LCD14";
+		titlesSize = 0.1;
+		forceTitles = 0;
+		titlesStructured = 1;
+	};
+};
