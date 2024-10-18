@@ -76,26 +76,6 @@ class cfgWeapons {
 	class knd_nvg_nya;
 	
 	// helmets
-	class BCG_Helmet_RallyMaster: tgf_helmets_battle_master {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Neifer's Helmet";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\RallyMaster\beskarized.rvmat"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\RallyMaster\camo1_co.paa",
-			"BCG_Armour\data\helmets\RallyMaster\camo2_co.paa"
-		};
-	};
 	class BCG_Helmet_Arbiter: tgf_helmets_arbiter {
 		scope=2;
 		scopeArsenal=2;
@@ -320,44 +300,6 @@ class cfgWeapons {
 			
 		};
 	};
-	class BCG_Helmet_Gryffin: tgf_helmets_warlord {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Warlord Gryffin";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\customs\Warlord_Gryffin_Custom.paa",
-			"BCG_Armour\data\helmets\Warlord\camo2_co.paa",
-			
-		};
-	};
-	class BCG_Helmet_Mavi: knd_helmet_punk {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Ambassador Mavi";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2",
-			"camo"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\customs\Mavi\mavi1_co",
-			"BCG_Armour\data\helmets\customs\Mavi\mavi2_co",
-			"BCG_Armour\data\helmets\customs\Mavi\mavi3_co",
-			
-		};
-	};
 	class BCG_Helmet_Funny: tgf_helmets_traditional {
 		scope=2;
 		scopeArsenal=2;
@@ -421,76 +363,6 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={
 			"BCG_Armour\data\helmets\Executioner\camo1_co.paa",
 			"BCG_Armour\data\helmets\Executioner\camo2_co.paa"
-		};
-	};
-	class BCG_Helmet_Wren_Gray: knd_helmet_Wren {
-		displayName = "[BCG] Wren Gray";
-		author = "Gray";
-		scope = 2;
-		model = "\knd_newHelmets\data\Wren\helmet.p3d";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_blk.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
-		class iteminfo: ItemInfo
-		{
-			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
-			hiddenSelections[] = {"camo1","camo2"};
-		};
-	};
-	class BCG_Wren_Gray_BLK: knd_helmet_Wren {
-		displayName = "[BCG] Wren Gray BLK";
-		author = "Gray";
-		scope = 2;
-		scopeArsenal = 1;
-		model = "\knd_newHelmets\data\Wren\helmet.p3d";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_blk.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
-		class iteminfo: ItemInfo
-		{
-			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
-			hiddenSelections[] = {"camo1","camo2"};
-		};
-		camoTypes[]={ "BLK", "DES", "SNO", "WDL" };
-	};
-	class BCG_Wren_Gray_DES: knd_helmet_Wren {
-		displayName = "[BCG] Wren Gray DES";
-		author = "Gray";
-		scope = 2;
-		scopeArsenal = 1;
-		model = "\knd_newHelmets\data\Wren\helmet.p3d";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_des.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
-		class iteminfo: ItemInfo
-		{
-			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
-			hiddenSelections[] = {"camo1","camo2"};
-		};
-	};
-	class BCG_Wren_Gray_SNO: knd_helmet_Wren {
-		displayName = "[BCG] Wren Gray SNO";
-		author = "Gray";
-		scope = 2;
-		scopeArsenal = 1;
-		model = "\knd_newHelmets\data\Wren\helmet.p3d";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_sno.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
-		class iteminfo: ItemInfo
-		{
-			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
-			hiddenSelections[] = {"camo1","camo2"};
-		};
-	};
-	class BCG_Wren_Gray_WDL: knd_helmet_Wren {
-		displayName = "[BCG] Wren Gray WDL";
-		author = "Gray";
-		scope = 2;
-		scopeArsenal = 1;
-		model = "\knd_newHelmets\data\Wren\helmet.p3d";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"BCG_Armour\data\helmets\Wren\bcg_wren_gray_wdl.paa","knd_newHelmets\tex\Wren\camo2_co.paa"};
-		class iteminfo: ItemInfo
-		{
-			uniformmodel = "\knd_newHelmets\data\Wren\helmet.p3d";
-			hiddenSelections[] = {"camo1","camo2"};
 		};
 	};
 	class BCG_Helmet_Heritage: tgf_helmets_heritage {
@@ -576,73 +448,7 @@ class cfgWeapons {
 			"BCG_Armour\data\helmets\Liege\camo2_co.paa"
 		};
 	};
-	class BCG_Helmet_Wolves: knd_helmet_Matriarch {
-		displayName = "[BCG] Matriarch Wolves";
-		author = "Gray";
-		scope = 2;
-		model = "\knd_newHelmets\data\Matriarch\helmet.p3d";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionstextures[] = {"bcg_armour\data\helmets\customs\wolves\bcg_matriarch_wolves_blk.paa","knd_newHelmets\tex\Matriarch\camo2_co.paa"};
-		class iteminfo: ItemInfo
-		{
-			uniformmodel = "\knd_newHelmets\data\Matriarch\helmet.p3d";
-			hiddenSelections[] = {"camo1","camo2"};
-		};
-	};
-	class BCG_Helmet_Jacks: BCG_Helmet_Gunslinger {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Gunslinger Jacks";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\customs\jacks\bcg_gunslinger_jacks_blk.paa",
-			"BCG_Armour\data\helmets\Gunslinger\camo2_co.paa"
-		};
-	};
-	class BCG_Helmet_Yeetster: BCG_Helmet_Gunslinger {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Gunslinger Yeet";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		subItems[]={};
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\customs\tacobell\gunslinger.paa",
-			"BCG_Armour\data\helmets\customs\tacobell\camo2_co.paa"
-		};
-		hiddenSelectionsMaterials[]={
-			"BCG_Armour\data\helmets\customs\tacobell\camo1.rvmat",
-			"BCG_Armour\data\helmets\customs\tacobell\camo2.rvmat"
-		};
-	};
-	class BCG_Helmet_Ace: tgf_helmets_executioner {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayname="[BCG] Executioner Ace";
-		ace_hearing_lowerVolume=0.3;
-		ace_hearing_protection=0.85;
-		knd_hasLowLight = 1;
-		hiddenSelections[]={
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[]={
-			"BCG_Armour\data\helmets\customs\Ace\Ace.paa",
-			"BCG_Armour\data\helmets\customs\Ace\Visor.paa"
-		};
-	};
+	
 	// vests
 	class BCG_Armour_Warrior: tgf_armour_battle_armour {
 		scope=2;
@@ -766,12 +572,7 @@ class cfgWeapons {
 			"BCG_Armour\data\vests\Arbiter\camo2_co.paa"
 		};
 	};
-	class BCG_Plate_Vest: knd_vest_aranov {
-		displayName="[BCG] Neifer's Shoulder Plates";
-		hiddenSelections[]={"camo1"};
-		hiddenSelectionsMaterials[]={"BCG_Armour\data\uniforms\neiferheavy\Vest\beskarshiny.rvmat"};
-		hiddenSelectionsTextures[]={"BCG_Armour\data\uniforms\neiferheavy\Vest\vest_co.paa"};
-	};
+	
 	class BCG_Base_Holster: knd_vest_beroya {
 		displayName="[BCG] Holster and Pouches";
 		hiddenSelections[]={"camo1"};
@@ -817,21 +618,7 @@ class cfgWeapons {
 			uniformModel = "knd_aranov\data\vest.p3d";
 		};
 	};
-	class BCG_Vest_Wolves: knd_vest_aranov {
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[BCG] Wolves' Shoulder Plates";
-		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[]={"BCG_Armour\data\vests\aranov\wolves.paa"};
-		class ItemInfo: ItemInfo {
-			hiddenSelections[]={"camo1"};
-			vestType = "Rebreather";
-			containerClass="Supply250";
-			mass=80;
-			modelSides[]={6};
-			uniformModel = "knd_aranov\data\vest.p3d";
-		};
-	};
+	
 	
 	// uniforms
 	class BCG_Suit_Black: tgf_undersuit_uniform_black_seal {
@@ -856,48 +643,6 @@ class cfgWeapons {
 			uniformClass="BCG_Uni_Medic";			
 		};
 	};
-	class BCG_Heavy_neifer: knd_Aranov_Solid {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayName="[BCG] Heavy Plate Neifer";
-		class Iteminfo: UniformItem {
-			containerClass="Supply550";
-			mass=40;
-			uniformClass="BCG_Plate_neifer";
-		};
-	};
-	class BCG_Dalverd_Gray: knd_dalverd {
-		scope=2;
-		scopeArsenal=2;
-		author="Gray";
-		displayName="[BCG] Dal'verd Gray";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: UniformItem {
-			uniformModel = "knd_dalverd\data\dalverd.p3d";
-			uniformClass = "BCG_Uni_Dalverd_Gray";
-			containerClass = "Supply250";
-			mass = 20;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class BCG_Dalverd_Gray_BLK: knd_dalverd {
-		scope=1;
-		scopeArsenal=1;
-		author="Gray";
-		displayName="[BCG] Dal'verd Gray BLK";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		camoTypes[] = {"BLK","DES","SNO","WDL"};
-		class ItemInfo: UniformItem {
-			uniformModel = "knd_dalverd\data\dalverd.p3d";
-			uniformClass = "BCG_Uni_Dalverd_Gray_BLK";
-			containerClass = "Supply250";
-			mass = 20;
-			hiddenSelections[] = {"camo"};
-		};
-	};
 	class BCG_base_armor_d: knd_beroya {
 		scope=2;
 		scopeArsenal=2;
@@ -907,20 +652,6 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={};
 		class ItemInfo: UniformItem {
 			uniformClass = "BCG_Uni_base_armor_d";
-			containerClass = "Supply250";
-			mass = 20;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class BCG_jacks_custom: knd_beroya {
-		scope=2;
-		scopeArsenal=2;
-		author="Gray";
-		displayName="[BCG] Jacks' Armor";
-		hiddenSelections[]={};
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: UniformItem {
-			uniformClass = "BCG_jacks";
 			containerClass = "Supply250";
 			mass = 20;
 			hiddenSelections[] = {"camo"};
@@ -1005,17 +736,6 @@ class cfgWeapons {
 			containerClass="Supply550";
 			mass=40;
 			uniformClass="BCG_Plate_Heavy";
-		};
-	};
-	class BCG_Heavy_Wolves: knd_Aranov_Solid {
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		displayName="[BCG] Heavy Wolves";
-		class Iteminfo: UniformItem {
-			containerClass="Supply550";
-			mass=40;
-			uniformClass="BCG_Plate_Wolves";
 		};
 	};
 	
@@ -1168,55 +888,13 @@ class cfgVehicles {
 		
 		};
 	};
-	class BCG_Plate_neifer: knd_Aranov_Solid_F
-	{
-		displayName="[BCG] Neifer's Armor";
-		uniformClass="BCG_Heavy_neifer";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"BCG_Armour\data\uniforms\neiferheavy\Armor\beskarshiny.rvmat",
-			"BCG_Armour\data\uniforms\neiferheavy\Armor\beskarshiny1.rvmat"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BCG_Armour\data\uniforms\neiferheavy\armor\camo1_co.paa",
-			"BCG_Armour\data\uniforms\neiferheavy\armor\camo2_co.paa"
-		};
-	};
-	class BCG_Uni_Dalverd_Gray: knd_dalverd_F
-	{
-		scope = 1;
-		model = "knd_dalverd\data\dalverd.p3d";
-		uniformClass = "BCG_Dalverd_Gray";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\bcg_dalverd_gray_blk.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
-	};
-	class BCG_Uni_Dalverd_Gray_BLK: knd_dalverd_F
-	{
-		scope = 1;
-		model = "knd_dalverd\data\dalverd.p3d";
-		uniformClass = "BCG_Uni_Gray_BLK";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\dalverd\camo1_co.paa","knd_dalverd\data\camo2_dark_co.paa","knd_dalverd\data\camo3_co.paa"};
-	};
+	
 	class BCG_Uni_base_armor_d: knd_beroya_F
 	{
 		scope = 1;
 		uniformClass = "BCG_base_armor_d";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\base\newberoya.paa","BCG_Armour\data\uniforms\base\newberoyapants.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
-	};
-	class BCG_jacks: knd_beroya_F
-	{
-		scope = 1;
-		uniformClass = "BCG_jacks_custom";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"BCG_Armour\data\uniforms\customs\jacks.paa","BCG_Armour\data\uniforms\base\newberoyapants.paa","BCG_Armour\data\uniforms\base\camo3_co.paa"};	
 	};
 	class BCG_camo: knd_beroya_F
 	{
