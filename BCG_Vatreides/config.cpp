@@ -50,6 +50,20 @@ class cfgWeapons {
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class BCG_Yeet_Vatreides: knd_beroya {
+		scope=2;
+		scopeArsenal=2;
+		author="Gray";
+		displayName="[BCG] Yeetster Armor";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: UniformItem {
+			uniformClass = "BCG_Yeet_Vatreides_d";
+			containerClass = "Supply250";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 };
 
 class cfgVehicles {
@@ -63,6 +77,13 @@ class cfgVehicles {
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"BCG_Vatreides\data\uniforms\vatreides1.paa","BCG_Vatreides\data\uniforms\vatreides2.paa","BCG_Vatreides\data\uniforms\vatreides3.paa"};	
 	};
+	class BCG_Yeet_Vatreides_d: knd_beroya_F
+	{
+		scope = 1;
+		uniformClass = "BCG_Yeet_Vatreides";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"BCG_Vatreides\data\uniforms\yeet1.paa","BCG_Vatreides\data\uniforms\yeet2.paa","BCG_Vatreides\data\uniforms\yeet3.paa"};
+	};
 	
 	// jetpacks
 	class knd_jetpack_maxim6_light_LR;
@@ -70,5 +91,11 @@ class cfgVehicles {
 		displayName = "[BCG] Z-6 LR Va'trei'des";
 		maximumLoad = 500;
 		hiddenselectionstextures[] = {"BCG_Vatreides\data\jetpacks\Rocket_co.paa","BCG_Vatreides\data\jetpacks\z6rto.paa"};
+	};
+	class BCG_Z6LR_Yeet: knd_jetpack_maxim6_light_LR {
+		displayName = "[BCG] Z-6 LR Yeet";
+		maximumLoad = 500;
+		hiddenselectionstextures[] = {"BCG_Vatreides\data\jetpacks\Rocket_yeet.paa","BCG_Vatreides\data\jetpacks\z6rto_yeet.paa"};
+		hiddenSelectionsMaterials[] = {"BCG_Vatreides\data\jetpacks\Rocket.rvmat","BCG_Vatreides\data\jetpacks\goldenized.rvmat"};
 	};
 };
