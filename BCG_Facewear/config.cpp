@@ -28,6 +28,83 @@ class cfgFunctions {
 		};
 	};
 };
+class cfgWeapons {
+	class UniformItem;
+	class ItemInfo;
+	class VestItem;
+	class HeadGearItem;
+	
+	class knd_nvg_nya;
+	class BCG_iPod_Beroya: knd_nvg_nya
+	{
+		scope = 2;
+		displayName = "[BCG] iPod (Beroya)";
+		model = "\BCG_Facewear\data\ipod\ipod.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","dalverd","gen5"};
+		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\ipod\camo1_co.paa","\BCG_Facewear\data\ipod\camo2_co.paa"};
+		picture = "BCG_Facewear\data\iPod\icon.paa";
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"dalverd",
+				"gen5"
+			};
+			uniformModel = "\BCG_Facewear\data\ipod\ipod.p3d";
+			modelOff = "\BCG_Facewear\data\ipod\ipod.p3d";
+		};
+	};
+	class BCG_iPod_Dalverd: BCG_iPod_Beroya
+	{
+		scope = 2;
+		displayName = "[BCG] iPod (Dalverd)";
+		model = "\BCG_Facewear\data\ipod\ipod.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","beroya","gen5"};
+		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\ipod\camo1_co.paa","\BCG_Facewear\data\ipod\camo2_co.paa"};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"beroya",
+				"gen5"
+			};
+			uniformModel = "\BCG_Facewear\data\ipod\ipod.p3d";
+			modelOff = "\BCG_Facewear\data\ipod\ipod.p3d";
+		};
+	};
+	class BCG_iPod_Gen5: BCG_iPod_Beroya
+	{
+		scope = 2;
+		displayName = "[BCG] iPod Gen 5 (Beroya)";
+		model = "\BCG_Facewear\data\ipod\ipod.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","beroya","dalverd"};
+		hiddenSelectionsTextures[] = {
+			"\BCG_Facewear\data\ipod\camo1_co.paa",
+			"\BCG_Facewear\data\ipod\camo2_co.paa",
+			"\BCG_Facewear\data\ipod\camo3_co.paa",
+			"\BCG_Facewear\data\ipod\camo2_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"beroya",
+				"dalverd"
+			};
+			uniformModel = "\BCG_Facewear\data\ipod\ipod.p3d";
+			modelOff = "\BCG_Facewear\data\ipod\ipod.p3d";
+		};
+	};
+};
 class cfgGlasses {
 	
 
@@ -206,27 +283,7 @@ class cfgGlasses {
 		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\mommy\camo_co.paa"};
 		ACE_Overlay = "";
 	};
-	class BCG_iPod_Beroya: G_Combat
-	{
-		scope = 2;
-		displayName = "[BCG] iPod (Beroya)";
-		model = "\BCG_Facewear\data\ipod\ipod.p3d";
-		hiddenSelections[] = {"camo1","camo2","dalverd"};
-		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\ipod\camo1_co.paa","\BCG_Facewear\data\ipod\camo2_co.paa"};
-		picture = "BCG_Facewear\data\iPod\icon.paa";
-		ACE_Overlay = "";
-		ACE_OverlayCracked = "";
-	};
-	class BCG_iPod_Dalverd: BCG_iPod_Beroya
-	{
-		scope = 2;
-		displayName = "[BCG] iPod (Dalverd)";
-		model = "\BCG_Facewear\data\ipod\ipod.p3d";
-		hiddenSelections[] = {"camo1","camo2","beroya"};
-		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\ipod\camo1_co.paa","\BCG_Facewear\data\ipod\camo2_co.paa"};
-		ACE_Overlay = "";
-		ACE_OverlayCracked = "";
-	};
+	
 };
 class cfgVehicles {
 	class Man;
@@ -260,7 +317,7 @@ class cfgVehicles {
 			};
 			class bcg_iPod {
 				displayName="iPod Tracks";
-				condition="(goggles player) in [""BCG_iPod_Beroya"",""BCG_iPod_Dalverd""]";
+				condition="(hmd player) in [""BCG_iPod_Beroya"",""BCG_iPod_Dalverd"",""BCG_iPod_Gen5""]";
 				statement="";
 				icon="BCG_Facewear\data\iPod\icon.paa";
 				class iPod_Stop {
