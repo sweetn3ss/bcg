@@ -612,6 +612,7 @@ class cfgWeapons {
 		displayname="[BCG] Gunslinger Yeet";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		subItems[]={};
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
