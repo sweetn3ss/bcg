@@ -35,7 +35,7 @@ class cfgMovesMaleSdr: cfgMovesBasic {
 			actions = "NoActions";
 			variantsPlayer[] = {};
 			forceAim = 1;
-			speed = 1;
+			speed = 1.15;
 			file = "BCG_Anim\data\skinwalking.rtm";
 			looped = 1;
 			minPlayTime = 1;
