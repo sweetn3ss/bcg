@@ -62,7 +62,13 @@ class cfgWeapons {
 	
 	class JLTS_stun_muzzle;
 	class 3AS_DWBlaster_F;
-	
+	class M2_Flamethrower_01_F;
+	class Rifle;
+	class Rifle_Base_F: Rifle
+	{
+		class WeaponSlotsInfo {};
+		class GunParticles {};
+	};
 
 	class BCG_Bulldog: OPTRE_CQS48_Bulldog_Automatic 
 	{
@@ -254,6 +260,62 @@ class cfgWeapons {
 		scopeArsenal=2;
 		displayName="[BCG] WIP Wrist Blaster (F)"; // blaster + flamethrower
 		baseWeapon="BCG_Gauntlet_BF";
+		muzzles[]={"this","flamer"};
+		modes[]={"Single","Burst"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_B2_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {""};
+			};
+			reloadTime = 0.1;
+			dispersion = 0.00399;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+		};
+		class Burst: Mode_Burst {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_B2_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {""};
+			};
+			reloadTime = 0.1;
+			dispersion = 0.00399;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+			burst = 7;
+		};
+		class flamer: M2_Flamethrower_01_F
+		{
+			WBK_BurnEm_RequiredBackpack="";
+			WBK_BurnEm_IsFlamethrower = "True";
+			WBK_BurnEm_FlamethrowerParticlePos="[ [ -0.55, 0.21, -0.15], 'leftHand' ]";
+			WBK_BurnEm_FlamethrowerDistance=30;
+			WBK_BurnEm_FlamethrowerSoundArray="['WBK_FlameAlter_Start','WBK_FlameAlter_loop',12.8,'WBK_FlameAlter_Stop']";
+		};
 	};
 	class BCG_MK_DMR: knd_MK
 	{
