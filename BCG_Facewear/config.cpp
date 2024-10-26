@@ -29,6 +29,9 @@ class cfgFunctions {
 	};
 };
 class cfgWeapons {
+	class ItemCore;
+	class InventoryWeapon_Base_F;
+	
 	class UniformItem;
 	class ItemInfo;
 	class VestItem;
@@ -42,7 +45,7 @@ class cfgWeapons {
 		model = "\BCG_Facewear\data\ipod\ipod.p3d";
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","dalverd","gen5"};
 		hiddenSelectionsTextures[] = {"\BCG_Facewear\data\ipod\camo1_co.paa","\BCG_Facewear\data\ipod\camo2_co.paa"};
-		picture = "BCG_Facewear\data\iPod\icon.paa";
+		picture = "\BCG_Facewear\data\iPod\icon.paa";
 		class ItemInfo: ItemInfo {
 			hiddenSelections[]=
 			{
@@ -102,6 +105,55 @@ class cfgWeapons {
 			};
 			uniformModel = "\BCG_Facewear\data\ipod\ipod.p3d";
 			modelOff = "\BCG_Facewear\data\ipod\ipod.p3d";
+		};
+	};
+	
+	class BCG_Playlist_Yeet: ItemCore {
+		author = "Gray";
+		scope=2;
+		scopeArsenal=2;
+		displayName = "[BCG] Playlist Yeet";
+		model = "\A3\weapons_F\ammo\mag_univ.p3d";
+		picture = "\BCG_Facewear\data\iPod\yeet2.paa";
+		detectRange = -1;
+		simulation = "ItemMineDetector";
+		useAsBinocular = 0;
+		type = 4096;
+		class ItemInfo: InventoryWeapon_Base_F
+		{
+			mass = 1;
+		};
+	};
+	class BCG_Playlist_Ace: ItemCore {
+		author = "Gray";
+		scope=2;
+		scopeArsenal=2;
+		displayName = "[BCG] Playlist Ace";
+		model = "\A3\weapons_F\ammo\mag_univ.p3d";
+		picture = "\BCG_Facewear\data\iPod\yeet2.paa";
+		detectRange = -1;
+		simulation = "ItemMineDetector";
+		useAsBinocular = 0;
+		type = 4096;
+		class ItemInfo: InventoryWeapon_Base_F
+		{
+			mass = 1;
+		};
+	};
+	class BCG_Playlist_Juggy: ItemCore {
+		author = "Gray";
+		scope=2;
+		scopeArsenal=2;
+		displayName = "[BCG] Playlist Juggy";
+		model = "\A3\weapons_F\ammo\mag_univ.p3d";
+		picture = "\BCG_Facewear\data\BK\vatreicon2a.paa";
+		detectRange = -1;
+		simulation = "ItemMineDetector";
+		useAsBinocular = 0;
+		type = 4096;
+		class ItemInfo: InventoryWeapon_Base_F
+		{
+			mass = 1;
 		};
 	};
 };
@@ -334,7 +386,7 @@ class cfgVehicles {
 				};
 				class iPod_Yeet {
 					displayName="Yeet's Epic Playlist";
-					condition="";
+					condition = "(""BCG_Playlist_Yeet"" in (items _player))";
 					statement="";
 					icon="BCG_Facewear\data\iPod\yeet.paa";
 					class iPod_Devious {
@@ -382,7 +434,7 @@ class cfgVehicles {
 				};
 				class iPod_Ace {
 					displayName="Ace's Playlist";
-					condition="";
+					condition="(""BCG_Playlist_Ace"" in (items _player))";
 					statement="";
 					icon="BCG_Facewear\data\iPod\ace.paa";
 					class iPod_nvrap {
@@ -424,9 +476,9 @@ class cfgVehicles {
 				};
 				class iPod_Juggy {
 					displayName="Juggy's Playlist";
-					condition="";
+					condition="(""BCG_Playlist_Juggy"" in (items _player))";
 					statement="";
-					icon="";
+					icon="BCG_Facewear\data\BK\vatreicon2.paa";
 					class iPod_hltw {
 						displayName="Hungry Like the Wolf";
 						condition="";
