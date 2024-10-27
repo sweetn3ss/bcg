@@ -242,6 +242,7 @@ class cfgWeapons {
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionstextures[] = {"BCG_Customs\data\Rag\Rag.paa","knd_newHelmets\tex\Kaste\camo2_co.paa"};
 		descriptionShort = "Most shootable helmet this side of the Mississippi.";
+		subItems[]={};
 	};
 	
 	// vests
