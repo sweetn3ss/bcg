@@ -18,35 +18,32 @@ class Mode_FullAuto;
 class SlotInfo;
 class CowsSlot;
 class PointerSlot;
-class CfgMovesBasic
-{
+class CfgMovesBasic {
 	class default;
 	class DefaultDie;
-	class ManActions
-	{
-		bcg_fortnitedance01 = "bcg_fortnitedance01";
+	class ManActions {
+		bcg_fortnitedance01="bcg_fortnitedance01";
 	};
 };
 class cfgMovesMaleSdr: cfgMovesBasic {
 	class States {
 		class AmovPercMstpSnonWnonDnon_falling;
-		class bcg_fortnitedance01: AmovPercMstpSnonWnonDnon_falling
-		{
-			actions = "NoActions";
-			variantsPlayer[] = {};
-			forceAim = 1;
-			speed = 1.15;
-			file = "BCG_Anim\data\skinwalking.rtm";
-			looped = 1;
-			minPlayTime = 1;
-			disableWeapons = 0;
-			ignoreMinPlayTime[] = {"Unconscious"};
-			soundEnabled = 0;
-			canBlendStep = 0;
-			ConnectFrom[] = {"AmovPercMstpSnonWnonDnon",0.1};
-			ConnectTo[] = {};
-			InterpolateTo[] = {};
-			InterpolateFrom[] = {"AmovPercMstpSnonWnonDnon",0.5};
+		class bcg_fortnitedance01: AmovPercMstpSnonWnonDnon_falling {
+			actions="NoActions";
+			variantsPlayer[]={};
+			forceAim=1;
+			speed=1.15;
+			file="BCG_Anim\data\skinwalking.rtm";
+			looped=1;
+			minPlayTime=1;
+			disableWeapons=0;
+			ignoreMinPlayTime[]={"Unconscious"};
+			soundEnabled=0;
+			canBlendStep=0;
+			ConnectFrom[]={"AmovPercMstpSnonWnonDnon",0.1};
+			ConnectTo[]={};
+			InterpolateTo[]={};
+			InterpolateFrom[]={"AmovPercMstpSnonWnonDnon",0.5};
 		};
 	};
 };
@@ -55,13 +52,13 @@ class cfgVehicles {
 	class CAManBase : Man {
 		class ACE_SelfActions {
 			class bcg_anims {
-				displayName = "BCG Fortnite";
-				icon = "";
+				displayName="BCG Fortnite";
+				icon="";
 				class bcg_Dance {
-					displayName = "Skinwalking";
-					icon = "";
-					condition = "";
-					statement = "[player, 'bcg_fortnitedance01'] remoteExec ['switchMove', 0]";
+					displayName="Skinwalking";
+					icon="";
+					condition="";
+					statement="[player, 'bcg_fortnitedance01'] remoteExec ['switchMove', 0]";
 					exceptions[]={};
 				};
 			};
