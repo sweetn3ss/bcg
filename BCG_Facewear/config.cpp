@@ -1,7 +1,7 @@
 class cfgPatches {
 	class BCG_Facewear {
 		authors[]={"Gray","Neifer","Indie Beninging"};
-		name="Buy'ce Gal Cabur Core";
+		name="Buy'ce Gal Cabur Facewear";
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
