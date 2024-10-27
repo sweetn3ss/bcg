@@ -280,7 +280,7 @@ class cfgVehicles {
 		};
 	};
 	class 3AS_Delta7_Purple;
-	class 3AS_Delta7_Purple: 3AS_Delta7_Base_F
+	class BCG_Delta7_Purple: 3AS_Delta7_Purple
 	{
 		author="$STR_3as_Studio";
 		scope=2;
