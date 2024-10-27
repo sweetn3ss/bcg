@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class BCG_Weapons
-	{
+class CfgPatches {
+	class BCG_Weapons {
 		requiredAddons[]={"OPTRE_Weapons","3AS_Weapons","JLTS_weapons_Core", "knd_silverhand","knd_ee3", "knd_mk", "knd_vornsk", "knd_amban", "knd_roba", "knd_de10", "knd_kGoodbye","OPTRE_M6GGNR", "knd_thompson", "knd_amr", "knd_dl44", "knd_beskad", "knd_westar_pistol", "knd_rotarycanon", "knd_galaar"};
 		requiredVersion=0.1;
 		units[]={};
