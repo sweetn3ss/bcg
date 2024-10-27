@@ -465,8 +465,7 @@ class cfgVehicles {
 	};
 	
 	//jetpacks
-	class BCG_Backpack_JT12: knd_jetpack_JT12_Maxim_Light
-	{
+	class BCG_Backpack_JT12: knd_jetpack_JT12_Maxim_Light {
 		displayName = "[BCG] JT12 Ascension Pack";
 		scope = 2;
 		picture = "knd_jetpacks\data\JT12_icon_co.paa";
@@ -485,16 +484,14 @@ class cfgVehicles {
 		knd_jetpack_strafeCoef = 0.3;
 		maximumLoad = 500;
 	};
-	class BCG_Backpack_JT12_LR: knd_jetpack_JT12_Maxim_Light_LR
-	{
+	class BCG_Backpack_JT12_LR: knd_jetpack_JT12_Maxim_Light_LR {
 		displayName = "[BCG] JT12 Ascension Pack LR";
 		model = "\knd_jetpacks\data\jt12RTO\jt12RTO.p3d";
 		hiddenselections[] = {"rocket","pack"};
 		hiddenselectionstextures[] = {"\knd_jetpacks\data\jt12\rocket_co.paa","\knd_jetpacks\data\jt12RTO\pack_co.paa"};
 		maximumLoad = 500;
 	};
-	class BCG_Backpack_JT13: knd_jetpack_JT13
-	{
+	class BCG_Backpack_JT13: knd_jetpack_JT13 {
 		author = "Maxim + Jenna";
 		displayName = "[BCG] JT13 Cliff Racer Pack";
 		scope = 2;
@@ -502,15 +499,13 @@ class cfgVehicles {
 		hiddenselectionstextures[] = {"knd_jetpacks\data\jt13\camo1_co.paa"};
 		maximumLoad = 500;
 	};
-	class BCG_Backpack_JT13_LR: knd_jetpack_JT13_LR
-	{
+	class BCG_Backpack_JT13_LR: knd_jetpack_JT13_LR {
 		displayName = "[BCG] JT13 Cliff Racer Pack LR";
 		model = "knd_jetpacks\data\jt13RTO\JT13RTO.p3d";
 		hiddenselectionstextures[] = {"knd_jetpacks\data\jt13RTO\camo1_co.paa"};
 		maximumLoad = 500;
 	};
-	class BCG_Backpack_Z6: knd_jetpack_maxim6_light
-	{
+	class BCG_Backpack_Z6: knd_jetpack_maxim6_light {
 		displayName = "[BCG] Z-6 Draigon Pack";
 		scope = 2;
 		model = "knd_jetpacks\data\z6\z6_final.p3d";
