@@ -15,22 +15,29 @@ class cfgPatches {
 };
 class cfgGlasses {
 	class OPTRE_HUD_Glasses;
-	class 82nd_Shawggles: OPTRE_HUD_Glasses {
+	class 82nd_Shawggles: OPTRE_HUD_Glasses
+	{
 		scope=2;
 		scopeArsenal=2;
 		displayName="[BCG] Shawggles";
 		model="\A3\characters_f_beta\heads\glasses\g_shades_green";
 		picture="\A3\Characters_F\data\ui\icon_g_shades_green_CA.paa";
 		optreHUDStyle="Glasses";
-		hiddenSelections[]={"camo"};
-		hiddenSelectionsTextures[]={"BCG_Core\data\shawggles.paa"};
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BCG_Core\data\shawggles.paa"
+		};
 	};
 };
 class cfgMarkers {
 	class bcg_flag {
 		name="BCG Flag Test";
-		author="Gray";
-		icon="\BCG_Core\data\bcg_flag";
+		author = "Gray";
+		icon = "\BCG_Core\data\bcg_flag";
 		color[]={1,1,1,1};
 		size=32;
 		shadow=0;
@@ -46,28 +53,28 @@ class cfgVehicles {
 		scopeCurator=2;
 		author="Gray";
 		displayName="Blanket";
-		hiddenselections[]={"camo1","screen"};
-		hiddenselectionstextures[]={"kobra\442_misc\data_pad\data\camo1_co.paa","BCG_Core\data\screen_co_bridget.paa"};
+		hiddenselections[] = {"camo1","screen"};
+		hiddenselectionstextures[] = {"kobra\442_misc\data_pad\data\camo1_co.paa","BCG_Core\data\screen_co_bridget.paa"};
 	};
 };
 class cfgEditorCategories {
 	class BCG_House {
-		displayName="House Buy'ce Gal";
+		displayName = "House Buy'ce Gal";
 	};
 };
 class cfgEditorSubcategories {
 	class BCG_VTOL {
-		displayName="VTOL Aircraft";
+		displayName = "VTOL Aircraft";
 	};
 	class BCG_Cars {
-		displayName="Cars";
+		displayName = "Cars";
 	};
 };
 class cfgFactionClasses {
 	class BCG_Units {
-		displayName="[BCG] Buy'ce Gal Units";
-		dlc="BCG";
-		priority=99;
-		side=2;
+		displayName = "[BCG] Buy'ce Gal Units";
+		dlc = "BCG";
+		priority = 99;
+		side = 2;
 	};
 };
