@@ -24,6 +24,8 @@ class cfgWeapons {
 	class knd_helmet_Matriarch;
 	class BCG_Helmet_Gunslinger;
 	class tgf_helmets_executioner;
+	class SFA_Scout_Trooper_STND_Helmet;
+	class knd_helmet_Kaste;
 	
 	// vest inherits
 	class knd_vest_aranov;
@@ -180,6 +182,7 @@ class cfgWeapons {
 		displayname="[BCG] Gunslinger Jacks";
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
+		subItems[]={};
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -197,6 +200,7 @@ class cfgWeapons {
 		ace_hearing_lowerVolume=0.3;
 		ace_hearing_protection=0.85;
 		subItems[]={};
+		descriptionShort = "Score 34785692857 for the Yeetster";
 		hiddenSelections[]={
 			"camo1",
 			"camo2"
@@ -226,6 +230,18 @@ class cfgWeapons {
 			"BCG_Customs\data\Ace\Ace.paa",
 			"BCG_Customs\data\Ace\Visor.paa"
 		};
+	};
+	class BCG_Helmet_Juggy: SFA_Scout_Trooper_STND_Helmet {
+		displayName = "[BCG] Scout Juggy";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"BCG_Customs\data\Juggy\Juggy.paa"};
+		descriptionShort = "The genie adds another 10-inch penis.";
+	};
+	class BCG_Helmet_Rag: knd_helmet_Kaste {
+		displayName = "[BCG] Kaste Rag";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionstextures[] = {"BCG_Customs\data\Rag\Rag.paa","knd_newHelmets\tex\Kaste\camo2_co.paa"};
+		descriptionShort = "Most shootable helmet this side of the Mississippi.";
 	};
 	
 	// vests
