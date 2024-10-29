@@ -26,6 +26,7 @@ class cfgWeapons {
 	class tgf_helmets_executioner;
 	class SFA_Scout_Trooper_STND_Helmet;
 	class knd_helmet_Kaste;
+	class BCG_Helmet_Arbiter;
 	
 	// vest inherits
 	class knd_vest_aranov;
@@ -243,6 +244,23 @@ class cfgWeapons {
 		hiddenSelectionstextures[] = {"BCG_Customs\data\Rag\Rag.paa","knd_newHelmets\tex\Kaste\camo2_co.paa"};
 		descriptionShort = "Most shootable helmet this side of the Mississippi.";
 		subItems[]={};
+	};
+	class BCG_Helmet_Chask: BCG_Helmet_Arbiter {
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayname="[BCG] Arbiter Chask";
+		ace_hearing_lowerVolume=0.3;
+		ace_hearing_protection=0.85;
+		knd_hasLowLight = 1;
+		hiddenSelections[]={
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]={
+			"BCG_Customs\data\Chask\Chask1.paa",
+			"BCG_Armour\data\helmets\Arbiter\camo2_co.paa"
+		};
 	};
 	
 	// vests
