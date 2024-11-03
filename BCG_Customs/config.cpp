@@ -50,7 +50,7 @@ class cfgWeapons {
 			"camo2"
 		};
 		hiddenSelectionsMaterials[]={
-			"BCG_Customs\data\neifer\beskarized.rvmat"
+			"BCG_Customs\data\neifer\helmet\newiron.rvmat"
 		};
 		hiddenSelectionsTextures[]={
 			"BCG_Customs\data\neifer\camo1_co.paa",
